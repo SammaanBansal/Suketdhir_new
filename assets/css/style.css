@@ -164,7 +164,6 @@ ul.SD-nav li {
         margin: 0px;
         width: 14%;
         display: inline-block;
-        line-height: 3;
     }
     .SD-gotohome img{
         width: 100% !important;
@@ -1145,3 +1144,556 @@ li.wardrobe-btn {
         background: #fff;
     }
 }
+
+/* Clothing */
+@font-face {
+    font-family: Cinzel;
+    src: url('../font/Cinzel-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+.SD-col-images:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.SD-col-images:nth-child(even) {
+    background-color: #ECEBE6;
+}
+
+.SD-col-head {
+    text-align: center;
+    margin: 0px !important;
+    padding: 30px !important;
+    font-size: 26px;
+    color: #636363;
+    font-weight: 300;
+}
+.shop-sub{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #f2f2eb;
+    text-align: center;
+}
+.shop-sub ul{
+    margin: 0;
+    vertical-align: middle;
+    line-height: 5;
+}
+.submenu-clothing {
+    display: inline;
+    font-size: 16px;
+    list-style: none;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+}
+.submenu-clothing.active:before{
+    content: '|';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+}
+.submenu-clothing.active:after{
+    content: '|';
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+}
+.shop-sub select{
+    width: 60px;
+    background: transparent;
+    text-align: right;
+    right: 0;
+    border: none;
+}
+.submenu-clothing-size{
+    display: inline;
+    font-size: 16px;
+    list-style: none;
+}
+
+.SD-clothing-pagination {
+    text-align: center;
+    padding: 10px;
+    display: table !important;
+    margin: auto !important;
+}
+
+.SD-clothing-pagination>li>a {
+    color: #636363 !important;
+    border: 0px !important;
+    font-size: 18px !important;
+    font-family: Cinzel;
+    padding: 6px 4px !important;
+}
+
+.SD-clothing-pagination>li>a:hover,
+.SD-clothing-pagination>li>a:focus {
+    background-color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.icon-heart {
+    color: #636363;
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+
+/*
+.SD-heart:visited i {
+    color: red;
+}*/
+
+.SD-heart {
+    text-align: right;
+    opacity: 0;
+}
+
+.SD-col-images {
+    padding: 30px !important;
+}
+
+.SD-clothing-name,
+.SD-clothing-price,
+.SD-clothing-sizes {
+    font-size: 14px;
+    display: inline;
+    opacity: 0;
+}
+
+.SD-clothing-sizes {
+    float: right;
+}
+
+.SD-clothing-price {
+    display: block;
+    font-family: Cinzel;
+}
+
+@media all and (min-width:769px) {
+    .SD-col-images:hover p {
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .shop-sub{
+        padding-left: 18%;
+    }
+}
+
+@media all and (max-width:768px) {
+    .SD-col-images p {
+        opacity: 1;
+        font-size: 12px;
+    }
+}
+
+.SD-col-images a {
+    color: #636363;
+}
+
+.SD-col-images a:hover {
+    color: #636363;
+}
+
+.SD-heart i:hover,
+.SD-heart i:active,
+.SD-heart i:focus {
+    color: #e2d5b5;
+    /*cursor: url('../assets/icons/pointer1.png') 100 0, auto;*/
+}
+
+.SD-collections-eg {
+    margin-top: 80px;
+}
+
+.SD-head-borderleft {
+    position: absolute;
+    font-size: 30px;
+    left: 44.45%;
+    top: 16%;
+}
+
+.SD-head-borderright {
+    position: absolute;
+    font-size: 30px;
+    right: 44.45%;
+    top: 16%;
+}
+
+/*end clothing */
+/*End by Sammaan*/
+
+/* CSS by Rahul */
+/* contact page css */
+
+.SD-contact-studio-det,
+.SD-contact-press-det,
+.SD-contact-b2b-det {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.fiftyPercent {
+    width: 50%;
+}
+
+.abourGraySection {
+    background-color: #f2f2eb;
+    padding: 92px 18.5%;
+}
+
+.fourtyTwoPercent {
+    width: 42%
+}
+
+.marginAuto {
+    margin: 0 auto;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bottomfourty {
+    padding-bottom: 40px;
+}
+
+.topTwenty {
+    padding-top: 20px;
+}
+
+.rightSixteen {
+    padding-right: 16px
+}
+
+.bottomTwenty {
+    padding-bottom: 20px;
+}
+
+.accorcontent p:last-child {
+    padding-bottom: 0;
+}
+
+.accorHeading {
+    font-family: Cormorant;
+    font-size: 21px;
+    font-weight: bold;
+    color: #696d70;
+}
+
+.accorcontent {
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(105, 109, 112);
+}
+
+.mapImg {
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+}
+
+.mapHeight {
+    height: 710px;
+}
+
+
+/* end contact page */
+
+
+/* career page */
+
+.carrerSection {
+    padding: 100px 13%;
+    justify-content: space-between;
+    /* height: 100vh; */
+    background-color: #f2f2eb;
+}
+
+.SD-existing-user a:hover {
+    color: #636363;
+    text-decoration: none;
+}
+
+.carrerSection aside nav ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+.nav-pills>li {
+    float: none;
+    margin-left: 0 !important;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 300;
+    color: #696d70;
+}
+
+.carrerSection aside nav .nav-pills>li.active>a,
+.carrerSection aside nav .nav-pills>li.active>a:focus,
+.carrerSection aside nav .nav-pills>li.active>a:hover {
+    color: #636363 !important;
+    background: unset !important;
+    /* text-decoration: underline !important; */
+    border-bottom: 2px solid;
+    border-radius: 0;
+}
+
+.carrerSection aside nav .nav>li>a {
+    padding: 0 !important;
+    display: inline-block;
+}
+
+.carrerSection aside nav .nav>li>a:hover {
+    cursor: pointer;
+}
+
+.carrerSection aside nav a:hover,
+.carrerSection aside nav a:active {
+    text-decoration: unset;
+}
+
+ul li:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    width: 0;
+    transition: width .6s ease;
+    border-top: 2px solid #c6c6c4;
+    left: auto
+}
+
+ul li.active:after {
+    width: 101px;
+    margin: 0px 6px;
+}
+
+ul li.active::before {
+    content: "";
+    position: absolute;
+}
+
+.tabsCol {
+    flex: none;
+}
+
+.fashionDesigner {
+    padding-top: 40px;
+}
+
+.onlineMarketing {
+    padding-top: 80px;
+}
+
+.accorItemHeading {
+    font-family: Cormorant;
+    font-size: 24px;
+    font-weight: 300;
+    color: #696d70;
+}
+
+.TwentySixty {
+    padding: 20px 0px 60px 0px;
+}
+
+.tab-content {
+    padding: 0px 120px;
+}
+
+.jobDescription p {}
+
+.fourteenSansPro {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 300;
+    color: #696d70;
+}
+
+.widthFull {
+    width: 100%;
+}
+
+.inputFileCon {
+    display: none;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.inputsContainer {
+    margin-bottom: 20px;
+}
+
+.form .inputsContainer:last-child {
+    margin: 50px 0px;
+}
+
+.inputFields {
+    background-color: unset;
+    border: none;
+    border-bottom: 2px solid #c6c6c4;
+    font-family: Cormorant;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    padding: 0;
+    outline: none;
+    color: #c6c6c4;
+}
+
+.textField::placeholder {
+    color: #c6c6c4;
+}
+
+.textField:focus {
+    border-bottom: 2px solid #979797;
+}
+
+.textField {
+    color: black;
+}
+
+.fourteenCormorant {
+    font-family: Cormorant;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.oneFortyButton {
+    background-color: #c6c6c6;
+    border: none;
+    padding: 10px 70px;
+    text-transform: uppercase;
+}
+
+.oneFortyButton:hover {
+    background-color: black;
+    font-weight: 900;
+}
+
+.uploadBtn {
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
+}
+
+.grayCenterContent {
+    margin: 0 auto;
+    max-width: 200px;
+    min-width: 31%;
+}
+
+
+/* end career page */
+
+
+/* about us page */
+
+video[poster] {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.videoContainer {
+    position: relative;
+}
+
+.videoPlayCon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.eightHundredImg {
+    height: 800px;
+    object-fit: cover;
+}
+
+.aboutGrayContainer {
+    background-color: #f2f2eb;
+    display: flex;
+    align-items: center;
+}
+
+.eighteenCormorant {
+    font-family: Cormorant;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: #696d70;
+}
+
+
+/* End about us page */
+
+
+/* responsivness */
+
+@media (max-width:744px) {
+    .abourGraySection {
+        padding: 50px 8%;
+    }
+}
+
+@media (max-width:546px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+    .abourGraySection,
+    .mapContainer {
+        width: 100%;
+    }
+}
+
+@media(max-width:730px) {
+    .carrerSection {
+        flex-direction: column;
+        padding: 100px 40px;
+    }
+    .tab-content {
+        width: 308px;
+        margin: 0 auto;
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width:594px) {
+    ul li.active:after {
+        width: 30px;
+        margin: 0px 6px;
+    }
+}
+
+@media(max-width:523px) {
+    .tab-content {
+        margin-left: 0;
+        padding-left: 40px;
+    }
+    .carrerSection {
+        padding: 100px 4%;
+    }
+    ul li.active:after {
+        width: 16px;
+    }
+}
+
+/* end responsivness */
+/* CSS by Rahul */
