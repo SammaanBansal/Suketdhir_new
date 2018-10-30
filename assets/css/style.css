@@ -52,7 +52,7 @@ a:focus {
 .left-chevron-image:hover,
 .SD-left-carousel span:hover,
 .SD-right-carousel span:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .carousel-indicators li {
@@ -151,7 +151,7 @@ ul.SD-nav li {
         /*float: left;*/
         display: block;
         word-break: break-word;
-        cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+        cursor: url('../../icons/cursor.svg') 100 0, auto !important;
     }
     .SD-name {
             float: left;
@@ -181,7 +181,7 @@ ul.SD-nav li {
     font-size: 14px;
     font-weight: 300;
     /*float: left;*/
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-nav li:last-child>a {
@@ -203,7 +203,7 @@ ul.SD-nav li {
 }
 
 .SD-nav label {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-headerpic img {
@@ -388,21 +388,16 @@ ul.SD-nav li {
     width: 80%;
     margin: auto;
     display: block;
-    z-index: 1;
+    z-index: 0;
     position: relative;
-    /*margin-top: 41px;
-    height: 390px;*/
 }
 
 .SD-collection-row img {
     width: 60%;
     margin: auto;
     display: block;
-    z-index: 1;
+    z-index: 0;
     position: relative;
-    /*margin-top: 41px;
-
-    height: 390px;*/
 }
 
 .SD-stl {
@@ -514,12 +509,12 @@ ul.SD-nav li {
 
 .SD-bottomright-takemethere {
     font-weight: 300;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-icon-hat {
     text-align: center;
-    background-image: url('../assets/icons/iconhat.png');
+    background-image: url('../../assets/icons/iconhat.png');
     height: 36px;
     display: block;
     margin: auto;
@@ -531,7 +526,7 @@ ul.SD-nav li {
 
 .SD-hamburger {
     text-align: center;
-    background-image: url('../assets/icons/hamburger1.png');
+    background-image: url('../../assets/icons/hamburger1.png');
     height: 36px;
     display: block;
     margin: auto;
@@ -541,7 +536,7 @@ ul.SD-nav li {
 }
 
 .pink-circle-parent a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto
+    cursor: url('../icons/cursor.svg') 100 0, auto
 }
 
 .SD-footer span {
@@ -562,7 +557,7 @@ ul.SD-nav li {
 
 .SD-clothing-row a:hover,
 .SD-clothing-row i:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto;
+    cursor: url('../icons/cursor.svg') 100 0, auto;
 }
 
 .SD-footer1 a,
@@ -572,7 +567,7 @@ ul.SD-nav li {
     font-family: Cormorant;
     font-size: 12px;
     font-weight: 300;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-homeions {
@@ -588,11 +583,11 @@ ul.SD-nav li {
 .SD-footer label:hover {
     text-decoration: underline;
     color: #636363;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-clothing-row div:hover {
-    cursor: url(../assets/icons/pointer1.png) 100 0, auto;
+    cursor: url(../icons/cursor.svg) 100 0, auto;
 }
 
 .SD-imageback {
@@ -611,7 +606,7 @@ ul.SD-nav li {
 
 .SD-stlhead:hover {
     color: #636363;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-include {
@@ -816,7 +811,7 @@ ul.SD-nav li {
 
 .SD-cross-icon {
     width: 14px;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-collection-size {
@@ -964,7 +959,7 @@ ul.SD-nav li {
 }
 
 .nav-pills a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-md2 {
@@ -1014,11 +1009,11 @@ header a:hover {
 }
 
 .SD-button:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 footer a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-footerbefore {
@@ -1118,6 +1113,7 @@ li.wardrobe-btn {
     top: 65px;
     padding-top: 20px;
     background: #fff;
+    z-index: 9;
 }
 .header-submenu ul {
     line-height: 2;
@@ -1241,7 +1237,7 @@ li.wardrobe-btn {
     font-size: 15px;
     width: 15px;
     color: #c6c6c4;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-wardrobe-item div.wardrobe-heart:hover{
@@ -1334,6 +1330,12 @@ li.wardrobe-btn {
     vertical-align: middle;
     line-height: 5;
 }
+.SD-clothing-head.shop-sub{
+    position: fixed;
+    top: 85px;
+    z-index: 1;
+    width: 100%;
+}
 .submenu-clothing {
     display: inline;
     font-size: 16px;
@@ -1345,15 +1347,17 @@ li.wardrobe-btn {
 .submenu-clothing.active:before{
     content: '|';
     position: absolute;
+    width: 5px;
     display: block;
-    left: 10px;
+    left: 0;
     top: 0;
 }
 .submenu-clothing.active:after{
     content: '|';
     position: absolute;
     display: block;
-    right: -40px;
+    width: 5px;
+    left: 100%;
     top: 0;
 }
 .shop-sub select{
@@ -1457,7 +1461,7 @@ li.wardrobe-btn {
 .SD-heart i:active,
 .SD-heart i:focus {
     color: #e2d5b5;
-    /*cursor: url('../assets/icons/pointer1.png') 100 0, auto;*/
+    /*cursor: url('../icons/cursor.svg') 100 0, auto;*/
 }
 
 .SD-collections-eg {
@@ -1544,7 +1548,7 @@ li.wardrobe-btn {
 .SD-product-view1,
 .SD-product-view2,
 .SD-product-view3 {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
     opacity:0.6;
 }
 
@@ -1754,7 +1758,7 @@ li.wardrobe-btn {
 .SD-atw-heart:hover {
     color: #e2d5b5;
     transition: 0.3s;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-product-la img,
@@ -1830,7 +1834,7 @@ li.wardrobe-btn {
         margin-top: 50px;
     }
 body a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 
 }
 
