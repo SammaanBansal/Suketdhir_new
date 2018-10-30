@@ -1298,6 +1298,7 @@ li.wardrobe-btn {
 }
 
 /* End Wardrobe */
+
 /* Clothing */
 @font-face {
     font-family: Cinzel;
@@ -1478,6 +1479,363 @@ li.wardrobe-btn {
 }
 
 /*end clothing */
+/* product */
+.SD-product {
+    background-color: #f2f2eb;
+    height: 700px;
+    display: block;
+}
+
+.SD-product-image {
+    position: relative;
+    width: 45%;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: left;
+    padding-top: 200px;
+}
+
+.SD-product-image img {
+    height: 600px;
+    z-index: 1;
+    padding-top: 100px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    opacity: 0;
+    transition: top 0.2s ease,
+                opacity 0.8s ease;
+}
+
+.SD-product-image img.SD-image-active {
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: top 0.3s ease 0.2s,
+                transform 0s ease 0.2s,
+                opacity 0.8s ease 0s;
+}
+
+.SD-product-view img.SD-thumbnail-active{
+    opacity: 1;
+}
+
+.SD-product-image img.SD-shown {
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.SD-product-image img.SD-shown {
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.SD-product-view1,
+.SD-product-view2,
+.SD-product-view3 {
+    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    opacity:0.6;
+}
+
+.SD-product-view1:hover,
+.SD-product-view2:hover,
+.SD-product-view3:hover {
+  opacity: 0.8;
+}
+
+
+/*.pink-circle-product{
+    position: absolute;
+    z-index: 0;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e2d5b5;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: .6;
+    transition: .8s;
+}*/
+
+.SD-product-view {
+    width: 12%;
+    vertical-align: top;
+    padding: 175px 0 100px;
+    float: left;
+}
+
+.SD-product-view img {
+    width: 80%;
+    padding: 10px;
+    height: 170px;
+}
+
+.SD-product-description {
+    padding-top: 175px;
+    width: 25%;
+    float: left;
+}
+
+.SD-product-la {
+    width: 5%;
+    text-align: center;
+    float: left;
+    padding-top: 110px;
+}
+
+.SD-product-ra {
+    width: 3%;
+    display: table-cell;
+    text-align: left;
+}
+
+.SD-col-name,
+.SD-collection-price {
+    line-height: 1.0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.SD-collection-detail {
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.SD-collection-sizes {
+    margin-top: 55px;
+    display: table;
+}
+.SD-product:nth-child(2n-1){
+    background-color: #ecece5;
+}
+.SD-product:first-child() {
+    margin-top: 80px;
+}
+.SD-product-description .SD-collection-sizes a{
+    font-size: 15px;
+}
+.SD-collection-sizes a:last-child {
+    margin-left: 50px;
+}
+.SD-collection-sizes a {
+    color: #636363;
+    font-size: 14px !important;
+    padding: 0 5px;
+    margin: 2px;
+    width: 25%;
+    height: 28px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.SD-collection-sizes a:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+
+/*
+.SD-size-1 {
+    top: 390px;
+}
+
+.SD-size-2 {
+    top: 380px;
+    right: 303px;
+}
+
+.SD-size-3 {
+    top: 380px;
+    right: 271px;
+}
+
+.SD-size-4 {
+    top: 380px;
+    right: 237px;
+}
+
+.SD-size-5 {
+    top: 380px;
+    right: 205px;
+}
+*/
+
+.SD-collection-sizes a:hover {
+    color: #636363;
+    text-decoration: none;
+}
+
+.SD-collection-sizes a:focus {
+    text-decoration: none;
+    background-color: white;
+    color: #636363;
+}
+
+.SD-collection-sizes a:first-child {
+    margin: 0px;
+}
+
+.SD-atw {
+    background-color: #C6C5C2;
+    color: #f7f7f2;
+    height: 40px;
+    width: 184px;
+    top: 430px;
+    border: 0px;
+    padding: 0px;
+    margin-top: 55px;
+    /*position: absolute;*/
+}
+
+.SD-return-details {
+    /*position: absolute;*/
+    top: 470px;
+    font-size: 12px;
+    text-align: center;
+    margin: 25px 80px 0px 9px;
+}
+
+.SD-return-details p {
+    margin: 0px;
+}
+
+
+/*
+.SD-return-details-2 {
+    position: absolute;
+    top: 480px;
+    font-size: 12px;
+}
+
+.SD-return-details-3 {
+    position: absolute;
+    top: 490px;
+    font-size: 12px;
+}*/
+
+.SD-atw-heart {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    color: #C6C5C2;
+    background-color: #f7f7f2;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-top: 55px;
+}
+
+.icon-heart {
+    margin: 10px;
+}
+
+.SD-atw-heart:hover {
+    color: #C6C5C2;
+}
+
+.SD-atw-heart:focus,
+.SD-atw-heart:active,
+.SD-atw-heart:hover {
+    color: #e2d5b5;
+    transition: 0.3s;
+    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+}
+
+.SD-product-la img,
+.SD-product-ra img {
+    width: 20px;
+    height: 20px;
+}
+
+@media all and (max-width:786px) {
+    .SD-product {
+        height: 100%;
+    }
+    .SD-product-la{
+        float: none;
+    }
+    .SD-product-description {
+        width: 100%;
+        display: block;
+        padding: 20px;
+        float: none;
+    }
+    .SD-product-view {
+        width: 100%;
+        display: block;
+        text-align: center;
+        float: none;
+        padding: 0;
+    }
+    .SD-product-view img {
+        width: 82px;
+        padding: 10px;
+        float: none;
+        /* height: 70px; */
+    }
+    .SD-product-image {
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        display: block;
+        float: none;
+        overflow-x: visible;
+        overflow-y: visible;
+        padding: 0;
+        height: 400px;
+    }
+    .SD-product-image img{
+        padding: 0;
+        height: 350px;
+    }
+    .SD-atw-heart, .SD-atw{
+        margin-top: 20px;
+    }
+}
+.SD-collection-sizes {
+        float: left;
+        width: 50%;
+        margin-top: 10px;
+    }
+    .SD-collection-sizes a{
+        width: 100%;
+        text-align: left;
+    }
+    .SD-collection-sizes a:first-child {
+        margin: 20px 0;
+    }
+    .SD-collection-sizes a:last-child {
+        margin-left: 0;
+    }
+    .SD-collection-sizes img {
+        margin-left: 10px;
+    }
+    .SD-atw-heart, .SD-atw{
+        margin-top: 50px;
+    }
+body a:hover {
+    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+
+}
+
+/*end product */
+
 /*End by Sammaan*/
 
 /* CSS by Rahul */
