@@ -47,6 +47,12 @@ body {
 a:focus {
     outline: none;
 }
+
+a,
+a:hover {
+    color: inherit;
+}
+
 .float-clear:after{
     display: block;
     clear: both;
@@ -1370,12 +1376,14 @@ li.wardrobe-btn {
     vertical-align: middle;
     line-height: 5;
 }
+
 .SD-clothing-head.shop-sub{
     position: fixed;
     top: 85px;
     z-index: 1;
     width: 100%;
 }
+
 .submenu-clothing {
     display: inline;
     font-size: 16px;
@@ -1593,8 +1601,8 @@ li.wardrobe-btn {
 .SD-product-view1,
 .SD-product-view2,
 .SD-product-view3 {
-    cursor: url('../icons/cursor.svg') 100 0, auto !important;
-    opacity:0.6;
+    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    opacity: 0.6;
 }
 
 .SD-product-view1:hover,
@@ -1665,7 +1673,14 @@ li.wardrobe-btn {
     margin-top: 40px;
 }
 
-.SD-product:nth-child(2n-1){
+
+.SD-collection-sizes {
+    margin-top: 55px;
+    display: table;
+}
+
+.SD-product:nth-child(2n-1) {
+
     background-color: #ecece5;
 }
 
@@ -1676,6 +1691,11 @@ li.wardrobe-btn {
 .SD-product-description .SD-collection-sizes a {
     font-size: 15px;
 }
+
+.SD-collection-sizes a:last-child {
+    margin-left: 50px;
+}
+
 .SD-collection-sizes a {
     color: #636363;
     font-size: 14px !important;
@@ -1687,6 +1707,7 @@ li.wardrobe-btn {
     display: inline-block;
     text-decoration: none;
 }
+
 
 .SD-collection-sizes a:hover{
     font-weight: bold;
@@ -1926,9 +1947,7 @@ li.wardrobe-btn {
 }
 body a:hover {
     cursor: url('../icons/cursor.svg') 100 0, auto !important;
-
 }
-
 
 /*end product */
 
@@ -2227,6 +2246,7 @@ video[poster] {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .videoContainer {
@@ -2253,15 +2273,126 @@ video[poster] {
 }
 
 .eighteenCormorant {
-    font-family: Cormorant;
+    /* font-family: Cormorant; */
     font-size: 18px;
     font-weight: 300;
     text-align: center;
-    color: #696d70;
+    /* color: #696d70; */
+}
+
+.abouWhiteContainer {
+    background-color: #ffffff;
+    padding: 40px 10px 20px 10px;
+}
+
+.abouWhiteContainer h4 {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.grauBack {
+    background-color: #ecece5;
+}
+
+.carousel-inner {
+    overflow: unset;
+}
+
+.carousel-left-gradient,
+.righCarousel {
+    background-image: unset !important;
+    width: 50%;
+    /* padding-top: 20%; */
+    height: auto;
+}
+
+.carousel-left-gradient {
+    cursor: url(../icons/VD_Icons_resize-07.png), auto;
+}
+
+.righCarousel {
+    cursor: url(../icons/VD_Icons_resize-42.png), auto;
+}
+
+.fiveThirty {
+    height: 530px;
+    object-fit: cover;
+}
+
+.slideHeading h3 {
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.3%, 1fr));
+}
+
+.heightFourhundred {
+    height: 420px;
+}
+
+.heightFourhundred img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridsContent {
+    padding: 40px 25px;
+}
+
+.gridsContent p {
+    margin-bottom: 0;
+    padding-bottom: 7px;
+}
+
+.gridsContent p:last-child {
+    padding: 0;
+}
+
+.gridsContent h4 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.gridsContent p a {
+    border-bottom: 1px solid;
 }
 
 
 /* End about us page */
+
+
+/* Collections page */
+
+.hovContent {
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.hoveContainer {
+    position: relative;
+}
+
+.gridFour {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+
+/* End Collections page */
 
 
 /* responsivness */
@@ -2312,6 +2443,30 @@ video[poster] {
     }
     ul li.active:after {
         width: 16px;
+    }
+}
+
+@media(max-width:585px) {
+    .aboutLarge,
+    .carousel-inner .item .flex {
+        flex-direction: column;
+    }
+    .aboutLarge .fiftyPercent,
+    .carousel-inner .item .flex .fiftyPercent {
+        width: 100%;
+    }
+    .aboutGrayContainer,
+    .grauBack {
+        padding: 40px 0px;
+    }
+    .videPlay {
+        width: 40px;
+    }
+}
+
+@media(max-width:681px) {
+    .gridThree {
+        grid-template-columns: auto;
     }
 }
 
