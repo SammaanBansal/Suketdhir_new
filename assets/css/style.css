@@ -47,14 +47,18 @@ body {
 a:focus {
     outline: none;
 }
-
+.float-clear:after{
+    display: block;
+    clear: both;
+    content: "";
+}
 .SD-left-carousel:hover,
 .SD-right-carousel:hover,
 .right-chevron-image:hover,
 .left-chevron-image:hover,
 .SD-left-carousel span:hover,
 .SD-right-carousel span:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .carousel-indicators li {
@@ -153,7 +157,7 @@ ul.SD-nav li {
         /*float: left;*/
         display: block;
         word-break: break-word;
-        cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+        cursor: url('../icons/cursor.svg') 100 0, auto !important;
     }
     .SD-name {
         float: left;
@@ -183,7 +187,7 @@ ul.SD-nav li {
     font-size: 14px;
     font-weight: 300;
     /*float: left;*/
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-nav li:last-child>a {
@@ -205,7 +209,7 @@ ul.SD-nav li {
 }
 
 .SD-nav label {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-headerpic img {
@@ -397,8 +401,6 @@ ul.SD-nav li {
     display: block;
     z-index: 1;
     position: relative;
-    /*margin-top: 41px;
-    height: 390px;*/
 }
 
 .SD-collection-row img {
@@ -407,9 +409,6 @@ ul.SD-nav li {
     display: block;
     z-index: 1;
     position: relative;
-    /*margin-top: 41px;
-
-    height: 390px;*/
 }
 
 .SD-stl {
@@ -521,12 +520,12 @@ ul.SD-nav li {
 
 .SD-bottomright-takemethere {
     font-weight: 300;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-icon-hat {
     text-align: center;
-    background-image: url('../assets/icons/iconhat.png');
+    background-image: url('../../assets/icons/iconhat.png');
     height: 36px;
     display: block;
     margin: auto;
@@ -538,7 +537,7 @@ ul.SD-nav li {
 
 .SD-hamburger {
     text-align: center;
-    background-image: url('../assets/icons/hamburger1.png');
+    background-image: url('../../assets/icons/hamburger1.png');
     height: 36px;
     display: block;
     margin: auto;
@@ -548,7 +547,7 @@ ul.SD-nav li {
 }
 
 .pink-circle-parent a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto
+    cursor: url('../icons/cursor.svg') 100 0, auto
 }
 
 .SD-footer span {
@@ -569,7 +568,7 @@ ul.SD-nav li {
 
 .SD-clothing-row a:hover,
 .SD-clothing-row i:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto;
+    cursor: url('../icons/cursor.svg') 100 0, auto;
 }
 
 .SD-footer1 a,
@@ -579,7 +578,7 @@ ul.SD-nav li {
     font-family: Cormorant;
     font-size: 12px;
     font-weight: 300;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-homeions {
@@ -595,11 +594,11 @@ ul.SD-nav li {
 .SD-footer label:hover {
     text-decoration: underline;
     color: #636363;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-clothing-row div:hover {
-    cursor: url(../assets/icons/pointer1.png) 100 0, auto;
+    cursor: url(../icons/cursor.svg) 100 0, auto;
 }
 
 .SD-imageback {
@@ -618,7 +617,7 @@ ul.SD-nav li {
 
 .SD-stlhead:hover {
     color: #636363;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-include {
@@ -825,7 +824,7 @@ ul.SD-nav li {
 
 .SD-cross-icon {
     width: 14px;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-collection-size {
@@ -973,7 +972,7 @@ ul.SD-nav li {
 }
 
 .nav-pills a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-md2 {
@@ -1019,15 +1018,15 @@ ul.SD-nav li {
 }
 
 header a:hover {
-    cursor: url('../assets/icons/cursor.svg') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-button:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 footer a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-footerbefore {
@@ -1141,6 +1140,7 @@ li.wardrobe-btn {
     top: 65px;
     padding-top: 20px;
     background: #fff;
+    z-index: 9;
 }
 
 .header-submenu ul {
@@ -1271,7 +1271,7 @@ li.wardrobe-btn {
     font-size: 15px;
     width: 15px;
     color: #c6c6c4;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-wardrobe-item div.wardrobe-heart:hover {
@@ -1370,7 +1370,12 @@ li.wardrobe-btn {
     vertical-align: middle;
     line-height: 5;
 }
-
+.SD-clothing-head.shop-sub{
+    position: fixed;
+    top: 85px;
+    z-index: 1;
+    width: 100%;
+}
 .submenu-clothing {
     display: inline;
     font-size: 16px;
@@ -1383,8 +1388,9 @@ li.wardrobe-btn {
 .submenu-clothing.active:before {
     content: '|';
     position: absolute;
+    width: 5px;
     display: block;
-    left: 10px;
+    left: 0;
     top: 0;
 }
 
@@ -1392,7 +1398,8 @@ li.wardrobe-btn {
     content: '|';
     position: absolute;
     display: block;
-    right: -40px;
+    width: 5px;
+    left: 100%;
     top: 0;
 }
 
@@ -1498,7 +1505,7 @@ li.wardrobe-btn {
 .SD-heart i:active,
 .SD-heart i:focus {
     color: #e2d5b5;
-    /*cursor: url('../assets/icons/pointer1.png') 100 0, auto;*/
+    /*cursor: url('../icons/cursor.svg') 100 0, auto;*/
 }
 
 .SD-collections-eg {
@@ -1586,8 +1593,8 @@ li.wardrobe-btn {
 .SD-product-view1,
 .SD-product-view2,
 .SD-product-view3 {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
-    opacity: 0.6;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
+    opacity:0.6;
 }
 
 .SD-product-view1:hover,
@@ -1658,12 +1665,7 @@ li.wardrobe-btn {
     margin-top: 40px;
 }
 
-.SD-collection-sizes {
-    margin-top: 55px;
-    display: table;
-}
-
-.SD-product:nth-child(2n-1) {
+.SD-product:nth-child(2n-1){
     background-color: #ecece5;
 }
 
@@ -1674,11 +1676,6 @@ li.wardrobe-btn {
 .SD-product-description .SD-collection-sizes a {
     font-size: 15px;
 }
-
-.SD-collection-sizes a:last-child {
-    margin-left: 50px;
-}
-
 .SD-collection-sizes a {
     color: #636363;
     font-size: 14px !important;
@@ -1688,12 +1685,12 @@ li.wardrobe-btn {
     height: 28px;
     text-align: center;
     display: inline-block;
-    border-radius: 50%;
     text-decoration: none;
 }
 
-.SD-collection-sizes a:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+.SD-collection-sizes a:hover{
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.7);
 }
 
 
@@ -1801,7 +1798,7 @@ li.wardrobe-btn {
 .SD-atw-heart:hover {
     color: #e2d5b5;
     transition: 0.3s;
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
 .SD-product-la img,
@@ -1858,35 +1855,78 @@ li.wardrobe-btn {
 }
 
 .SD-collection-sizes {
-    float: left;
-    width: 50%;
-    margin-top: 10px;
-}
-
-.SD-collection-sizes a {
+    display: block;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.SD-collection-sizes a{
+    width: 48%;
+    height: 100%;
+    float: left;
     text-align: left;
 }
-
-.SD-collection-sizes a:first-child {
-    margin: 20px 0;
-}
-
-.SD-collection-sizes a:last-child {
-    margin-left: 0;
-}
-
 .SD-collection-sizes img {
-    margin-left: 10px;
+    display: block;
+    margin-top: 5px;
+}
+.size-guide-link {
+    margin: 30px 5px 0;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#sizeModal .modal-header{
+    padding: 5px 15px;
+    border: 0;
+}
+#sizeModal .close{
+    font-size: 64px;
+    font-weight: 300;
+}
+#sizeModal .modal-dialog{
+    width: 400px;
+}
+#sizeModal .modal-content{
+    background-color: #ecece5;
+}
+#sizeModal .modal-body{
+    height: 300px;
+    padding: 2px 40px; 
+}
+#sizeModal h3 {
+    margin-bottom: 40px;
+    font-family: cormorant;
+    font-weight: 300;
+}
+#sizeModal .inline-grid{
+    display: inline-grid;
+}
+#sizeModal .text-block{
+    display: block;
 }
 
-.SD-atw-heart,
-.SD-atw {
+#sizeModal .text-block img{
+    display: inline;
+    margin-right: 10px;
+}
+.font-15{
+    font-size: 15px;
+}
+#sizeModal .text-block span{
+    font-family: SourceSansPro-Light;
+    font-size: 12px;
+}
+#sizeModal .SD-collection-sizes p {
+    float: left;
+    width: 49%;
+}
+.SD-atw-heart, .SD-atw{
     margin-top: 50px;
 }
-
 body a:hover {
-    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    cursor: url('../icons/cursor.svg') 100 0, auto !important;
+
 }
 
 
