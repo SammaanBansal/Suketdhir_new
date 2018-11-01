@@ -122,56 +122,33 @@ function listItems() {
 
 
 // For contact us accordion
-c = 0;
-d = 0;
-e = 0;
+var plus = document.getElementsByClassName("imgClick");
+var allaccorHeading = document.getElementsByClassName("accorHeading");
+for (var r = 0; r < plus.length; r++) {
+    plus[r].addEventListener("click", crossFun)
+}
 
-function showContent(val) {
+function crossFun() {
+    var classes = this.parentElement.className;
+    for (var a = 0; a < allaccorHeading.length; a++) {
+        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
+        console.log(a);
+    }
 
-    if (val == 1) {
-        c++;
-        if (c % 2 == 1) {
-            $('.SD-contact-img1').attr('src', 'assets/icons/VD_Icons_resize-40.png');
-            $('.SD-contact-studio-det').css({
-                'display': 'block'
-            });
-        } else {
-            $('.SD-contact-img1').attr('src', 'assets/icons/VD_Icons_resize-19.png');
-            $('.SD-contact-studio-det').css({
-                'display': 'none'
-            });
-        }
-    }
-    if (val == 2) {
-        d++;
-        if (d % 2 == 1) {
-            $('.SD-contact-img2').attr('src', 'assets/icons/VD_Icons_resize-40.png');
-            $('.SD-contact-press-det').css({
-                'display': 'block'
-            });
-        } else {
-            $('.SD-contact-img2').attr('src', 'assets/icons/VD_Icons_resize-19.png');
-            $('.SD-contact-press-det').css({
-                'display': 'none'
-            });
-        }
-    }
-    if (val == 3) {
-        e++;
-        if (e % 2 == 1) {
-            $('.SD-contact-img3').attr('src', 'assets/icons/VD_Icons_resize-40.png');
-            $('.SD-contact-b2b-det').css({
-                'display': 'block'
-            });
-        } else {
-            $('.SD-contact-img3').attr('src', 'assets/icons/VD_Icons_resize-19.png');
-            $('.SD-contact-b2b-det').css({
-                'display': 'none'
-            });
-        }
+    if (classes == "accorHeading removeCross bottomfourty") {
+        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
     }
 }
 
+var acc = document.getElementsByClassName("accordion-header");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
 
 // For contact us accordion
 
