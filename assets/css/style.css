@@ -173,7 +173,6 @@ ul.SD-nav li {
         width: 15%;
     }
     ul.SD-nav>li {
-        float: left;
         margin: 0px;
         width: 14%;
         display: inline-block;
@@ -454,10 +453,6 @@ ul.SD-nav li {
 
 /* video css overwriting videojs*/
 
-.SD-homevideo .video-js {
-    /*width: 100%;*/
-    /*height: 100px;*/
-}
 
 .SD-homevideo .video-js .vjs-big-play-button {
     left: 0;
@@ -733,9 +728,6 @@ ul.SD-nav li {
     }
     .SD-footer3 a {
         margin-right: 0px !important;
-    }
-    .SD-footer a {
-        /*font-size: 12px;*/
     }
     .SD-footer li {
         display: inline;
@@ -1211,7 +1203,6 @@ li.wardrobe-btn {
 .SD-wardrobe-item-pic,
 .SD-wardrobe-item-info {
     width: 50%;
-    float: left;
     display: inline-block;
 }
 
@@ -1840,7 +1831,6 @@ li.wardrobe-btn {
     .SD-product-image {
         width: 100%;
         text-align: center;
-        vertical-align: middle;
         display: block;
         float: none;
         overflow-x: visible;
@@ -2138,7 +2128,6 @@ body a:hover {
 .SD-inline-wardrobe-item-pic,
 .SD-inline-wardrobe-item-info {
     width: 50%;
-    float: left;
     display: inline-block;
 }
 
@@ -2992,8 +2981,6 @@ ul li.active::before {
 .tab-content {
     padding: 0px 120px;
 }
-
-.jobDescription p {}
 
 .fourteenSansPro * {
     font-family: Source Sans Pro;
