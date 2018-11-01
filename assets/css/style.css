@@ -47,11 +47,18 @@ body {
 a:focus {
     outline: none;
 }
-.float-clear:after{
+
+a,
+a:hover {
+    color: inherit;
+}
+
+.float-clear:after {
     display: block;
     clear: both;
     content: "";
 }
+
 .SD-left-carousel:hover,
 .SD-right-carousel:hover,
 .right-chevron-image:hover,
@@ -1355,12 +1362,14 @@ li.wardrobe-btn {
     vertical-align: middle;
     line-height: 5;
 }
-.SD-clothing-head.shop-sub{
+
+.SD-clothing-head.shop-sub {
     position: fixed;
     top: 95px;
     z-index: 1;
     width: 100%;
 }
+
 .submenu-clothing {
     display: inline;
     font-size: 16px;
@@ -1578,8 +1587,8 @@ li.wardrobe-btn {
 .SD-product-view1,
 .SD-product-view2,
 .SD-product-view3 {
-    cursor: url('../icons/cursor.svg') 100 0, auto !important;
-    opacity:0.6;
+    cursor: url('../assets/icons/pointer1.png') 100 0, auto !important;
+    opacity: 0.6;
 }
 
 .SD-product-view1:hover,
@@ -1650,7 +1659,12 @@ li.wardrobe-btn {
     margin-top: 40px;
 }
 
-.SD-product:nth-child(2n-1){
+.SD-collection-sizes {
+    margin-top: 55px;
+    display: table;
+}
+
+.SD-product:nth-child(2n-1) {
     background-color: #ecece5;
 }
 
@@ -1661,6 +1675,11 @@ li.wardrobe-btn {
 .SD-product-description .SD-collection-sizes a {
     font-size: 15px;
 }
+
+.SD-collection-sizes a:last-child {
+    margin-left: 50px;
+}
+
 .SD-collection-sizes a {
     color: #636363;
     font-size: 14px !important;
@@ -1673,9 +1692,9 @@ li.wardrobe-btn {
     text-decoration: none;
 }
 
-.SD-collection-sizes a:hover{
+.SD-collection-sizes a:hover {
     font-weight: bold;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -1845,73 +1864,89 @@ li.wardrobe-btn {
     margin-top: 20px;
     margin-bottom: 40px;
 }
-.SD-collection-sizes a{
+
+.SD-collection-sizes a {
     width: 48%;
     height: 100%;
     float: left;
     text-align: left;
 }
+
 .SD-collection-sizes img {
     display: block;
     margin-top: 5px;
 }
+
 .size-guide-link {
     margin: 30px 5px 0;
     font-size: 12px;
     text-decoration: underline;
     cursor: pointer;
 }
-#sizeModal .modal-header{
+
+#sizeModal .modal-header {
     padding: 5px 15px;
     border: 0;
 }
-#sizeModal .close{
+
+#sizeModal .close {
     font-size: 64px;
     font-weight: 300;
 }
-#sizeModal .modal-dialog{
+
+#sizeModal .modal-dialog {
     width: 400px;
 }
-#sizeModal .modal-content{
+
+#sizeModal .modal-content {
     background-color: #ecece5;
 }
-#sizeModal .modal-body{
+
+#sizeModal .modal-body {
     height: 300px;
-    padding: 2px 40px; 
+    padding: 2px 40px;
 }
+
 #sizeModal h3 {
     margin-bottom: 40px;
     font-family: cormorant;
     font-weight: 300;
 }
-#sizeModal .inline-grid{
+
+#sizeModal .inline-grid {
     display: inline-grid;
 }
-#sizeModal .text-block{
+
+#sizeModal .text-block {
     display: block;
 }
 
-#sizeModal .text-block img{
+#sizeModal .text-block img {
     display: inline;
     margin-right: 10px;
 }
-.font-15{
+
+.font-15 {
     font-size: 15px;
 }
-#sizeModal .text-block span{
+
+#sizeModal .text-block span {
     font-family: SourceSansPro-Light;
     font-size: 12px;
 }
+
 #sizeModal .SD-collection-sizes p {
     float: left;
     width: 49%;
 }
-.SD-atw-heart, .SD-atw{
+
+.SD-atw-heart,
+.SD-atw {
     margin-top: 50px;
 }
+
 body a:hover {
     cursor: url('../icons/cursor.svg') 100 0, auto !important;
-
 }
 
 /*end product */
@@ -3054,6 +3089,7 @@ video[poster] {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .videoContainer {
@@ -3080,15 +3116,126 @@ video[poster] {
 }
 
 .eighteenCormorant {
-    font-family: Cormorant;
+    /* font-family: Cormorant; */
     font-size: 18px;
     font-weight: 300;
     text-align: center;
-    color: #696d70;
+    /* color: #696d70; */
+}
+
+.abouWhiteContainer {
+    background-color: #ffffff;
+    padding: 40px 10px 20px 10px;
+}
+
+.abouWhiteContainer h4 {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.itemCenter {
+    align-items: center;
+}
+
+.grauBack {
+    background-color: #ecece5;
+}
+
+.carousel-inner {
+    overflow: unset;
+}
+
+.carousel-left-gradient,
+.righCarousel {
+    background-image: unset !important;
+    width: 50%;
+    /* padding-top: 20%; */
+    height: auto;
+}
+
+.carousel-left-gradient {
+    cursor: url(../icons/VD_Icons_resize-07.png), auto;
+}
+
+.righCarousel {
+    cursor: url(../icons/VD_Icons_resize-42.png), auto;
+}
+
+.fiveThirty {
+    height: 530px;
+    object-fit: cover;
+}
+
+.slideHeading h3 {
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.3%, 1fr));
+}
+
+.heightFourhundred {
+    height: 420px;
+}
+
+.heightFourhundred img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridsContent {
+    padding: 40px 25px;
+}
+
+.gridsContent p {
+    margin-bottom: 0;
+    padding-bottom: 7px;
+}
+
+.gridsContent p:last-child {
+    padding: 0;
+}
+
+.gridsContent h4 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.gridsContent p a {
+    border-bottom: 1px solid;
 }
 
 
 /* End about us page */
+
+
+/* Collections page */
+
+.hovContent {
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.hoveContainer {
+    position: relative;
+}
+
+.gridFour {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+
+/* End Collections page */
 
 
 /* responsivness */
@@ -3142,8 +3289,86 @@ video[poster] {
     }
 }
 
+@media(max-width:585px) {
+    .aboutLarge,
+    .carousel-inner .item .flex {
+        flex-direction: column;
+    }
+    .aboutLarge .fiftyPercent,
+    .carousel-inner .item .flex .fiftyPercent {
+        width: 100%;
+    }
+    .aboutGrayContainer,
+    .grauBack {
+        padding: 40px 0px;
+    }
+    .videPlay {
+        width: 40px;
+    }
+}
+
+@media(max-width:681px) {
+    .gridThree {
+        grid-template-columns: auto;
+    }
+}
+
 
 /* end responsivness */
 
 
 /* CSS by Rahul */
+
+
+/* Collections page */
+
+.hovContent {
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    width: 100%;
+    transition: 0.4s;
+    background-color: #fff;
+    cursor: pointer;
+    bottom: calc(-67px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hoveContainer {
+    position: relative;
+}
+
+.gridFour {
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.hoveContainer:hover .hovContent {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.largerVideoPoster[poster] {
+    height: 710px;
+}
+
+.hoveContainer:hover .heart {
+    transform: scale(1);
+}
+
+.selected .unselected svg g path {
+    fill: red;
+}
+
+.heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* End Collections page */
