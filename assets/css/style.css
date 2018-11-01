@@ -1960,10 +1960,6 @@ li.wardrobe-btn {
     margin-top: 50px;
 }
 
-body a:hover {
-    cursor: url('../icons/cursor.svg') 100 0, auto !important;
-}
-
 
 /*end product */
 
@@ -2354,7 +2350,7 @@ video[poster] {
 }
 
 .heightFourhundred {
-    height: 420px;
+    height: 400px;
 }
 
 .heightFourhundred img {
@@ -2399,16 +2395,87 @@ video[poster] {
     width: 100%;
 }
 
+.hovContent a:hover {
+    text-decoration: none;
+}
+
 .hoveContainer {
     position: relative;
 }
 
 .gridFour {
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+}
+
+.hovContent {
+    text-align: center;
+    padding: 10px 10px;
+    position: absolute;
+    width: 100%;
+    transition: 0.4s;
+    background-color: #fff;
+    cursor: pointer;
+    bottom: calc(-67px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hoveContainer {
+    position: relative;
+}
+
+.gridFour {
+    /* grid-template-columns: repeat(auto-fill, minmax(25%, 1fr)); */
+}
+
+.hoveContainer:hover .hovContent {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.largerVideoPoster[poster] {
+    height: 710px;
+}
+
+.hoveContainer:hover .heart {
+    transform: scale(1);
+}
+
+.selected .unselected svg g path {
+    fill: red;
+}
+
+.heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: scale(0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.topEightPix {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.yellowBtn {
+    background-color: #d19e2a;
+    color: #fff;
+    padding: 9px 43px;
+}
+
+.collectionGray.removeSection {
+    display: none;
 }
 
 
 /* End Collections page */
+
+.content-container {
+    padding-top: 95px;
+}
 
 
 /* responsivness */
@@ -2491,57 +2558,3 @@ video[poster] {
 
 
 /* CSS by Rahul */
-
-
-/* Collections page */
-
-.hovContent {
-    text-align: center;
-    padding: 10px 10px;
-    position: absolute;
-    width: 100%;
-    transition: 0.4s;
-    background-color: #fff;
-    cursor: pointer;
-    bottom: calc(-67px);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.hoveContainer {
-    position: relative;
-}
-
-.gridFour {
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-}
-
-.hoveContainer:hover .hovContent {
-    bottom: 0;
-    opacity: 1;
-    pointer-events: unset;
-}
-
-.largerVideoPoster[poster] {
-    height: 710px;
-}
-
-.hoveContainer:hover .heart {
-    transform: scale(1);
-}
-
-.selected .unselected svg g path {
-    fill: red;
-}
-
-.heart {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transform: scale(0);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-
-/* End Collections page */

@@ -300,5 +300,43 @@ function showContent(val) {
         }
     }
 }
+
+
 // For contact us accordion
+
+// For about us video
+
+
+
+
+// For Collection page
+var myVideo = document.querySelector(".playVidGain");
+myVideo.addEventListener("click", function() {
+    if (myVideo.paused) {
+        myVideo.play();
+        document.querySelector(".videoPlayCon").style.display = "none";
+        // document.querySelector(".collectionGray").className = "removeSection";
+        // myVideo.setAttribute("controls", "two")
+        // myVideo.removeAttribute("controls", "controls")
+    } else {
+        // myVideo.removeAttribute("controls", "two")
+        myVideo.pause();
+        document.querySelector(".videoPlayCon").style.display = "block";
+        // document.querySelector(".collectionGray").className = "removeSection fff";
+        // document.querySelector(".collectionGray").className = "fiftyPercent aboutGrayContainer collectionGray";
+    }
+})
+
+var slectHeart = document.getElementsByClassName("heart");
+for (var i = 0; i < slectHeart.length; i++) {
+    slectHeart[i].addEventListener("click", wishList)
+    console.log(i);
+}
+
+function wishList() {
+    this.classList.toggle("selected");
+}
+// For Collection page
+
+
 /* JS by Rahul for contact us accordian */
