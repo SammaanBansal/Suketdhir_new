@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</head>
+
+<body>
+    <header class="SD-header">
+        <div class="float-clear">
+            <div class="SD-name">
+                <a role="button" class="SD-gotohome" href="index.html">
+                    <img class="SD-logo" src="./assets/images/landing-header-logo.svg">
+                </a>
+                <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs">
+                    <div class="SD-icon-hat">
+                    </div>
+                </a>
+            </div>
+            <ul class="SD-nav collapse navbar-collapse" id="SD-nav" aria-expanded="false">
+                <li>
+                    <a role="button" class="SD-clothing" href="clothing.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                    SHOP
+                    </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Coats</a></li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-collections" href="collections.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                        COLLECTIONS
+                    </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW 2016</a></li>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW2017</a></li>
+                            <li><a href="#">Resort 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-nav-stories" href="stories.html">
+                    STORIES
+                </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-about" href="aboutus.html">
+                    ABOUT
+                </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-contact" href="contact.html">
+                    CONTACT
+                </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-account" href="account_signup.html">
+                    MY ACCOUNT
+                </a>
+                </li>
+                <li class="wardrobe-btn">
+                    <a onclick="toggleWardrobe()">
+                        <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                    </a>
+    
+                </li>
+            </ul>
+        </div>
+        <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus style="z-index:-1;">
+            <div class="SD-wardrobe-header ">
+                Wardrobe
+            </div>
+            <ul class="SD-wardrobe-items ">
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men4.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value=""><span>M</span></option>
+                                <option value=""><span>L</span></option>
+                                <option value=""><span>XL</span></option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value=""><span>1</span></option>
+                                <option value=""><span>2</span></option>
+                                <option value=""><span>3</span></option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men2.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value=""><span>M</span></option>
+                                <option value=""><span>L</span></option>
+                                <option value=""><span>XL</span></option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value=""><span>1</span></option>
+                                <option value=""><span>2</span></option>
+                                <option value=""><span>3</span></option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men6.png " alt="">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value=""><span>M</span></option>
+                                <option value=""><span>L</span></option>
+                                <option value=""><span>XL</span></option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value=""><span>1</span></option>
+                                <option value=""><span>2</span></option>
+                                <option value=""><span>3</span></option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men3.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value=""><span>M</span></option>
+                                <option value=""><span>L</span></option>
+                                <option value=""><span>XL</span></option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value=""><span>1</span></option>
+                                <option value=""><span>2</span></option>
+                                <option value=""><span>3</span></option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="SD-wardrobe-bottom ">
+                <p>Subtotal: <span>$1050</span>
+                </p>
+                <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="modal fade" id="SD-login-md" role="dialog">
+            <div class="modal-dialog SDlogin-modal">
+                <div class="modal-content SD-login-modal">
+                    <div class="modal-body SD-login-modal-body">
+                        <div>
+                            <input class="SD-input-field" type="text" placeholder="Name">
+                            <input class="SD-input-field" type="text" placeholder="Email-id" class="SD-account-email">
+                            <input class="SD-input-field" type="text" placeholder="Mobile Number">
+                            <input class="SD-input-field" type="password" placeholder="Password">
+                            <input class="SD-input-field" type="password" placeholder="Re-enter Password">
+                            <div class="SD-signup-links">
+                                <button class="SD-button">Sign Up</button>
+                                <p>Existing User?</p>
+                                <a role="button" class="SD-login" data-toggle="modal" data-target="#SD-signup-md" onclick="changeModal(1)">log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SD-reset-md" role="dialog">
+            <div class="modal-dialog SDreset-modal">
+                <div class="modal-content SD-reset-modal">
+                    <div class="modal-body SD-reset-modal-body">
+                        <div>
+                            <p class="SD-reset-text">Enter your registered email and we will send an email to you with a link to create a new password:</p>
+                            <input type="text" placeholder="Email- id" class="SD-input-field">
+                            <div class="SD-signup-links">
+                                <button class="SD-button">RESET PASSWORD</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="SD-signup-md" role="dialog">
+            <div class="modal-dialog modal-lg SDsignup-modal">
+                <div class="modal-content SD-signup-modal">
+                    <div class="modal-body row SD-signup-modal-body">
+                        <div>
+                            <div class="col-sm-6 SD-md1">
+                                <input type="text" placeholder="Email- id" class="SD-input-field">
+                                <input type="text" placeholder="Phone Number" class="SD-input-field">
+                                <div class="SD-remember-block">
+                                    <div class="SD-squared-checkbox">
+                                        <input type="checkbox" value="None" id="SD-squared-checkbox" name="SD-check" />
+                                        <label for="SD-squared-checkbox"></label>
+                                    </div>
+                                    <div>
+                                        <span class="remember-text">Remember me</span>
+                                        <a class="SD-forgotpass" role="button" data-toggle="modal" data-target="#SD-reset-md" onclick="changeModal(3)"><span style="float: right;text-decoration: underline; cursor:pointer;">Forgot Password?</span>.
+                                    </a>
+                                    </div>
+                                </div>
+                                <div class="SD-signup-links">
+                                    <button class="SD-button">Sign in</button>
+                                    <p>New user?</p>
+                                    <a role="button" class="SD-signup" data-toggle="modal" data-target="#SD-login-md" onclick="changeModal(2)" style="
+        text-transform: uppercase;
+        text-decoration: underline;
+    ">sign up</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 SD-social-login SD-md2">
+                                <div>
+                                    <button class="SD-social-icon SD-button">f</button>
+                                    <button class="SD-social-text SD-button">log in with facebook</button>
+                                </div>
+                                <div>
+                                    <button class="SD-social-icon SD-button">g+</button>
+                                    <button class="SD-social-text SD-button">log in with google</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 SD-ship">
+            <div class="col-sm-8" style="padding: 0px; padding-left: 200px;">
+                <div class="SD-isp">
+                    <a href="info.html"><span role="button" class="SD-isp-i">Information</span></a>
+                    <a href="ship.html"><span role="button" class="SD-isp-s">Shipping</span></a>
+                    <a href="payment1.html"><span role="button" class="SD-isp-p">Payment</span></a>
+                </div>
+                <div class="SD-s-head">Payment</div>
+                <div class="SD-ship1">Ship to:</div>
+                <div class="SD-shipaddress">
+                    <p class="SD-saddress-loc">2234/34,Sector 14,Rajiv Nagar</p>
+                    <p class="SD-saddress-city">Gurgaon</p>
+                    <p class="SD-saddress-pin">Haryana,122007</p>
+                    <a role="button" href="#" class="SD-editadd">Edit</a>
+                </div>
+                <div class="SD-shipm">Shipping Method:</div>
+                <div class="SD-shipmethod">
+                    <p class="SD-ship-meth">Domestic Shipping to Gurgaon</p>
+                    <p class="SD-ship-price">$100</p>
+                </div>
+                <div class="SD-paym">Payment Method:</div>
+                <div>
+                    <div class="SD-paycc">
+                        <div class="SD-squared-checkbox">
+                            <input type="checkbox" value="None" id="SD-squared-checkbox-pay" name="check" />
+                            <label for="SD-squared-checkbox-pay" onclick="showFormCC()"></label>
+                        </div>
+                        <span class="SD-paymentspan">Credit Card</span>
+                        <div class="SD-pay-img">
+                            <img src="assets/icons/VD_Icons_resize-22.png"></img>
+                            <img src="assets/icons/VD_Icons_resize-23.png"></img>
+                            <img src="assets/icons/VD_Icons_resize-24.png"></img>
+                            <img src="assets/icons/VD_Icons_resize-25.png"></img>
+                        </div>
+                    </div>
+                    <form class="form-SignUp">
+                        <div>
+
+                            <input class="SD-input-field" type="text" placeholder="Card Number">
+                            <input class="SD-input-field" type="text" placeholder="Name on card" class="SD-account-email">
+                            <input class="SD-input-field-doe" type="text" placeholder="MM/YY" maxlength="5">
+                            <input class="SD-input-field-cvv" type="text" placeholder="CVV" maxlength="3">
+                            <img class="SD-question-cvv" src="assets/icons/VD_Icons_resize-21.png">
+                        </div>
+                    </form>
+                    <div class="SD-paypal">
+                        <div class="SD-squared-checkbox">
+                            <input type="checkbox" value="None" id="SD-squared-checkbox-pay-2" name="check" />
+                            <label for="SD-squared-checkbox-pay-2" onclick="showSDpanel()"></label>
+                        </div>
+                        <span class="SD-paymentspan">Paypal</span>
+                    </div>
+                    <div class="panel panel-default SD-panel">
+                        <div class="SD-paypal-2 panel-body SD-panel-body">
+                            <img src="assets/icons/paypal.png">
+                            <p>You will be re-directed to PayPal after clicking on Pay.</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="SD-savedata">
+                    <div class="SD-squared-checkbox">
+                        <input type="checkbox" value="None" id="SD-squared-checkbox-save" name="check" />
+                        <label for="SD-squared-checkbox-save"></label>
+                    </div>
+                    <span class="SD-paymentspan1">Save card information for further use</span>
+                </form>
+                <div class="SD-bill">Billing:</div>
+                <form class="SD-bill-1">
+                    <div class="SD-squared-checkbox">
+                        <input type="checkbox" value="None" id="SD-squared-checkbox-bill" name="check" />
+                        <label for="SD-squared-checkbox-bill" onclick="hideFormAddress()"></label>
+                    </div>
+                    <span class="SD-paymentspan1">Same as shipping address</span>
+                </form>
+                <form>
+                    <div class="SD-squared-checkbox">
+                        <input type="checkbox" value="None" id="SD-squared-checkbox-bill-2" name="check" />
+                        <label for="SD-squared-checkbox-bill-2" onclick="showFormAddress()"></label>
+                    </div>
+                    <span class="SD-paymentspan1">Use another address</span>
+                </form>
+                <form class="form-Address">
+                    <div>
+                        <input class="SD-input-field" type="text" placeholder="Name">
+                        <input class="SD-input-field" type="text" placeholder="Email-ID" class="SD-account-email">
+                        <input class="SD-input-field" type="text" placeholder="Address Line 1">
+                        <input class="SD-input-field" type="text" placeholder="Address Line 2">
+                        <input class="SD-input-field-city" type="text" placeholder="City">
+                        <input class="SD-input-field-pin" type="text" placeholder="Postal Code">
+                        <input class="SD-input-field-state" type="text" placeholder="State">
+                        <input class="SD-input-field-country" type="text" placeholder="Country">
+                        <input class="SD-input-field" type="text" placeholder="Phone">
+                    </div>
+                </form>
+                <button class="SD-cont SD-button">PAY</button>
+                <a role="button" href="#" class="SD-sback">Back</a>
+            </div>
+            <div class="col-sm-4" style="padding: 0px;">
+                <div class="SD-inline-wardrobe-container">
+                    <div class="SD-inline-wardrobe-header">
+                        Wardrobe
+                    </div>
+                    <ul class="SD-inline-wardrobe-items">
+                        <li class="SD-inline-wardrobe-item">
+                            <div class="SD-inline-wardrobe-item-pic">
+                                <img src="assets/images/men_images/Men4.png" alt="">
+                                <div class="pink-circle-wardrobe"></div>
+                            </div>
+                            <div class="SD-inline-wardrobe-item-info">
+                                <h4>Black Hemmed Pants</h4>
+                                <p><span>$350</span> | M | <span>1</span></p>
+                                <a href="">Edit</a> | <a href="">Delete</a>
+                            </div>
+                        </li>
+                        <li class="SD-inline-wardrobe-item">
+                            <div class="SD-inline-wardrobe-item-pic">
+                                <img src="assets/images/men_images/Men2.png" alt="">
+                                <div class="pink-circle-wardrobe"></div>
+                            </div>
+                            <div class="SD-inline-wardrobe-item-info">
+                                <h4>Black Hemmed Pants</h4>
+                                <p><span>$350</span> | M | <span>1</span></p>
+                                <a href="">Edit</a> | <a href="">Delete</a>
+                            </div>
+                        </li>
+                        <li class="SD-inline-wardrobe-item">
+                            <div class="SD-inline-wardrobe-item-pic">
+                                <img src="assets/images/men_images/Men6.png" alt="">
+                                <div class="pink-circle-wardrobe"></div>
+                            </div>
+                            <div class="SD-inline-wardrobe-item-info">
+                                <h4>Black Hemmed Pants</h4>
+                                <p><span>$350</span> | M | <span>1</span></p>
+                                <a href="">Edit</a> | <a href="">Delete</a>
+                            </div>
+                        </li>
+                        <li class="SD-inline-wardrobe-item">
+                            <div class="SD-inline-wardrobe-item-pic">
+                                <img src="assets/images/men_images/Men3.png" alt="">
+                                <div class="pink-circle-wardrobe"></div>
+                            </div>
+                            <div class="SD-inline-wardrobe-item-info">
+                                <h4>Black Hemmed Pants</h4>
+                                <p><span>$350</span> | M | <span>1</span></p>
+                                <a href="">Edit</a> | <a href="">Delete</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="SD-inline-wardrobe-bottom">
+                        <p>Subtotal: <span>$1050</span></p>
+                        <p>Taxes: <span>$105</span></p>
+                        <p>Shipping: <span>$100</span></p>
+                        <p class="SD-inline-total">Total: <span>$1255</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="col-sm-12">
+            <div class="SD-icon-hat">
+            </div>
+            <div class="SD-footer float-clear">
+                <p class="SD-footer0 col-sm-1"></p>
+                <p class="SD-footer1 col-sm-2 text-right">
+                    <span>&copy;2017</span>
+                    SUKET DHIR
+                </p>
+                <ul class="SD-footer2 col-sm-6">
+                <li>
+                    <a role="button" href="#">
+                    SHIPPING & RETURNS
+                    </a>
+                </li>
+                <li>
+                    <a role="button" href="#">
+                    FAQ
+                    </a>
+                </li>
+                <li>
+                    <a role="button" href="#">
+                    TERMS OF USE
+                    </a>
+                </li>
+                <li>
+                    <a role="button" href="#">
+                    PRIVACY POLICY
+                    </a>
+                </li>
+                </ul>
+                <ul class="SD-footer3 col-sm-2">
+                    <li>
+                        <a role="button" href="https://www.facebook.com/suketdhirpage/?hc_ref=SEARCH&fref=nf">
+                            <img src="assets/icons/VD_Icons_resize-02.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a role="button" href="https://www.instagram.com/suketdhir/">
+                            <img src="assets/icons/VD_Icons_resize-03.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a role="button" href="#">
+                            <img src="assets/icons/VD_Icons_resize-04.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </footer>
+    <script type="text/javascript">
+        function showFormAddress() {
+            $('.form-Address').css({
+                'display': 'block',
+            });
+        }
+
+        function hideFormAddress() {
+            $('.form-Address').css({
+                'display': 'none',
+            });
+        }
+
+        function showFormCC() {
+            $('.form-SignUp').css({
+                'display': 'block',
+            });
+            $('.SD-panel').css({
+                'display': 'none',
+            });
+        }
+
+        function showSDpanel() {
+            $('.SD-panel').css({
+                'display': 'block',
+            });
+            $('.form-SignUp').css({
+                'display': 'none',
+            });
+        }
+    </script>
+</body>
+</html>

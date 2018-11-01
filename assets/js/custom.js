@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-    $('.grid').masonry({
-        //columnWidth: 50,
-        transitionDuration: '0.8s',
-        stagger: 30,
-        itemSelector: '.grid-item'
-    });
-
     // prevent reloading of page on clicking search open and close buttons
     $("a.SD-search").attr("href", "javascript:void(0);");
     $("span.search-close a").attr("href", "javascript:void(0);");
@@ -59,41 +52,8 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    /* end of JS by Sammaan for shop submenu */
 
-
-
-    var hideWardrobeFlag = false;
-
-    function toggleWardrobe() {
-
-        if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
-            $('.SD-wardrobe-container').removeClass('show-wardrobe')
-                // if ($(window).scrollTop() > 400) {
-                //     $('.SD-header').css('opacity', '.9');
-                // } else {
-                //     $('.SD-header').css('opacity', '1');
-
-            // }
-
-        } else {
-            $('.SD-wardrobe-container').addClass('show-wardrobe')
-            $('.SD-wardrobe-container').focus();
-            // $('.SD-header').css('opacity', '1');
-
-
-        }
-        // if ($(window).scrollTop() > 400) {
-        //     $('.SD-wardrobe-container').css('top', '70');
-
-        // } else {
-        //     $('.SD-wardrobe-container').css('top', '100');
-
-        // }
-    }
-
-    function hideWardrobe() {
-        // do nothing lol
-    }
 
     // var handler = function(event){
     //   // if the target is a descendent of container do nothing
@@ -126,27 +86,8 @@ $(document).ready(function() {
     // }
 
     //for header
-    function toggleCategory(value) {
-        var mobile = false;
-        if ($(window).outerWidth() <= 768) {
-            mobile = true;
-        }
 
-        if ((!mobile) && value == 1) {
-            $(".SD-collectionlist").show();
-            $('.SD-header').css('opacity', '1');
-            if ($(window).scrollTop() > 400) {
-                $(".SD-collectionlist").css('top', '100%')
-            } else if ($(window).scrollTop() < 400) {
-                $(".SD-collectionlist").css('top', '100%')
-            }
-        } else if ((!mobile) && value == 2) {
-            $(".SD-collectionlist").hide();
-            $('.SD-header').css('opacity', '1');
-
-        }
-
-    }
+    
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
@@ -302,3 +243,59 @@ function showContent(val) {
 }
 // For contact us accordion
 /* JS by Rahul for contact us accordian */
+
+
+function toggleCategory(value) {
+    var mobile = false;
+    if ($(window).outerWidth() <= 768) {
+        mobile = true;
+    }
+
+    if ((!mobile) && value == 1) {
+        $(".SD-collectionlist").show();
+        $('.SD-header').css('opacity', '1');
+        if ($(window).scrollTop() > 400) {
+            $(".SD-collectionlist").css('top', '100%')
+        } else if ($(window).scrollTop() < 400) {
+            $(".SD-collectionlist").css('top', '100%')
+        }
+    } else if ((!mobile) && value == 2) {
+        $(".SD-collectionlist").hide();
+        $('.SD-header').css('opacity', '1');
+
+    }
+}
+
+
+var hideWardrobeFlag = false;
+
+function toggleWardrobe() {
+
+    if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
+        $('.SD-wardrobe-container').removeClass('show-wardrobe')
+            // if ($(window).scrollTop() > 400) {
+            //     $('.SD-header').css('opacity', '.9');
+            // } else {
+            //     $('.SD-header').css('opacity', '1');
+
+        // }
+
+    } else {
+        $('.SD-wardrobe-container').addClass('show-wardrobe')
+        $('.SD-wardrobe-container').focus();
+        // $('.SD-header').css('opacity', '1');
+
+
+    }
+    // if ($(window).scrollTop() > 400) {
+    //     $('.SD-wardrobe-container').css('top', '70');
+
+    // } else {
+    //     $('.SD-wardrobe-container').css('top', '100');
+
+    // }
+}
+
+function hideWardrobe() {
+    // do nothing lol
+}
