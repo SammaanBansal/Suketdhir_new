@@ -241,61 +241,43 @@ function showContent(val) {
         }
     }
 }
+
+
 // For contact us accordion
-/* JS by Rahul for contact us accordian */
+
+// For about us video
 
 
-function toggleCategory(value) {
-    var mobile = false;
-    if ($(window).outerWidth() <= 768) {
-        mobile = true;
-    }
-
-    if ((!mobile) && value == 1) {
-        $(".SD-collectionlist").show();
-        $('.SD-header').css('opacity', '1');
-        if ($(window).scrollTop() > 400) {
-            $(".SD-collectionlist").css('top', '100%')
-        } else if ($(window).scrollTop() < 400) {
-            $(".SD-collectionlist").css('top', '100%')
-        }
-    } else if ((!mobile) && value == 2) {
-        $(".SD-collectionlist").hide();
-        $('.SD-header').css('opacity', '1');
-
-    }
-}
 
 
-var hideWardrobeFlag = false;
-
-function toggleWardrobe() {
-
-    if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
-        $('.SD-wardrobe-container').removeClass('show-wardrobe')
-            // if ($(window).scrollTop() > 400) {
-            //     $('.SD-header').css('opacity', '.9');
-            // } else {
-            //     $('.SD-header').css('opacity', '1');
-
-        // }
-
+// For Collection page
+var myVideo = document.querySelector(".playVidGain");
+myVideo.addEventListener("click", function() {
+    if (myVideo.paused) {
+        myVideo.play();
+        document.querySelector(".videoPlayCon").style.display = "none";
+        // document.querySelector(".collectionGray").className = "removeSection";
+        // myVideo.setAttribute("controls", "two")
+        // myVideo.removeAttribute("controls", "controls")
     } else {
-        $('.SD-wardrobe-container').addClass('show-wardrobe')
-        $('.SD-wardrobe-container').focus();
-        // $('.SD-header').css('opacity', '1');
-
-
+        // myVideo.removeAttribute("controls", "two")
+        myVideo.pause();
+        document.querySelector(".videoPlayCon").style.display = "block";
+        // document.querySelector(".collectionGray").className = "removeSection fff";
+        // document.querySelector(".collectionGray").className = "fiftyPercent aboutGrayContainer collectionGray";
     }
-    // if ($(window).scrollTop() > 400) {
-    //     $('.SD-wardrobe-container').css('top', '70');
+})
 
-    // } else {
-    //     $('.SD-wardrobe-container').css('top', '100');
-
-    // }
+var slectHeart = document.getElementsByClassName("heart");
+for (var i = 0; i < slectHeart.length; i++) {
+    slectHeart[i].addEventListener("click", wishList)
+    console.log(i);
 }
 
-function hideWardrobe() {
-    // do nothing lol
+function wishList() {
+    this.classList.toggle("selected");
 }
+// For Collection page
+
+
+/* JS by Rahul for contact us accordian */
