@@ -13,27 +13,26 @@
 </head>
 
 <body>
-    <div class="content-container">
-        <div class="aboutContainer flex">
-            <div class="fiftyPercent abourGraySection">
+    <div class="aboutContainer flex">
+        <div class="fiftyPercent abourGraySection">
 
-                <div class="accorContainer">
-                    <div class="accordionItem bottomfourty">
-                        <p class="SD-contact-studio accorHeading">
-                            <span class="rightSixteen"> 
+            <div class="accorContainer">
+                <div class="accordionItem bottomfourty">
+                    <p class="SD-contact-studio accorHeading">
+                        <span class="rightSixteen"> 
                             <img class="SD-contact-img1 pointer" onclick="showContent(1)" src="assets/icons/VD_Icons_resize-19.png" ></span>Studio
-                        </p>
-                        <div class="SD-contact-studio-det accorcontent topTwenty">
-                            <p>F-574/B2, 2nd Floor, Near CNG Pump, Anuvrat Marg, Lado Sarai, Chatri Wala Kuan, Lado Sarai, New Delhi, Delhi 110030</p>
-                            <p>+331 4260 1662</p>
-                            <p>studiosuket@namus.com</p>
-                            <p>Visiting Hours : 11 a.m. to 8 p.m.</p>
-                        </div>
+                    </p>
+                    <div class="SD-contact-studio-det accorcontent topTwenty">
+                        <p>F-574/B2, 2nd Floor, Near CNG Pump, Anuvrat Marg, Lado Sarai, Chatri Wala Kuan, Lado Sarai, New Delhi, Delhi 110030</p>
+                        <p>+331 4260 1662</p>
+                        <p>studiosuket@namus.com</p>
+                        <p>Visiting Hours : 11 a.m. to 8 p.m.</p>
                     </div>
-                    <div class="accordionItem bottomfourty">
-                        <p class="SD-contact-studio accorHeading">
-                            <span class="rightSixteen"> <img class="SD-contact-img2 pointer" src="assets/icons/VD_Icons_resize-19.png" onclick="showContent(2)"></span>Press</p>
-                        <div class="SD-contact-press-det accorcontent topTwenty" ">
+                </div>
+                <div class="accordionItem bottomfourty">
+                    <p class="SD-contact-studio accorHeading">
+                        <span class="rightSixteen"> <img class="SD-contact-img2 pointer" src="assets/icons/VD_Icons_resize-19.png" onclick="showContent(2)"></span>Press</p>
+                    <div class="SD-contact-press-det accorcontent topTwenty" ">
                             <p>F-574/B2, 2nd Floor, Near CNG Pump, Anuvrat Marg, Lado Sarai, Chatri Wala Kuan, Lado Sarai, New Delhi, Delhi 110030</p>
                             <p>+331 4260 1662</p>
                             <p>studiosuket@namus.com</p>
@@ -50,8 +49,58 @@
             </div>
         </div>
     </div>
-</div>
 
+
+    <script>
+        c = 0;
+        d = 0;
+        e = 0;
+
+        function showContent(val) {
+            if (val == 1) {
+                c++;
+                if (c % 2 == 1) {
+                    $('.SD-contact-img1').attr('src', 'assets/icons/VD_Icons_resize-40.png');
+                    $('.SD-contact-studio-det').css({
+                        'display': 'block'
+                    });
+                } else {
+                    $('.SD-contact-img1').attr('src', 'assets/icons/VD_Icons_resize-19.png');
+                    $('.SD-contact-studio-det').css({
+                        'display': 'none'
+                    });
+                }
+            }
+            if (val == 2) {
+                d++;
+                if (d % 2 == 1) {
+                    $('.SD-contact-img2').attr('src', 'assets/icons/VD_Icons_resize-40.png');
+                    $('.SD-contact-press-det').css({
+                        'display': 'block'
+                    });
+                } else {
+                    $('.SD-contact-img2').attr('src', 'assets/icons/VD_Icons_resize-19.png');
+                    $('.SD-contact-press-det').css({
+                        'display': 'none'
+                    });
+                }
+            }
+            if (val == 3) {
+                e++;
+                if (e % 2 == 1) {
+                    $('.SD-contact-img3').attr('src', 'assets/icons/VD_Icons_resize-40.png');
+                    $('.SD-contact-b2b-det').css({
+                        'display': 'block'
+                    });
+                } else {
+                    $('.SD-contact-img3').attr('src', 'assets/icons/VD_Icons_resize-19.png');
+                    $('.SD-contact-b2b-det').css({
+                        'display': 'none'
+                    });
+                }
+            }
+        }
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
