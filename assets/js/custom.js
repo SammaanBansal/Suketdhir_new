@@ -18,6 +18,23 @@ $(document).ready(function() {
     /* end of JS by Sammaan for shop submenu */
 
     
+    /* JS by Sammaan for wardrobe*/
+    var hideWardrobeFlag = false;
+
+    function toggleWardrobe() {
+
+        if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
+            $('.SD-wardrobe-container').removeClass('show-wardrobe')
+
+        } else {
+            $('.SD-wardrobe-container').addClass('show-wardrobe')
+            $('.SD-wardrobe-container').focus();
+
+
+        }
+
+    /* End JS by Sammaan for wardrobe*/
+
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
