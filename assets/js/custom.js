@@ -5,44 +5,7 @@ $(document).ready(function() {
     $("span.search-close a").attr("href", "javascript:void(0);");
 
     $('.form-LogIn').fadeOut()
-        //   $('.owl-carousel').owlCarousel({
-        //     loop:true,
-        //     margin:0,
-        //     nav:true,
-        //     // autoWidth:true,
-        //     responsive:{
-        //         0:{
-        //             items:2
-        //         },
-        //         600:{
-        //             items:2
-        //         },
-        //         1000:{
-        //             items:2
-        //         }
-        //     }
-        // })
-        // $(window).scrollTop(); // returns pixel value
-        // $(window).scroll(function() {
-        //     if ($(window).scrollTop() > 400) {
-        //         $('.SD-header').addClass('SD-reduce', { duration: 1500 })
-        //         if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
-        //             $('.SD-header').css('opacity', '1');
-        //             $('.SD-wardrobe-container').css('top', '70');
-
-    //         }
-    //         else {
-    //             $('.SD-header').css('opacity', '.9');
-
-    //         }
-    //     }
-    //     else if ($(window).scrollTop() < 400) {
-    //         $('.SD-header').removeClass('SD-reduce')
-    //         $('.SD-header').css('opacity', '1');
-    //         $('.SD-wardrobe-container').css('top', '100');
-
-    //     }
-    // });
+       
 
     /* JS by Sammaan for shop submenu */
 
@@ -53,39 +16,6 @@ $(document).ready(function() {
     });
 
     /* end of JS by Sammaan for shop submenu */
-
-
-    // var handler = function(event){
-    //   // if the target is a descendent of container do nothing
-    //   if($(event.target).is("img.wardrobeIcon"))
-    //   {
-    //       return;
-    //   }
-    //   else{
-    //       $('.SD-wardrobe-container').removeClass('show-wardrobe')
-    //     //   toggleWardrobe()
-    //   }
-    //   // remove event handler from document
-    // //   $(document).off("click", handler);
-
-    //   // dostuff
-    // }
-
-    // $(document).on("click", handler);
-    // function animateInfo(v){
-    //     // $('.SD-story-info-card').on
-    //     console.log(this)
-    //     if(v == 1){
-    //         $('.SD-story-info-card').addClass('animated fadeInUp');
-    //         $('.SD-story-info-card').removeClass(' fadeOutDown');
-    //     }
-    //     if(v == 2){
-    //         $('.SD-story-info-card').addClass('animated fadeOutDown');
-    //         $('.SD-story-info-card').removeClass(' fadeInUp');
-    //     }
-    // }
-
-    //for header
 
     
     /* JS by Sammaan for header scroll changes*/
@@ -111,36 +41,15 @@ $(document).ready(function() {
             $('.form-SignUp').fadeIn(500)
             $('.form-LogIn').fadeOut(500)
 
-            // $('.form-SignUp').addClass('form-hide', { duration: 1500 })
-            // $('.form-SignUp').addClass('form-show', { duration: 1500 })
-            // $('.form-LogIn').css({ 'display': 'none', 'opacity': 0, 'transition': 'opacity 1s linear' });
-            // $('.form-SignUp').css({ 'display': 'block', 'opacity': 1, 'transition': 'opacity 1s linear' });
-            // $('.form-LogIn').css('opacity','0');
+            
         } else if (value == 2) {
             $('.form-LogIn').fadeIn(500)
             $('.form-SignUp').fadeOut(500)
 
-            // $('.form-SignUp').addClass('form-hide', { duration: 1500 })
-            // $('.form-LogIn').removeClass('form-show', { duration: 1500 })
-            // $('.form-LogIn').css({ 'display': 'block', 'opacity': 1, 'transition': 'opacity 1s linear' });
-            // $('.form-SignUp').css({ 'display': 'none', 'opacity': 0, 'transition': 'opacity 1s linear' });
         }
 
     }
 
-    // function showPaginator() {
-    //     $('#show_paginator').bootpag(
-    //             total: 5 page: 1 maxVisible: 5 leaps: true firstLastUse: true first: '←'
-    //             last: '→'
-    //             wrapClass: 'pagination'
-    //             activeClass: 'active'
-    //             disabledClass: 'disabled'
-    //             nextClass: 'next'
-    //             prevClass: 'prev'
-    //             lastClass: 'last'
-    //             firstClass: 'first').on 'page', (event, num) - >
-    //         $('#dynamic_content').html 'page ' + num
-    // }
 
     function changeModal(val) {
         if (val == 1) {
