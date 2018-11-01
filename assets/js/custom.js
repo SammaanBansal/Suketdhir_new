@@ -21,7 +21,7 @@ $(document).ready(function() {
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 95) {
+        if ($(this).scrollTop() >= $('.SD-header').height()) {
             $('.SD-header').addClass('scrolled');
             $('.SD-name').find('img').attr('src', 'assets/icons/on-scroll-logo.svg');
         } else {
