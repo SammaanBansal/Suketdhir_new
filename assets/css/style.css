@@ -2836,6 +2836,14 @@ li.wardrobe-btn {
     padding-right: 16px
 }
 
+.leftSixteen {
+    padding-left: 16px;
+}
+
+.accorHeading img {
+    padding-right: 16px
+}
+
 .bottomTwenty {
     padding-bottom: 20px;
 }
@@ -2873,6 +2881,26 @@ li.wardrobe-btn {
 
 .mapHeight {
     height: 710px;
+}
+
+.accorcontent,
+.removeCross .cross,
+.removePlus .plus {
+    display: none;
+}
+
+.removeCross.showCross,
+.showContent .accorcontent {
+    display: block;
+}
+
+.imgClick {
+    cursor: pointer;
+}
+
+.fontFourteen {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 
