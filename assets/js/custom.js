@@ -14,6 +14,24 @@ $(document).ready(function() {
     });
 
     /* end of JS by Sammaan for shop submenu */
+    /* JS by Sammaan for header to section scroll */
+
+    $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            var ost = target.offset().top - 110;
+            $('html, body').stop().animate({
+                scrollTop: ost
+            }, 1000);
+        }
+    });
+    $('a[href^="#home"]').on('click', function(event) {
+        $('html, body').stop().animate({
+                scrollTop: 0
+            }, 1000);
+    });
+    /* JS by Sammaan for header to section scroll*/
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {

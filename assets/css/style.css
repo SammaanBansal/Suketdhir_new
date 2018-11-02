@@ -1197,7 +1197,10 @@ Version: 1.0
         letter-spacing: normal;
         color: #696d70;
     }
-    
+    .shop-sub a, .shop-sub a:hover, .shop-sub a:focus{
+        text-decoration: none;
+        color: #696d70;
+    }
     .SD-header .SD-nav li:hover .header-submenu {
         display: block;
     }
