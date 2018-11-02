@@ -1092,10 +1092,10 @@ Version: 1.0
     
     /* CSS by Sammaan*/
     .desk-only{
-        display: block;
+        display: block !important;
     }
     .mob-only{
-        display: none;
+        display: none !important;
     }
     .inline-text{
         display: inline;
@@ -1111,10 +1111,10 @@ Version: 1.0
     }
     @media screen and (max-width: 767px){
         .desk-only{
-            display: none;
+            display: none !important;
         }
         .mob-only{
-            display: block;
+            display: block !important;
         }
         .SD-clothing-head.shop-sub ul{
             width: 100%;
@@ -1166,7 +1166,9 @@ Version: 1.0
         line-height: 5;
         padding: 0 25px;
     }
-    
+    .SD-header .SD-nav li.current-active{
+        text-decoration: underline;
+    }
     .SD-header .header-submenu {
         display: none;
         position: absolute;

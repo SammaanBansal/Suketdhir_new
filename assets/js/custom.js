@@ -6,9 +6,7 @@ $(document).ready(function() {
 
     $('.form-LogIn').fadeOut()
        
-
-    /* JS by Sammaan for shop submenu */
-
+    /* JS for shop submenu */
 
     $('.shop-sub').find('li').click(function() {
         $('.submenu-clothing').removeClass('active');
@@ -16,8 +14,6 @@ $(document).ready(function() {
     });
 
     /* end of JS by Sammaan for shop submenu */
-
-
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
