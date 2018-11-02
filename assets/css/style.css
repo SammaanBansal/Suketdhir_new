@@ -1166,7 +1166,7 @@ Version: 1.0
         line-height: 5;
         padding: 0 25px;
     }
-    .SD-header .SD-nav li.active{
+    .SD-header .SD-nav li.current-active{
         text-decoration: underline;
     }
     .SD-header .header-submenu {
