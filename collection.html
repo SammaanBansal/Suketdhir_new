@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Collections</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="SD-header">
+        <div class="float-clear">
+            <div class="SD-name">
+                <a role="button" class="SD-gotohome" href="index.html">
+                    <img class="SD-logo" src="assets/images/landing-header-logo.svg">
+                </a>
+                <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs collapsed" aria-expanded="false">
+                    <div class="SD-icon-hat">
+                    </div>
+                </a>
+            </div>
+            <ul class="SD-nav navbar-collapse collapse" id="SD-nav" aria-expanded="false">
+                <li>
+                    <a role="button" class="SD-clothing" href="clothing.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                  SHOP
+                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Coats</a></li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-collections" href="collections.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                      COLLECTIONS
+                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW 2016</a></li>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW2017</a></li>
+                            <li><a href="#">Resort 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-nav-stories" href="stories.html">
+                  STORIES
+              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-about" href="aboutus.html">
+                  ABOUT
+              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-contact" href="contact.html">
+                  CONTACT
+              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-account" href="account_signup.html">
+                  MY ACCOUNT
+              </a>
+                </li>
+                <li class="wardrobe-btn">
+                    <a onclick="toggleWardrobe()">
+                        <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus="" style="z-index:-1;">
+            <div class="SD-wardrobe-header ">
+                Wardrobe
+            </div>
+            <ul class="SD-wardrobe-items ">
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men4.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                  <option value="">M</option>
+                                  <option value="">L</option>
+                                  <option value="">XL</option>
+                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men2.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                  <option value="">M</option>
+                                  <option value="">L</option>
+                                  <option value="">XL</option>
+                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men6.png " alt="">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                  <option value="">M</option>
+                                  <option value="">L</option>
+                                  <option value="">XL</option>
+                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men3.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                  <option value="">M</option>
+                                  <option value="">L</option>
+                                  <option value="">XL</option>
+                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="SD-wardrobe-bottom ">
+                <p>Subtotal: <span>$1050</span></p>
+                <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="flex aboutLarge">
+            <div class="fiftyPercent aboutGrayContainer collectionGray">
+                <div class="fourteenSansPro grayCenterContent">
+                    <p>
+                        We combine traditional techniques with modern classic silhouettes in natural fabrics. Infused with whimsical details, our designs are ageless and transform with the wearer.</p>
+                    <p>
+                        Less is indeed more, as the wearer gradually discovers the subtle nuances that go into the making of each garment. At SUKETDHIR, elegance is in function and exquisiteness of minimal design never goes out of style—as we fashion clothes that feel as good
+                        as they look.
+                    </p>
+                </div>
+            </div>
+
+            <div class="videoContainer fiftyPercent">
+                <div>
+                    <video class="playVidGain largerVideoPoster" src="./assets/videos/slow.mp4" poster="./assets/images/aboutVideoBanner.png"></video>
+                </div>
+                <div class="videoPlayCon">
+                    <img class="videPlay" src="./assets/icons/play.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex aboutLarge">
+            <div class="fiftyPercent">
+                <img class="widthFull eightHundredImg" src="./assets/images/colletionL2.png" alt="">
+            </div>
+            <div class="fiftyPercent">
+                <img class="widthFull eightHundredImg" src="./assets/images/colletionL1.png" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div class="gridThree gridFour">
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication2.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hoveContainer">
+                    <div class="heightFourhundred">
+                        <img src="./assets/images/publication1.png" alt="">
+                    </div>
+                    <div class="gridsContent hovContent">
+                        <a href="">
+                            <p>Look 6</p>
+                            <p>
+                                SHOP THE LOOK
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="heart">
+                        <div class="unselected">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="22" viewBox="0 0 25 22">
+                                    <defs>
+                                        <path id="a" d="M0 0h24.777v21.545H0z"/>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <mask id="b" fill="#fff">
+                                            <use xlink:href="#a"/>
+                                        </mask>
+                                        <path fill="#636363" d="M1.794 1.837c-2.393 2.45-2.39 6.391 0 8.843l10.588 10.865 10.6-10.853c2.394-2.449 2.394-6.393 0-8.843a5.996 5.996 0 0 0-8.637 0l-1.95 1.998-1.963-2.01a5.996 5.996 0 0 0-8.638 0" mask="url(#b)"/>
+                                    </g>
+                                </svg>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="topEightPix">
+                <button class="yellowBtn">Shop by category</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="col-sm-12">
+        <div class="SD-icon-hat">
+        </div>
+        <div class="SD-footer">
+            <li class="SD-footer1">
+                <span>©2017</span>
+                <a role="button" class="SD-sd" href="#">
+                SUKET DHIR
+            </a>
+            </li>
+            <li class="SD-footer2">
+                <a role="button" class="SD-shipp" href="#">
+                SHIPPING &amp; RETURNS
+            </a>
+                <a role="button" class="SD-faq" href="#">
+                FAQ
+            </a>
+                <a role="button" class="SD-tnc" href="#">
+                TERMS OF USE
+            </a>
+                <a role="button" class="SD-privacy" href="#">
+                PRIVACY POLICY
+            </a>
+            </li>
+            <li class="SD-footer3">
+                <a role="button" class="ion SD-homeions" href="https://www.facebook.com/suketdhirpage/?hc_ref=SEARCH&amp;fref=nf">
+                    <img src="assets/icons/VD_Icons_resize-02.png">
+                </a>
+                <a role="button" class="ion SD-homeions" href="https://www.instagram.com/suketdhir/">
+                    <img src="assets/icons/VD_Icons_resize-03.png">
+                </a>
+                <a role="button" class="ion SD-homeions" href="#">
+                    <img src="assets/icons/VD_Icons_resize-04.png">
+                </a>
+            </li>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

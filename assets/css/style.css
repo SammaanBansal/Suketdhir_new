@@ -1116,6 +1116,20 @@ Version: 1.0
         .mob-only{
             display: block;
         }
+        .SD-clothing-head.shop-sub ul{
+            width: 100%;
+        }
+        .SD-clothing-head.shop-sub .submenu-clothing {
+            font-size: 14px;
+            line-height: 5;
+        }
+        .submenu-clothing.active{
+            text-decoration: underline;
+        }
+        .SD-clothing-head.shop-sub .submenu-clothing.active:before,
+        .SD-clothing-head.shop-sub  .submenu-clothing.active:after{
+            display: none;
+        }
     }
     /* Header */
     
