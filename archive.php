@@ -13,6 +13,7 @@
 get_header(); 
 
 $category = get_queried_object();
+//$all_cat = explode(",", get_category_parents( $category->term_id,'',',' ));
 ?>
 <div class="content-container">
 <?php
@@ -24,7 +25,7 @@ $category = get_queried_object();
 			break;
 
 			default :
-			get_template_part( 'template-parts/category/content', 'page' );
+			get_template_part( 'template-parts/category/content', 'collections' );
 			break;
 		}
 
