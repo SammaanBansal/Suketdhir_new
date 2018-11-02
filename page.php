@@ -28,6 +28,10 @@ get_header(); ?>
 			get_template_part( 'template-parts/page/content', 'contact' );
 			break;
 			
+			case 29 :
+			get_template_part( 'template-parts/page/content', 'about' );
+			break;
+
 			default :
 			get_template_part( 'template-parts/page/content', 'page' );
 			break;
