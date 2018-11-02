@@ -7,40 +7,38 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage suketdhir
  * @since 1.0
  * @version 1.2
  */
 
 ?>
+	<footer class="col-sm-12">
+        <div class="SD-icon-hat">
+        </div>
+        <div class="SD-footer float-clear">
+            <p class="SD-footer0 col-sm-1"></p>
+            <p class="SD-footer1 col-sm-2 text-right">
+                <span>&copy;2017</span>
+                SUKET DHIR
+            </p>
+           
+            <?php get_template_part( 'template-parts/navigation/navigation', 'bottom' ); ?>
 
-		</div><!-- #content -->
+            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+               <ul class="SD-footer3 col-sm-2">
+                    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </ul>
+            <?php endif; ?>
+            
+        </div>
+        </div>
+    </footer>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="wrap">
-				<?php
-				get_template_part( 'template-parts/footer/footer', 'widgets' );
-
-				if ( has_nav_menu( 'social' ) ) : ?>
-					<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentyseventeen' ); ?>">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'social',
-								'menu_class'     => 'social-links-menu',
-								'depth'          => 1,
-								'link_before'    => '<span class="screen-reader-text">',
-								'link_after'     => '</span>' . twentyseventeen_get_svg( array( 'icon' => 'chain' ) ),
-							) );
-						?>
-					</nav><!-- .social-navigation -->
-				<?php endif;
-
-				get_template_part( 'template-parts/footer/site', 'info' );
-				?>
-			</div><!-- .wrap -->
-		</footer><!-- #colophon -->
-	</div><!-- .site-content-contain -->
-</div><!-- #page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="<?php echo get_bloginfo('template_directory');?>/<?php echo get_bloginfo('template_directory');?>/assets/js/custom.js"></script>
+		
 <?php wp_footer(); ?>
 
 </body>

@@ -21,12 +21,13 @@ $(document).ready(function() {
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
+        
         if ($(this).scrollTop() >= $('.SD-header').height()) {
             $('.SD-header').addClass('scrolled');
-            $('.SD-name').find('img').attr('src', 'assets/icons/on-scroll-logo.svg');
+            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
         } else {
             $('.SD-header').removeClass('scrolled');
-            $('.SD-name').find('img').attr('src', 'assets/images/landing-header-logo.svg');
+            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
         }
     });
 
