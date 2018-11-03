@@ -97,7 +97,7 @@ Version: 1.0
         /*overflow: hidden;*/
         position: fixed;
         top: 0px;
-        z-index: 2;
+        z-index: 9;
         background: #fff;
         /*transition: 1s;*/
         -webkit-transition: all .8s ease;
@@ -156,6 +156,12 @@ Version: 1.0
         ul.SD-nav li>a {
             font-size: 14px;
         }
+    }
+    @media (max-width: 1024px) {
+            li.wardrobe-btn {
+                width: 5% !important;
+            }
+        
     }
     @media (min-width: 768px) {
         ul.SD-nav {
@@ -1123,13 +1129,6 @@ Version: 1.0
             font-size: 14px;
             line-height: 5;
         }
-        .submenu-clothing.active{
-            text-decoration: underline;
-        }
-        .SD-clothing-head.shop-sub .submenu-clothing.active:before,
-        .SD-clothing-head.shop-sub  .submenu-clothing.active:after{
-            display: none;
-        }
     }
     /* Header */
     
@@ -1165,6 +1164,7 @@ Version: 1.0
     .SD-header>div {
         line-height: 5;
         padding: 0 25px;
+        height: 95px;
     }
     .SD-header .SD-nav li.current-active{
         text-decoration: underline;
@@ -1415,7 +1415,7 @@ Version: 1.0
     .SD-clothing-head.shop-sub {
         position: fixed;
         top: 95px;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
     }
     
@@ -1428,22 +1428,16 @@ Version: 1.0
         position: relative;
     }
     
-    .submenu-clothing.active:before {
-        content: '|';
-        width: 5px;
-        display: block;
-        left: 0;
-        top: 0;
-    }
     
-    .submenu-clothing.active:after {
-        content: '|';
-        display: block;
-        width: 5px;
-        left: 100%;
-        top: 0;
-        border: 0 !important;
-        margin: 0 !important;
+    li.submenu-clothing:before, li.submenu-clothing:after{
+        display: none;
+    }
+    li.submenu-clothing a{
+        padding: 0 3px;
+    }
+    .submenu-clothing.active a{
+        border-left: 1px solid #696d70;
+        border-right: 1px solid #696d70;
     }
     
     .shop-sub select {
@@ -1519,7 +1513,15 @@ Version: 1.0
         font-family: Cinzel;
     }
     
-    @media all and (min-width:769px) {
+    @media all and (max-width:768px) {
+        .SD-col-head.submenu-clothing{
+            padding: 30px 15px !important;
+        }
+        .SD-clothing-head.shop-sub {
+            top: 90px;
+        }
+    }
+    @media all and (min-width:768px) {
         .SD-col-images:hover p {
             opacity: 1;
             transition: 0.5s;
@@ -1529,10 +1531,13 @@ Version: 1.0
         }
     }
     
-    @media all and (max-width:768px) {
+    @media all and (max-width:767px) {
         .SD-col-images p {
             opacity: 1;
             font-size: 12px;
+        }
+        .shop-sub {
+          display: none;
         }
     }
     
