@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseOne") {
+        $("#collapseOne").addClass('in');
+        document.documentElement.scrollTop = 0;
+        
+    }
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseTwo") {
+        $("#collapseTwo").addClass('in');
+        document.documentElement.scrollTop = 0;
+        
+     }
+     if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseThree") {
+        $("#collapseThree").addClass('in');
+        document.documentElement.scrollTop = 0;
+        
+     }
+     if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseFour") {
+        $("#collapseFour").addClass('in');
+        document.documentElement.scrollTop = 0;
+        
+     }
+
     // prevent reloading of page on clicking search open and close buttons
     $("a.SD-search").attr("href", "javascript:void(0);");
     $("span.search-close a").attr("href", "javascript:void(0);");
@@ -208,27 +229,41 @@ function wishList() {
 }
 // For Collection page
 
-var page = document.getElementsByClassName("linkPage");
-for (var j = 0; j < page.length; j++) {
-    page[j].addEventListener("click", pageLink)
-}
+$(".SD-footer2 a").click(function(){
+    var $delete = $(this);
+    //alert($delete.attr('href'));
+    var id = $delete.attr('href');
+    window.location.href = "http://localhost/suketdhir-wordpress/customer-care/"+id;
+    
+    
+    //window.location.href = "http://localhost/suketdhir-wordpress/customer-care/";
+    
+});
 
-function pageLink() {
-    if (window.location != "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html") {
-        window.location.href = "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html";
-    }
-    document.documentElement.scrollTop = 0;
-}
-$(".toggleAcc").click(function() {
-    // $(".threeAcor").toggleClass("panel-collapse collapse in");
-    if (window.location === "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html") {
-        if ($(".threeAcor").hasClass("panel-collapse threeAcor collapse")) {
-            alert("Has");
-        } else {
-            alert("not");
-        }
-    }
-})
+// var page = document.getElementsByClassName("linkPage");
+// var id = document.getElementById()
+// for (var j = 0; j < page.length; j++) {
+//     page[j].addEventListener("click", pageLink);
+   
+// }
+
+// function pageLink() {
+//     if (window.location != "http://localhost/suketdhir-wordpress/customer-care/") {
+//         window.location.href = "http://localhost/suketdhir-wordpress/customer-care/";
+//     }
+//     document.documentElement.scrollTop = 0;
+    
+// }
+// $(".toggleAcc").click(function() {
+//     // $(".threeAcor").toggleClass("panel-collapse collapse in");
+//     if (window.location === "http://localhost/suketdhir-wordpress/customer-care/") {
+//         if ($(".threeAcor").hasClass("panel-collapse threeAcor collapse")) {
+//             alert("Has");
+//         } else {
+//             alert("not");
+//         }
+//     }
+// })
 
 // document.querySelector(".SD-sd").addEventListener("click", function(){})
 
