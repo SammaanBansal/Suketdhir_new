@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Care</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="SD-header">
+        <div class="float-clear">
+            <div class="SD-name">
+                <a role="button" class="SD-gotohome" href="about.html">
+                    <img class="SD-logo" src="assets/images/landing-header-logo.svg">
+                </a>
+                <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs collapsed" aria-expanded="false">
+                    <div class="SD-icon-hat">
+                    </div>
+                </a>
+            </div>
+            <ul class="SD-nav navbar-collapse collapse" id="SD-nav" aria-expanded="false" style="height: 1px;">
+                <li>
+                    <a role="button" class="SD-clothing" href="clothing.html">
+                                  SHOP
+                                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Coats</a></li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-collections" href="collections.html">
+                                      COLLECTIONS
+                                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW 2016</a></li>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW2017</a></li>
+                            <li><a href="#">Resort 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-nav-stories" href="stories.html">
+                                  STORIES
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-about" href="aboutus.html">
+                                  ABOUT
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-contact" href="contact.html">
+                                  CONTACT
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-account" href="account_signup.html">
+                                  MY ACCOUNT
+                              </a>
+                </li>
+                <li class="wardrobe-btn">
+                    <a onclick="toggleWardrobe()">
+                        <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus="" style="z-index:-1;">
+            <div class="SD-wardrobe-header ">
+                Wardrobe
+            </div>
+            <ul class="SD-wardrobe-items ">
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men4.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                                  <option value="">M</option>
+                                                  <option value="">L</option>
+                                                  <option value="">XL</option>
+                                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men2.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value="">M</option>
+                                <option value="">L</option>
+                                <option value="">XL</option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men6.png " alt="">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value="">M</option>
+                                <option value="">L</option>
+                                <option value="">XL</option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men3.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>Size:
+                            <select name="" id="#SD-sizeselect">
+                                <option value="">M</option>
+                                <option value="">L</option>
+                                <option value="">XL</option>
+                            </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="SD-wardrobe-bottom ">
+                <p>Subtotal: <span>$1050</span></p>
+                <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <section class="footerSection flex">
+            <div class="tabsTitle panel-group deskAccordion" id="accordionMenu" role="tablist" aria-multiselectable="true">
+                <h1>Customer Care</h1>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    FAQ
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="sixtyFourty grayTabs faqHead">
+                            <!-- <h1>FAQ</h1> -->
+                            <div>
+                                <h2><span>1</span>Ordering online</h2>
+                                <div class="accorContainer notCromp">
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-1.</span> <span> What do I do if I have forgotten my password? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-2.</span> <span> How will I know if you received my order? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2><span>2</span>Shipping and delivery</h2>
+                                <div class="accorContainer notCromp">
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-1.</span> <span> What do I do if I have forgotten my password? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-2.</span> <span> How will I know if you received my order? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2><span>3</span>Payment</h2>
+                                <div class="accorContainer notCromp">
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-1.</span> <span> What do I do if I have forgotten my password? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-2.</span> <span> How will I know if you received my order? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2><span>4</span>Pre-Orders</h2>
+                                <div class="accorContainer notCromp">
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-1.</span> <span> What do I do if I have forgotten my password? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="accorHeading removeCross bottomfourty">
+                                        <span>1-2.</span> <span> How will I know if you received my order? </span>
+                                        <img class="plus imgClick" src="./assets/icons/down.svg" alt="">
+                                        <img class="cross imgClick" src="./assets/icons/up.svg" alt="">
+                                        <div class="accorcontent fontFourteen">
+                                            <p>
+                                                You can either contact our customer care team and we will assist you with a new password, or you can press on My account/ Sign in/ Forgot your password? An auto-generated password will then be sent to your registered email address
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Shipping & Returns
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="sixtyFourty grayTabs shipping">
+                            <!-- <h1>Shipping &amp; Returns</h1> -->
+                            <h2>General Information</h2>
+                            <p>
+                                All Suket Dhir products are subject to availability. While every effort will be made to display accurate stock information, there may be times where stock is depleted after an order has been purchased.
+                            </p>
+
+                            <p>
+                                1. We reserve the right to limit purchase quantities, supply only one part of an order or to divide orders for delivery.
+                            </p>
+                            <p>
+                                2. Any items, prices, and services featured on Maiyet.com are subject to change at any time and without notice.
+                            </p>
+                            <p>
+                                3. All product descriptions and specifications are approximate and provided for your convenience only.
+                            </p>
+                            <h3>RATES</h3>
+                            <p>
+                                Prices displayed on the Suket Dhir website are quoted in US Dollars. While we do our best to ensure that all prices are accurate, errors may occur. Should there be a pricing error for your order, we will give you the option to reconfirm your order at
+                                the correct price or cancel your order. If we are unable to contact you, we will cancel the order.
+                            </p>
+                            <p>
+                                Suket Dhir accepts Visa, Mastercard, and American Express. Your credit card will be charged upon order confirmation.
+                            </p>
+                            <p>
+                                Suket Dhir offers free domestic ground shipping on all purchases.
+                            </p>
+                            <ul>
+                                <li>US Domestic</li>
+                                <li> Overnight: $50</li>
+                                <li> 2-day: $25</li>
+                                <li> Ground: no charge</li>
+                                <li>International shipping fee calculated at checkouttotal price will include shipping &amp; duties</li>
+                            </ul>
+                            <p>Sales Tax</p>
+                            <p>Please note that your on-screen transaction total reflects estimated tax; the actual sales tax will </p>
+                            <p>be calculated when your order is shipped and may vary from the estimated tax.</p>
+                            <h3>SHIPPING &amp; DELIVERY</h3>
+                            <p>
+                                Overnight orders must be placed by 3pm on a business day in order to receive by the next business day. Suket Dhir orders generally ship within 2-3 business days. Delivery times are provided solely as guidelines and are subject to change. If you wish to
+                                cancel or modify your order, please email orders@maiyet.com as soon as possible. We will make every effort to accommodate your request. However, once an order has been processed by our warehouse, we are unable to make any
+                                changes. Please refer to Suket Dhir’s return policy below if you wish to change an order after it has been processed. Once dispatched from our warehouse, we are unable to reroute deliveries. Suket Dhir cannot ship to P.O.
+                                Boxes at this time.
+                            </p>
+                            <h3>RETURN POLICY</h3>
+                            <p>
+                                If you would like to return an item, please request a Return Authorization (RA) number within 10 days of receiving your order. Please note that we do not accept refunds for Fine Jewelry, but we allow exchange within the 10 day return window. You may request
+                                an RA number by emailing orders@maiyet.com with your order number and the reason for your return. Your item must be shipped to returns within 5 days of receiving your RA number. We will accept full-priced merchandise with
+                                their original packaging and tickets. Merchandise must be unused, unworn and in an unaltered condition. Footwear must be tried on carpeted surfaces only. Approved returns are free of charge. Refunds may only be issued in
+                                the same form as payment. Sale merchandise is final sale, refunds or exchanges will not be issued.
+                            </p>
+                            <h3>REPAIRS</h3>
+                            <p>
+                                Suket Dhir takes special care to handcraft unique products. While all items are closely quality controlled, should your item not arrive in perfect condition, please email orders@namus.com immediately and we can assist you. For a full list of product care
+                                information, please visit our Product Care page.
+                            </p>
+                            <h3>SECURITY</h3>
+                            <p>To ensure your information is safe and secure, Maiyet’s shop is hosted on an SSL encrypted platform.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Terms of Use
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse threeAcor" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="sixtyFourty grayTabs">
+                            <!-- <h1>Terms of Use</h1> -->
+                            <p>
+                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
+                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
+                            </p>
+                            <h2>The Service</h2>
+                            <h3>Your Use of Service:</h3>
+                            <p>
+                                In order to access or use the Service, you may be required to provide current, accurate, identification, contact and other information. You are responsible for maintaining the accuracy and completeness of this information and also for maintaining the
+                                confidentiality of your username and password. You will be fully responsible for all activities that occur under your account, including activities of others to whom you have provided your username or password so please
+                                notify Maiyet immediately of any unauthorized use of your account or any other breach of security.
+                            </p>
+                            <h4>Modifications to Service and Data:</h4>
+                            <p>
+                                The Service may change over time as we add more features. We may modify, suspend or discontinue, temporarily or permanently, the Service (or a part of the Service). Please backup your data as Maiyet has no responsibility for the deletion or failure to
+                                store any data or other content maintained or transmitted by the Service. Maiyet reserves the right to terminate accounts that are inactive for an extended period of time.
+                            </p>
+                            <h5>Age</h5>
+                            <p>You must be 13 years of age to use this Service, with or without registering</p>
+                            <h2>CONDITIONS OF USE</h2>
+                            <p>
+                                You are solely responsible for all information, data, text, software, music, sound, photographs, graphics, video, messages or other materials (“content”) that you upload, post, publish or display (“post”) or email or otherwise transmit or use via the
+                                Service. You agree to not use the Service to post, email or otherwise transmit any content that is unlawful, threatening, unsolicited “junk mail” or spam, contains software viruses or, in the sole judgment of Maiyet, restricts
+                                or inhibits any other person from using or enjoying the Service, or which may expose Maiyet or its users to any harm or liability of any type. You also agree to provide accurate, up-to-date information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Privacy Policy
+                          </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="sixtyFourty grayTabs privacyPol">
+                            <!-- <h1>Privacy Policy</h1> -->
+                            <h2>Intellectual property rights</h2>
+                            <h3>Service Content, Software and Trademarks</h3>
+                            <p>
+                                The Service may contain content (“Service Content”) that is protected by copyright, patent, trademark, trade secret or other proprietary rights and laws. Except as expressly authorized by Suket Dhir, you agree not to modify, copy, frame, scrape, rent,
+                                lease, loan, sell, distribute or create derivative works based on the Service or the Service Content, in whole or in part. If you are eligible to use the Service, you are granted a limited license to access and use the
+                                Site and the Service Content and to download or print a copy of the Service Content you have provided or to which another user has properly granted you access solely for your personal, non-commercial use, provided that
+                                you keep all copyright or other proprietary notices intact. You are not permitted to use any data mining, robots, scraping or similar data gathering or extraction methods. Any use of the Site or the Service Content other
+                                than as authorized by these Terms is strictly prohibited and will terminate the license granted here. The technology and software underlying the Service is the property of Suket Dhir, our affiliates and our partners (the
+                                “Software”). You agree not to reverse engineer, reverse assemble or otherwise attempt to discover any source code version of the Software. We reserve all right, title and interest in and to the Software and Service Content,
+                                except for the limited rights expressly granted in these Terms.
+                            </p>
+
+                            <p>
+                                The Suket Dhir name and logo are trademarks and service marks of Suket Dhir (collectively the “Suket Dhirt Trademarks”). Other company, product, and service names and logos used and displayed via the Service may be trademarks or service marks of their
+                                respective owners who may or may not endorse or be affiliated with or connected to Suket Dhir. You may not use any of Maiyet Trademarks without our prior written permission.
+                            </p>
+
+                            <h4>Third Party Material:</h4>
+                            <p>
+                                Suket Dhir will not be liable for any content posted by third parties or at the direction of users; you must evaluate the accuracy and usefulness of this content. Maiyet does not pre-screen content, but Suket Dhir and its designees will have the right
+                                (but not the obligation) to refuse or remove any content that is available via the Service, including the right to remove any content that violates the Terms or is deemed by Maiyet to be objectionable.
+                            </p>
+                            <h4>User Content Posted on the Site:</h4>
+                            <p>
+                                You are solely responsible for the content and other materials you post on or through the Service or the Site or transmit to or share with other users or recipients (collectively, “User Content”). You may not post any content that you did not create or
+                                that you do not own. By posting User Content you hereby grant and will grant Maiyet and its affiliated companies a nonexclusive, worldwide, royalty free, fully paid up, transferable, sublicenseable, perpetual, irrevocable
+                                license to copy, display, transmit, distribute, store, modify and otherwise use your User Content in connection with the operation, advertising or marketing of the Service, in any form now known or later developed.
+                            </p>
+                            <p>
+                                We welcome your comments, questions, suggestions and feedback about the Site or the Service (“Submissions”)! But be aware that any comments or suggestions you make to Maiyet are non-confidential and become the property of Suket Dhir, which will be entitled
+                                to the unrestricted use and dissemination of these Submissions for any purpose, commercial or otherwise, without acknowledgment or compensation to you.
+                            </p>
+                            <h4>Copyright Complaints:</h4>
+                            <p>
+                                Suket Dhir respects the intellectual property of others, and we ask our users to do the same. Maiyet will promptly process and investigate notices of alleged infringement and will take appropriate actions under the Digital Millennium Copyright Act (“DMCA”)
+                                and other applicable intellectual property laws with respect to any alleged or actual infringement. If you believe that your work has been copied in a way that constitutes copyright infringement, or that your intellectual
+                                property rights have been otherwise violated, please provide our Copyright Agent with the following information:
+                            </p>
+                            <p>
+                                An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest;
+                            </p>
+                            <p>
+                                a description of the copyrighted work or other intellectual property that you claim has been infringed;
+                            </p>
+                            <p>
+                                a description of where the material that you claim is infringing is located on the Site, with enough detail that we may find it on the Site;
+                            </p>
+                            <p>
+                                your address, telephone number, and email address;
+                            </p>
+                            <p>a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright or intellectual property owner, its agent, or the law;</p>
+                            <p>
+                                a statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner's behalf.
+                            </p>
+                            <p>
+                                Suket Dhir's Copyright Agent for Notice of claims of copyright or other intellectual property infringement can be reached as follows:
+                            </p>
+                            <p>Copyright Agent</p>
+                            <p>PeaceVentures, Inc. d/b/a Maiyet</p>
+                            <p>Daniel Tobias</p>
+                            <p>Email</p>
+                            <p>Repeat Infringer Policy:</p>
+                            <p>
+                                In accordance with the DMCA and other applicable law, Suket Dhir has adopted a policy of terminating, in appropriate circumstances and at Suket Dhir's sole discretion, members who are deemed to be repeat infringers. Suket Dhir may also at its sole discretion
+                                limit access to the Site and/or terminate the memberships of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement.
+                            </p>
+                            <h5>THIRD PARTY LINKS AND CONTENT</h5>
+                            <p>
+                                The Service may provide, or third parties may provide, links or otherwise direct users to other sites and resources on the Internet. Suket Dhir has no control over such sites and resources and Maiyet is not responsible for and does not endorse such sites
+                                and resources. Maiyet will not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any content, events, goods or services
+                                available on or through such site or resource.
+                            </p>
+                            <h5>RELEASE</h5>
+                            <p>
+                                By using the Service you agree to release, discharge and hold harmless Suket Dhir and its subsidiaries and affiliates (the “Suket Dhir Entities”) from any and all losses, damages, rights, claims, actions of any kind and injury (including death) arising
+                                out of or relating to the Service or any act or omission by any person, including without limitation, any dispute between you and any other person or regarding any content posted on the Site. If you are a California resident,
+                                you waive California Civil Code §1542, which says: “A general release does not extend to claims which the creditor does not know or suspect to exist in his favor at the time of executing the release, which if known by him
+                                must have materially affected his settlement with the debtor.” This release includes, without limitation, any claim resulting from delay and the criminal acts of others.
+                            </p>
+                            <h5>INDEMNITY</h5>
+                            <p>You agree to indemnify and hold Suket Dhir and the Suket Dhir Entities harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of or relating to the Services, including
+                                without limitation, any content posted to or transmitted through the Service, or publicly distributed on the web, your use of the Service, your connection to the Service, your violation of the Terms or your violation of
+                                any rights of another.information is safe and secure, Suket Dhir’s shop is hosted on an SSL encrypted platform.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="col-sm-12">
+        <div class="SD-icon-hat"></div>
+        <div class="SD-footer">
+            <li class="SD-footer1">
+                <span>©2017</span>
+                <a role="button" class="SD-sd" href="#">
+                    SUKET DHIR
+                </a>
+            </li>
+
+            <li class="SD-footer2">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordionMenu" class="linkPage">
+                        SHIPPING &amp; RETURNS
+                    </a>
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordionMenu" class="linkPage">
+                    FAQ
+                </a>
+                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" data-parent="#accordionMenu" class="linkPage">
+                    TERMS OF USE
+                </a>
+                <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" data-parent="#accordionMenu" class="linkPage">
+                    PRIVACY POLICY
+                </a>
+            </li>
+
+            <li class="SD-footer3 ">
+                <a role="button " class="ion SD-homeions " href="https://www.facebook.com/suketdhirpage/?hc_ref=SEARCH&amp;fref=nf ">
+                    <img src="assets/icons/VD_Icons_resize-02.png ">
+                </a>
+                <a role="button " class="ion SD-homeions " href="https://www.instagram.com/suketdhir/ ">
+                    <img src="assets/icons/VD_Icons_resize-03.png ">
+                </a>
+                <a role="button " class="ion SD-homeions " href="# ">
+                    <img src="assets/icons/VD_Icons_resize-04.png ">
+                </a>
+            </li>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js "></script>
+
+</body>
+
+</html>

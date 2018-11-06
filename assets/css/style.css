@@ -28,6 +28,11 @@ Version: 1.0
     * — Minor Section Heading —
     */
 
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: Cormorant;
 }
@@ -453,7 +458,6 @@ ul.SD-nav li {
 
 /* video css overwriting videojs*/
 
-
 .SD-homevideo .video-js .vjs-big-play-button {
     left: 0;
     right: 0;
@@ -581,7 +585,7 @@ ul.SD-nav li {
     font-family: Cormorant;
     font-size: 12px;
     font-weight: 300;
-    cursor: url('../icons/cursor.svg') 100 0, auto !important;
+    /* cursor: url('../icons/cursor.svg') 100 0, auto !important; */
 }
 
 .SD-homeions {
@@ -958,9 +962,10 @@ ul.SD-nav li {
     margin-left: 50px !important;
 }
 
-.nav-pills a:hover {
+
+/* .nav-pills a:hover {
     cursor: url('../icons/cursor.svg') 100 0, auto !important;
-}
+} */
 
 .SD-md2 {
     margin-top: 60px !important;
@@ -1013,7 +1018,7 @@ header a:hover {
 }
 
 footer a:hover {
-    cursor: url('../icons/cursor.svg') 100 0, auto !important;
+    /* cursor: url('../icons/cursor.svg') 100 0, auto !important; */
 }
 
 .SD-footerbefore {
@@ -1083,18 +1088,23 @@ footer a:hover {
 
 /* CSS by Sammaan*/
 
-.inline-text{
+.inline-text {
     display: inline;
 }
-.pad0{
+
+.pad0 {
     padding: 0;
 }
-.padleft200{
+
+.padleft200 {
     padding-left: 200px;
 }
-.float-right{
+
+.float-right {
     float: right;
 }
+
+
 /* Header */
 
 .SD-header.scrolled .SD-name img {
@@ -1169,6 +1179,7 @@ li.wardrobe-btn {
         background: #fff;
     }
 }
+
 
 /* css for Wardrobe */
 
@@ -1938,6 +1949,7 @@ li.wardrobe-btn {
 
 /*end product */
 
+
 /* css for ship */
 
 .SD-isp {
@@ -1951,23 +1963,24 @@ li.wardrobe-btn {
     text-decoration: none;
 }
 
-.SD-isp a .SD-isp-i:after{
+.SD-isp a .SD-isp-i:after {
     content: "";
     position: absolute;
     left: 292px;
     right: 0;
-    top:15px;
+    top: 15px;
     width: 90px;
     height: 0.5em;
     transition: width .6s ease;
     border-top: 1px solid #636363;
 }
-.SD-isp a .SD-isp-s:after{
+
+.SD-isp a .SD-isp-s:after {
     content: "";
     position: absolute;
     left: 460px;
     right: 0;
-    top:15px;
+    top: 15px;
     width: 90px;
     height: 0.5em;
     opacity: 0.4;
@@ -2052,7 +2065,6 @@ li.wardrobe-btn {
 .SD-ship-price {
     float: right;
     font-family: Cinzel;
-
 }
 
 .SD-cont,
@@ -2102,7 +2114,10 @@ li.wardrobe-btn {
     float: right;
 }
 
+
 /* end ship */
+
+
 /* wardrobe checkout */
 
 .SD-inline-wardrobe-container {
@@ -2156,11 +2171,13 @@ li.wardrobe-btn {
     font-family: 'Cormorant', serif;
     font-weight: 300;
 }
+
 .SD-inline-wardrobe-item-info>p:nth-child(2) span {
     font-size: 18px;
     font-family: Cinzel;
     font-weight: 300;
 }
+
 .SD-inline-wardrobe-item-pic {
     position: relative;
     padding: 5px;
@@ -2194,7 +2211,7 @@ li.wardrobe-btn {
     text-align: center;
 }
 
-.SD-inline-wardrobe-bottom > p {
+.SD-inline-wardrobe-bottom>p {
     color: white;
     margin: 0px;
     font-size: 18px;
@@ -2203,7 +2220,7 @@ li.wardrobe-btn {
     margin-left: 20%;
 }
 
-.SD-inline-wardrobe-bottom > p.SD-inline-total {
+.SD-inline-wardrobe-bottom>p.SD-inline-total {
     font-size: 21px;
 }
 
@@ -2229,7 +2246,10 @@ li.wardrobe-btn {
     background: #636363;
 }
 
+
 /* end wardrobe checkout */
+
+
 /* order placed */
 
 .SD-information {
@@ -2394,7 +2414,10 @@ li.wardrobe-btn {
         width: 57%;
     }
 }
+
+
 /* end order placed */
+
 
 /* css payment */
 
@@ -2407,30 +2430,33 @@ li.wardrobe-btn {
     margin-right: 100px;
     position: relative;
 }
-.SD-isp a .SD-isp-i:after{
+
+.SD-isp a .SD-isp-i:after {
     content: "";
     position: absolute;
     left: 90px;
     right: 0;
-    top:15px;
+    top: 15px;
     width: 90px;
     height: 0.5em;
     opacity: 1;
     transition: width .6s ease;
     border-top: 1px solid #636363;
 }
-.SD-isp a .SD-isp-s:after{
+
+.SD-isp a .SD-isp-s:after {
     content: "";
     position: absolute;
     left: 70px;
     right: 0;
-    top:15px;
+    top: 15px;
     width: 90px;
     height: 0.5em;
     opacity: 1;
     transition: width .6s ease;
     border-top: 1px solid #636363;
 }
+
 .SD-s-head {
     color: #636363;
     font-size: 24px;
@@ -2779,14 +2805,22 @@ li.wardrobe-btn {
     margin-top: 20px;
 }
 
+
 /* end order placed */
+
+
 /* footer */
+
 
 /* end footer */
 
 
 /* End by Sammaan */
+
+
 /* CSS by Rahul */
+
+
 /* contact page css */
 
 .SD-contact-studio-det,
@@ -2909,6 +2943,10 @@ li.wardrobe-btn {
 
 /* career page */
 
+.twentyTwenty {
+    padding: 20px 20px;
+}
+
 .carrerSection {
     padding: 100px 13%;
     justify-content: space-between;
@@ -2935,9 +2973,9 @@ li.wardrobe-btn {
     color: #696d70;
 }
 
-.carrerSection aside nav .nav-pills>li.active>a,
-.carrerSection aside nav .nav-pills>li.active>a:focus,
-.carrerSection aside nav .nav-pills>li.active>a:hover {
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
     color: #636363 !important;
     background: unset !important;
     /* text-decoration: underline !important; */
@@ -2945,7 +2983,7 @@ li.wardrobe-btn {
     border-radius: 0;
 }
 
-.carrerSection aside nav .nav>li>a {
+.nav-pills>li>a {
     padding: 0 !important;
     display: inline-block;
 }
@@ -2959,7 +2997,7 @@ li.wardrobe-btn {
     text-decoration: unset;
 }
 
-ul li:after {
+.linActive li:after {
     content: "";
     position: absolute;
     top: 11px;
@@ -2969,7 +3007,7 @@ ul li:after {
     left: auto
 }
 
-ul li.active:after {
+.linActive li.active:after {
     width: 101px;
     margin: 0px 6px;
 }
@@ -3316,6 +3354,265 @@ video[poster] {
 
 /* End Collections page */
 
+
+/* For customer css */
+
+
+/* For Privacy page */
+
+.footerSection {
+    background: unset;
+    padding: 130px 13%;
+}
+
+.sixtyFourty {
+    background-color: #ecece5;
+    padding: 60px 40px;
+}
+
+.grayTabs h1 {
+    font-size: 21px;
+    color: #636363;
+    font-family: Cormorant Medium;
+    padding-bottom: 30px;
+}
+
+.grayTabs h2 {
+    padding: 50px 0 30px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.grayTabs h5 {
+    padding-top: 20px;
+}
+
+.grayTabs * {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footerContentSpace {
+    padding: 49px 60px;
+}
+
+.footerTabs li a {
+    font-family: Cormorant Light;
+    font-size: 18px;
+}
+
+.footerTabs li {
+    padding-bottom: 8px;
+}
+
+.tabsTitle h1 {
+    font-size: 24px;
+    color: #636363;
+    font-family: Cormorant Medium;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.notCromp .accorHeading span:first-child {
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+
+/* Privacy end here */
+
+
+/* FAQ Page CSS */
+
+.notCromp * {
+    font-weight: normal;
+}
+
+.grayTabs .notCromp .accorHeading {
+    padding-bottom: 0;
+}
+
+.grayTabs .notCromp .accorHeading .accorcontent {
+    margin: 4px 17px;
+    background-color: #f7f7f2;
+    padding: 2px 3px;
+}
+
+.faqHead h2 {
+    text-transform: unset;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 20px 0px;
+}
+
+.faqHead h1 {
+    padding-bottom: 0;
+}
+
+.faqHead h2 span {
+    font-size: 27px;
+    font-weight: 100;
+    padding-right: 8px;
+}
+
+.notCromp {
+    padding: 0px 30px;
+}
+
+
+/* FAQ end here */
+
+
+/* For Shipping & Returns */
+
+.shipping h1 {
+    padding: 0%;
+}
+
+.shipping h2 {
+    padding: 20px 0px;
+    text-transform: lowercase;
+}
+
+.shipping p:nth-child(-n+5) {
+    padding-bottom: 0;
+}
+
+.shipping h3 {
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+.shipping ul {
+    padding: 0px 30px 20px 30px;
+    list-style-type: none;
+}
+
+.shipping p {
+    padding-bottom: 16px;
+}
+
+
+/* Shipping & Returns end */
+
+
+/* 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+} */
+
+.nav li {
+    /* border-bottom: 1px solid #eee; */
+}
+
+
+/* .nav li a {
+    font-size: 14px;
+} */
+
+#accordionMenu {
+    /* max-width: 300px; */
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0;
+    border-top: 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.panel-default>.panel-heading a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #eee;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\e113";
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\e114";
+}
+
+.deskAccordion h1 {
+    /* margin: 0;
+    padding-bottom: 30px;
+    font-size: 30px; */
+}
+
+.deskAccordion {
+    width: 100%;
+}
+
+.privacyPol h1 {}
+
+.privacyPol h2 {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.privacyPol h3 {
+    padding-bottom: 20px;
+}
+
+.privacyPol h4 {
+    padding-bottom: 20px;
+}
+
+.privacyPol h5 {
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.privacyPol p {
+    padding-bottom: 20px;
+}
+
+.privacyPol p:nth-child(n+8) {}
+
+
+/* Customer care end */
+
 .content-container {
     padding-top: 95px;
 }
@@ -3353,7 +3650,7 @@ video[poster] {
 }
 
 @media(max-width:594px) {
-    ul li.active:after {
+    .linActive li.active:after {
         width: 30px;
         margin: 0px 6px;
     }
@@ -3367,7 +3664,7 @@ video[poster] {
     .carrerSection {
         padding: 100px 4%;
     }
-    ul li.active:after {
+    .linActive li.active:after {
         width: 16px;
     }
 }
@@ -3393,6 +3690,36 @@ video[poster] {
 @media(max-width:681px) {
     .gridThree {
         grid-template-columns: auto;
+    }
+    .footerSection {
+        flex-direction: column;
+        padding: 100px 40px;
+    }
+    .desktopTabs {
+        display: none;
+    }
+    .grayTabs {
+        background-color: unset;
+        padding: 20px 20px;
+    }
+}
+
+@media(max-width:493px) {
+    .footerSection {
+        padding: 100px 18px;
+    }
+    .grayTabs {
+        padding: 20px 14px;
+    }
+    .notCromp,
+    .accorHeading img {
+        padding: 0;
+    }
+}
+
+@media(min-width:681px) {
+    .mobileAccor {
+        display: none;
     }
 }
 

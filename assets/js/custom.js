@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("span.search-close a").attr("href", "javascript:void(0);");
 
     $('.form-LogIn').fadeOut()
-       
+
 
     /* JS by Sammaan for shop submenu */
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
             $('.form-SignUp').fadeIn(500)
             $('.form-LogIn').fadeOut(500)
 
-            
+
         } else if (value == 2) {
             $('.form-LogIn').fadeIn(500)
             $('.form-SignUp').fadeOut(500)
@@ -140,15 +140,15 @@ function crossFun() {
     }
 }
 
-var acc = document.getElementsByClassName("accordion-header");
-var i;
+// var acc = document.getElementsByClassName("accordion-header");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-    }
-}
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].onclick = function() {
+//         this.classList.toggle("active");
+//         this.nextElementSibling.classList.toggle("show");
+//     }
+// }
 
 // For contact us accordion
 
@@ -158,23 +158,24 @@ for (i = 0; i < acc.length; i++) {
 
 
 // For Collection page
-var myVideo = document.querySelector(".playVidGain");
-myVideo.addEventListener("click", function() {
-    if (myVideo.paused) {
-        myVideo.play();
-        document.querySelector(".videoPlayCon").style.display = "none";
-        // document.querySelector(".collectionGray").className = "removeSection";
-        // myVideo.setAttribute("controls", "two")
-        // myVideo.removeAttribute("controls", "controls")
-    } else {
-        // myVideo.removeAttribute("controls", "two")
-        myVideo.pause();
-        document.querySelector(".videoPlayCon").style.display = "block";
-        // document.querySelector(".collectionGray").className = "removeSection fff";
-        // document.querySelector(".collectionGray").className = "fiftyPercent aboutGrayContainer collectionGray";
-    }
-})
-
+if (window.location == "https://www.google.com/") {
+    var myVideo = document.querySelector(".playVidGain");
+    myVideo.addEventListener("click", function() {
+        if (myVideo.paused) {
+            myVideo.play();
+            document.querySelector(".videoPlayCon").style.display = "none";
+            // document.querySelector(".collectionGray").className = "removeSection";
+            // myVideo.setAttribute("controls", "two")
+            // myVideo.removeAttribute("controls", "controls")
+        } else {
+            // myVideo.removeAttribute("controls", "two")
+            myVideo.pause();
+            document.querySelector(".videoPlayCon").style.display = "block";
+            // document.querySelector(".collectionGray").className = "removeSection fff";
+            // document.querySelector(".collectionGray").className = "fiftyPercent aboutGrayContainer collectionGray";
+        }
+    })
+}
 var slectHeart = document.getElementsByClassName("heart");
 for (var i = 0; i < slectHeart.length; i++) {
     slectHeart[i].addEventListener("click", wishList)
@@ -186,5 +187,28 @@ function wishList() {
 }
 // For Collection page
 
+var page = document.getElementsByClassName("linkPage");
+for (var j = 0; j < page.length; j++) {
+    page[j].addEventListener("click", pageLink)
+}
+
+function pageLink() {
+    if (window.location != "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html") {
+        window.location.href = "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html";
+    }
+    document.documentElement.scrollTop = 0;
+}
+$(".toggleAcc").click(function() {
+    // $(".threeAcor").toggleClass("panel-collapse collapse in");
+    if (window.location === "file:///Users/rahulalam/Desktop/suketdhir-wordpress/customer_care.html") {
+        if ($(".threeAcor").hasClass("panel-collapse threeAcor collapse")) {
+            alert("Has");
+        } else {
+            alert("not");
+        }
+    }
+})
+
+// document.querySelector(".SD-sd").addEventListener("click", function(){})
 
 /* JS by Rahul for contact us accordian */
