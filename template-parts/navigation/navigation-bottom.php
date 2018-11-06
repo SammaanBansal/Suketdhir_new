@@ -31,6 +31,21 @@
 	  
 	);
 
-	echo wp_nav_menu( $defaults ); 
+	//echo wp_nav_menu( $defaults ); 
 
 ?>
+<div class="SD-footer2 col-sm-6">
+
+    <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordionMenu" class="linkPage">
+            SHIPPING &amp; RETURNS
+        </a>
+    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordionMenu" class="linkPage">
+        FAQ
+    </a>
+    <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" data-parent="#accordionMenu" class="linkPage">
+        TERMS OF USE
+    </a>
+    <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" data-parent="#accordionMenu" class="linkPage">
+        PRIVACY POLICY
+    </a>
+</div>

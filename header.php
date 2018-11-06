@@ -39,7 +39,7 @@
     <header class="SD-header">
       <div class="float-clear">
         <div class="SD-name">
-            <a role="button" class="SD-gotohome" href="index.html">
+            <a role="button" class="SD-gotohome" href="<?php echo get_bloginfo('url');?>">
                 <img class="SD-logo" src="<?php echo get_bloginfo('template_directory');?>/assets/images/landing-header-logo.svg">
             </a>
             <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs">
