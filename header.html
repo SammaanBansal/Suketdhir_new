@@ -32,7 +32,7 @@
             </a>
         </div>
         <ul class="SD-nav collapse navbar-collapse" id="SD-nav" aria-expanded="false">
-            <li>
+            <li class="current-active">
                 <a role="button" class="SD-clothing" href="clothing.html">
                 SHOP
                 </a>
@@ -81,7 +81,10 @@
             </a>
             </li>
             <li class="wardrobe-btn">
-                <a onclick="toggleWardrobe()">
+                <a class="desk-only" onclick="toggleWardrobe()">
+                    <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                </a>
+                <a class="mob-only" onclick="toggleWardrobe()">
                     <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
                 </a>
 

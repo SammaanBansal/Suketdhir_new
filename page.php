@@ -10,32 +10,37 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @subpackage suketdhir
  * @since 1.0
  * @version 1.0
  */
 
 get_header(); ?>
+<div class="content-container">
+	<?php
+	// Getting the page ID.
+	$page_id = get_the_ID();
 
-<div class="wrap">
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	while ( have_posts() ) : the_post();
 
-			<?php
-			while ( have_posts() ) : the_post();
+		switch($page_id) {
+			case 24 :
+			get_template_part( 'template-parts/page/content', 'contact' );
+			break;
+			
+			case 29 :
+			get_template_part( 'template-parts/page/content', 'about' );
+			break;
 
-				get_template_part( 'template-parts/page/content', 'page' );
+			default :
+			get_template_part( 'template-parts/page/content', 'page' );
+			break;
+		}
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+		
+	endwhile; // End of the loop.
+	?>
 
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .wrap -->
-
+			
+</div>
 <?php get_footer();

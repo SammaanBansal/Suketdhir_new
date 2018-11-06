@@ -7,7 +7,11 @@ $(document).ready(function() {
     $('.form-LogIn').fadeOut()
 
 
+
     /* JS by Sammaan for shop submenu */
+
+       
+    /* JS for shop submenu */
 
 
     $('.shop-sub').find('li').click(function() {
@@ -16,17 +20,34 @@ $(document).ready(function() {
     });
 
     /* end of JS by Sammaan for shop submenu */
+    /* JS by Sammaan for header to section scroll */
 
-
+    $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            var ost = target.offset().top - 110;
+            $('html, body').stop().animate({
+                scrollTop: ost
+            }, 1000);
+        }
+    });
+    $('a[href^="#home"]').on('click', function(event) {
+        $('html, body').stop().animate({
+                scrollTop: 0
+            }, 1000);
+    });
+    /* JS by Sammaan for header to section scroll*/
     /* JS by Sammaan for header scroll changes*/
 
     $(window).scroll(function() {
+        
         if ($(this).scrollTop() >= $('.SD-header').height()) {
             $('.SD-header').addClass('scrolled');
-            $('.SD-name').find('img').attr('src', 'assets/icons/on-scroll-logo.svg');
+            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
         } else {
             $('.SD-header').removeClass('scrolled');
-            $('.SD-name').find('img').attr('src', 'assets/images/landing-header-logo.svg');
+            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
         }
     });
 
