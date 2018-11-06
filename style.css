@@ -27,5 +27,8 @@ svg.icon.icon-angle-down {
     width: auto!important;
     
 }
+.SD-nav li.current-menu-item, .SD-footer2 li.current-menu-item {
+    text-decoration: underline!important;
+}
 
 

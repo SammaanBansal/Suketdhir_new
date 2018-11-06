@@ -32,6 +32,14 @@ get_header(); ?>
 			get_template_part( 'template-parts/page/content', 'about' );
 			break;
 
+			case 6 :
+			get_template_part( 'template-parts/page/content', 'shop' );
+			break;
+
+			case 139 :
+			get_template_part( 'template-parts/page/content', 'customercare' );
+			break;
+
 			default :
 			get_template_part( 'template-parts/page/content', 'page' );
 			break;
