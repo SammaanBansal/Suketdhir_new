@@ -10,7 +10,7 @@
 
 ?>
 
-<section class="carrerSection flex11">
+<section class="carrerSection flex">
             <div class="flex">
               
 
