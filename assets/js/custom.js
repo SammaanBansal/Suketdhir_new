@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseOne") {
         $("#collapseOne").addClass('in');
         document.documentElement.scrollTop = 0;
@@ -144,59 +143,6 @@ function toggleWardrobe() {
 
 
 
-
-/* JS by Rahul for contact us accordian */
-
-// For upload file
-var inputFileCon = document.getElementsByClassName("uploadBtn");
-var inputFile = document.querySelector(".inputFile");
-var uploaded = document.querySelector(".cvUpload");
-
-for (var i = 0; i < inputFileCon.length; i++) {
-    inputFileCon[i].addEventListener("click", listItems);
-
-}
-
-function listItems() {
-    inputFile.click();
-}
-// For upload file
-
-
-
-// For contact us accordion
-var plus = document.getElementsByClassName("imgClick");
-var allaccorHeading = document.getElementsByClassName("accorHeading");
-for (var r = 0; r < plus.length; r++) {
-    plus[r].addEventListener("click", crossFun)
-}
-
-function crossFun() {
-    var classes = this.parentElement.className;
-    for (var a = 0; a < allaccorHeading.length; a++) {
-        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
-        console.log(a);
-    }
-
-    if (classes == "accorHeading removeCross bottomfourty") {
-        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
-    }
-}
-
-// var acc = document.getElementsByClassName("accordion-header");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].onclick = function() {
-//         this.classList.toggle("active");
-//         this.nextElementSibling.classList.toggle("show");
-//     }
-// }
-
-// For contact us accordion
-
-// For about us video
-
 /* JS by Sammaan for homepage */
 
 $(document).ready(function() {
@@ -322,89 +268,113 @@ $(document).ready(function() {
         //     break;
         //     case 91 : $('#slide3').css('transform', "translate3d(0,-" + $(this).scrollTop()*8 + "px,0)");
         // }
-        console.log('window offsetTop', $(window).scrollTop());
+        // console.log('window offsetTop', $(window).scrollTop());
     }).scroll();
 });
 /* end of JS by Sammaan for homepage */
 
 
 
-// For Collection page
+
+/* JS by Rahul */
+
+// For upload file
+var inputFileCon = document.getElementsByClassName("uploadBtn");
+var inputFile = document.querySelector(".inputFile");
+var uploaded = document.querySelector(".cvUpload");
+for (var i = 0; i < inputFileCon.length; i++) {
+    inputFileCon[i].addEventListener("click", listItems);
+}
+
+function listItems() {
+    inputFile.click();
+}
+// For upload file (End)
+
+
+// For contact us accordion
+var plus = document.getElementsByClassName("imgClick");
+var allaccorHeading = document.getElementsByClassName("accorHeading");
+for (var r = 0; r < plus.length; r++) {
+    plus[r].addEventListener("click", crossFun)
+}
+
+function crossFun() {
+    var classes = this.parentElement.className;
+    for (var a = 0; a < allaccorHeading.length; a++) {
+        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
+        plus[a].addEventListener()
+    }
+    if (classes == "accorHeading removeCross bottomfourty") {
+        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
+    }
+}
+
+var acc = document.getElementsByClassName("accordion-header");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+// For contact us accordion (End)
+
+
+// For Video
 if (window.location == "https://www.google.com/") {
     var myVideo = document.querySelector(".playVidGain");
     myVideo.addEventListener("click", function() {
         if (myVideo.paused) {
             myVideo.play();
             document.querySelector(".videoPlayCon").style.display = "none";
-            // document.querySelector(".collectionGray").className = "removeSection";
-            // myVideo.setAttribute("controls", "two")
-            // myVideo.removeAttribute("controls", "controls")
         } else {
-            // myVideo.removeAttribute("controls", "two")
             myVideo.pause();
             document.querySelector(".videoPlayCon").style.display = "block";
-            // document.querySelector(".collectionGray").className = "removeSection fff";
-            // document.querySelector(".collectionGray").className = "fiftyPercent aboutGrayContainer collectionGray";
         }
     })
 }
+// For Video (End)
+
+
+// For heart wishlist onclcik active
 var slectHeart = document.getElementsByClassName("heart");
 for (var i = 0; i < slectHeart.length; i++) {
     slectHeart[i].addEventListener("click", wishList)
-    console.log(i);
 }
 
 function wishList() {
     this.classList.toggle("selected");
 }
-// For Collection page
+// heart wishlist onclcik active (End)
 
+
+//For footer Finding id 
 $(".SD-footer2 a").click(function() {
     var $delete = $(this);
-    //alert($delete.attr('href'));
     var id = $delete.attr('href');
     window.location.href = "http://localhost/suketdhir-wordpress/customer-care/" + id;
 
-
-    //window.location.href = "http://localhost/suketdhir-wordpress/customer-care/";
-
 });
+//For footer Finding id (End)
 
-// var page = document.getElementsByClassName("linkPage");
-// var id = document.getElementById()
-// for (var j = 0; j < page.length; j++) {
-//     page[j].addEventListener("click", pageLink);
 
-// }
+// For shop page
 
-// function pageLink() {
-//     if (window.location != "http://localhost/suketdhir-wordpress/customer-care/") {
-//         window.location.href = "http://localhost/suketdhir-wordpress/customer-care/";
-//     }
-//     document.documentElement.scrollTop = 0;
+// onclcik reach to particualar section
+$(".navigationLink").click(function() {
+    var links = this.getAttribute("href")
+    var linkName = $(this).attr('href');
+    $('html,body').animate({
+        scrollTop: $(linkName).offset().top - 170
+    }, 10);
+});
+// onclcik reach to particualar section (End)
 
-// }
-// $(".toggleAcc").click(function() {
-//     // $(".threeAcor").toggleClass("panel-collapse collapse in");
-//     if (window.location === "http://localhost/suketdhir-wordpress/customer-care/") {
-//         if ($(".threeAcor").hasClass("panel-collapse threeAcor collapse")) {
-//             alert("Has");
-//         } else {
-//             alert("not");
-//         }
-//     }
-// })
 
-// document.querySelector(".SD-sd").addEventListener("click", function(){})
-
-/* JS by Rahul for contact us accordian */
-
-// JS by rahul
+// On scroll vavigation active
 $(window).scroll(function() {
-    // Section should be less than the scroll top position + Header Menu + Shop Navigation Menu + 15px
     var scrollDistance = $(window).scrollTop() + 80 + 15 + $(".navigation").outerHeight();
-
-    // Assign active class to nav links while scolling
     $('.page-section').each(function(i) {
         if ($(this).position().top <= scrollDistance) {
             $('.navigation a.active').removeClass('active');
@@ -412,4 +382,8 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
-// JS by rahul
+// On scroll vavigation active (End)
+
+// For shop page (End)
+
+// JS by rahul (End)

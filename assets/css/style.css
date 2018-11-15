@@ -1447,6 +1447,7 @@ li.wardrobe-btn {
 .SD-header>div {
     line-height: 5;
     padding: 0 25px;
+    height: inherit;
 }
 
 .SD-header .header-submenu {
@@ -6135,16 +6136,16 @@ ul {
     color: #fff;
 }
 
-.navigation__link {
+.navigationLink {
     display: block;
     cursor: pointer;
 }
 
-.navigation__link:hover {
+.navigationLink:hover {
     /* background-color: #aaa; */
 }
 
-.navigation__link.active {
+.navigationLink.active {
     color: #696d70;
     border-left: 1px solid;
     border-right: 1px solid;
@@ -6189,6 +6190,7 @@ ul {
 }
 
 .shopSelect select {
+    outline: none;
     cursor: pointer;
     font-family: SourceSansPro;
     font-size: 14px;
@@ -6395,3 +6397,6 @@ h4 {
 
 
 /* CSS by Rahul */
+
+
+/* .page-section .shopCol:nth-child(odd) {} */
