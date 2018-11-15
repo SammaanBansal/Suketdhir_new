@@ -98,27 +98,27 @@ $(document).ready(function() {
                 // $('#slide7 .slide-7-2').css('transform', "translate3d(0,-" + $(this).scrollTop()/360*2 + "px,0");
                 // $('#slide7 .slide-7-3').css('transform', "translate3d(-" + $(this).scrollTop()/100*3 + "px,0,0)");
             }
-            if (windowOffset >= 49000) {
+            if (windowOffset >= 50000) {
                 $('#slide9').fadeIn();
                 $('#slide8').css('transition', "all linear 2s");
                 $('#slide8').css('top', '-70%');
             }
-            if (windowOffset < 49000) {
+            if (windowOffset < 50000) {
                 $('#slide9').fadeOut();
                 $('#slide8').css('transition', "all linear 2s");
                 $('#slide8').css('top', '22.2%');
             }
-            if (windowOffset > 49300) {
+            if (windowOffset > 52000) {
                 $('#slide10').fadeIn();
                 $('#slide10').css('transition', "all linear 2s");
                 $('#slide10').css('top', '0');
             }
-            if (windowOffset < 49300) {
+            if (windowOffset < 52000) {
                 $('#slide10').fadeOut();
                 // $('#slide10').css('transition', "all linear 2s");
                 $('#slide10').css('top', '100%');
             }
-            if (windowOffset > 50000) {
+            if (windowOffset > 54000) {
                 $('#slide9').css('left', '20%');
                 $('#slide9').css('transition', "all linear 2s");
                 $('#slide10').css('transition', "all linear 2s");
@@ -127,20 +127,20 @@ $(document).ready(function() {
                 $('#slide11').css('transition', "all linear 2s");
                 $('#slide11').css('top', '0');
             }
-            if (windowOffset < 50000) {
+            if (windowOffset < 54000) {
                 $('#slide11').fadeOut();
                 $('#slide9').css('left', '44%');
                 $('#slide9').css('transition', "all linear 2s");
 
             }
-            if (windowOffset > 60000) {
+            if (windowOffset > 56000) {
                 $('#slide10').css('transition', "all linear 2s");
                 $('#slide10').css('top', '-100%');
                 $('#slide11 .slide-11-2').css('top', '100%');
                 $('#slide11 .scroll-slide').css('transition', "all linear 2s");
                 $('#slide11 .slide-11-1').css('left', '100%');
             }
-            if (windowOffset < 60000) {
+            if (windowOffset < 56000) {
                 $('#slide11 .slide-11-2').css('top', '27%');
                 $('#slide11 .scroll-slide').css('transition', "all linear 2s");
                 $('#slide11 .slide-11-1').css('left', '44%');
@@ -181,7 +181,10 @@ $(document).ready(function() {
         document.documentElement.scrollTop = 0;
 
     }
-
+    // to change the ATW button on click
+    $('.SD-atw').click(function(){
+        $(this).addClass('added');
+    });
     // prevent reloading of page on clicking search open and close buttons
     $("a.SD-search").attr("href", "javascript:void(0);");
     $("span.search-close a").attr("href", "javascript:void(0);");
@@ -248,12 +251,8 @@ $(document).ready(function() {
         } else if (value == 2) {
             $('.form-LogIn').fadeIn(500)
             $('.form-SignUp').fadeOut(500)
-
         }
-
     }
-
-
     function changeModal(val) {
         if (val == 1) {
             $('#SD-login-md').modal('hide');
@@ -265,15 +264,12 @@ $(document).ready(function() {
             $('#SD-signup-md').modal('hide');
         }
     }
-
     function showSearch() {
         $('#searchbox').fadeToggle('500');
     }
-
     function hideSearch() {
         $('#searchbox').fadeOut('500');
     }
-
     var path;
     var page;
     $(function() {
@@ -281,9 +277,8 @@ $(document).ready(function() {
         page = path.split("/").pop();
         // alert(page)
     });
-
+   
 })
-
 /* JS by Sammaan for wardrobe*/
 
 var hideWardrobeFlag = false;
