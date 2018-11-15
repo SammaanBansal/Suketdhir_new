@@ -64,46 +64,58 @@ a,
 a:hover {
     color: inherit;
 }
+
 .desk-only {
     display: block !important;
 }
+
 .mob-only {
     display: none !important;
 }
+
 .float-clear:after {
     display: block;
     clear: both;
     content: "";
 }
-  /* Homepage */
-    
-  .homepage-image-scroller h3 {
+
+
+/* Homepage */
+
+.homepage-image-scroller h3 {
     font-size: 48px;
 }
+
 .homepage-image-scroller p {
     font-size: 16px;
 }
+
 .homepage-image-scroller img {
     width: 100%;
     height: 100%;
 }
+
 .homepage-image-scroller .scroll-hide {
     width: 100%;
     overflow-x: hidden;
 }
+
 .homepage-image-scroller .scrolled-content {
     width: 100%;
     height: 64000px;
     overflow-y: scroll;
 }
+
 .homepage-image-scroller body::-webkit-scrollbar {
     width: 0 !important
 }
+
 .clear-float:after {
     display: block;
     clear: both;
     content: "";
 }
+
 .homepage-image-scroller .fixed-text {
     font-family: SourceSansPro;
     font-size: 16px;
@@ -111,16 +123,19 @@ a:hover {
     color: #696d70;
     z-index: 1;
 }
+
 .homepage-image-scroller ul {
     padding-top: 25px;
     list-style: none;
 }
+
 .homepage-image-scroller #slide1 {
     width: 100%;
     height: 720;
     position: relative;
     z-index: 2;
 }
+
 .homepage-image-scroller #slide2 {
     position: fixed;
     top: 20%;
@@ -128,6 +143,7 @@ a:hover {
     width: 467px;
     height: 260px;
 }
+
 #slide3 {
     width: 333px;
     height: 500px;
@@ -136,6 +152,7 @@ a:hover {
     position: relative;
     z-index: 2;
 }
+
 #slide4 {
     display: none;
     width: 333px;
@@ -145,6 +162,7 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
+
 #slide5 {
     display: none;
     width: 750px;
@@ -154,6 +172,7 @@ a:hover {
     position: fixed;
     z-index: 2;
 }
+
 #slide6 {
     display: none;
     width: 465px;
@@ -163,11 +182,13 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
+
 #slide6 img {
     width: auto;
     float: left;
     margin-right: 175px;
 }
+
 #slide7 {
     display: none;
     top: 22%;
@@ -177,13 +198,16 @@ a:hover {
     width: 100%;
     z-index: 3;
 }
+
 #slide7 .slide-7-2,
 #slide8 .slide-8 {
     left: 44%;
 }
+
 #slide7 .slide-7-3 {
     left: 66%;
 }
+
 #slide7 img,
 #slide8 img {
     display: none;
@@ -192,6 +216,7 @@ a:hover {
     float: left;
     position: fixed;
 }
+
 #slide8 {
     display: none;
     top: 22%;
@@ -200,6 +225,7 @@ a:hover {
     position: fixed;
     z-index: 2;
 }
+
 #slide9 {
     display: none;
     top: 22.2%;
@@ -208,6 +234,7 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
+
 #slide10 {
     display: none;
     top: 100%;
@@ -218,8 +245,8 @@ a:hover {
     z-index: 3;
 }
 
-@media screen and (max-width: 1024px){
-    .scroll-slide{
+@media screen and (max-width: 1024px) {
+    .scroll-slide {
         display: block;
         position: relative;
         text-align: center;
@@ -1608,6 +1635,7 @@ li.wardrobe-btn {
 .SD-header>div {
     line-height: 5;
     padding: 0 25px;
+    height: 95px;
 }
 
 .SD-header .header-submenu {
@@ -2934,7 +2962,6 @@ li.wardrobe-btn {
         width: 100%;
     }
     /* CSS by Sammaan*/
-    
     .inline-text {
         display: inline;
     }
@@ -2962,7 +2989,6 @@ li.wardrobe-btn {
             line-height: 5;
         }
     }
-  
     /* Header */
     .SD-header.scrolled .SD-name img {
         height: 86px;
