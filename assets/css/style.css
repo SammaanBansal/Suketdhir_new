@@ -6173,6 +6173,14 @@ ul {
     color: #fff;
 }
 
+.navigationLink.active {
+    color: #696d70;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
 .navigation__link {
     display: block;
     cursor: pointer;
