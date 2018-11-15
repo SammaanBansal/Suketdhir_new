@@ -2,128 +2,158 @@
 
 $(document).ready(function() {
     $(window).scroll(function() {
-        windowOffset = $(window).scrollTop();
-        // $('#slide1').css('transform', "translate3d(0,-" + $(this).scrollTop()*8 + "px,0)");
-        // $('#slide3').css('transform', "translate3d(0,-" + $(this).scrollTop()*17 + "px,0)");
+        if ( $(this).width() > 1024 ) {
+            windowOffset = $(window).scrollTop();
+            // $('#slide1').css('transform', "translate3d(0,-" + $(this).scrollTop()*8 + "px,0)");
+            // $('#slide3').css('transform', "translate3d(0,-" + $(this).scrollTop()*17 + "px,0)");
 
-        if (windowOffset > 1250) {
-            $('#slide4').css('display', 'block');
+            if (windowOffset > 1250) {
+                $('#slide4').css('display', 'block');
 
-        }
-        if (windowOffset < 1250) {
-            $('#slide4').css('display', 'none');
-            $('#slide1').css('display', 'block');
-        }
-        if (windowOffset > 1300) {
-            $('#slide4').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
-        }
-        if (windowOffset < 1400) {
-            $('#slide4').css('transform', "translate3d(-" + $(this).scrollTop() / 100 * 2 + "px,0,0)");
-        }
-        if (windowOffset < 1530) {
-            $('#slide3').css('display', 'block');
-        }
-        if (windowOffset > 1530) {
-            $('#slide1').css('display', 'none');
-            $('#slide3').css('display', 'none');
+            }
+            if (windowOffset < 1250) {
+                $('#slide4').css('display', 'none');
+                $('#slide1').css('display', 'block');
+            }
+            if (windowOffset > 1300) {
+                $('#slide4').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
+            }
+            if (windowOffset < 1400) {
+                $('#slide4').css('transform', "translate3d(-" + $(this).scrollTop() / 100 * 2 + "px,0,0)");
+            }
+            if (windowOffset < 1530) {
+                $('#slide3').css('display', 'block');
+            }
+            if (windowOffset > 1530) {
+                $('#slide1').css('display', 'none');
+                $('#slide3').css('display', 'none');
 
-        }
-        if (windowOffset > 4370) {
-            $('#slide2').css('left', '2%');
-            $('#slide2').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
-        }
-        if (windowOffset == 4370) {
-            $('#slide2').css('transform', "translate3d(" + $(this).scrollTop() / 100 * 3 + "px,0,0)");
-        }
-        if (windowOffset > 8700) {
-            $('#slide1').fadeOut();
-            $('#slide5').fadeIn();
-        }
-        if (windowOffset < 8700) {
-            $('#slide1').fadeIn();
-            $('#slide5').fadeOut();
-        }
-        if (windowOffset > 8740) {
-            $('#slide5').css('top', '-90%');
-            $('#slide5').css('transform', "translate3d(0," + $(this).scrollTop() / 180 * 5 + "px,0)");
-        }
-        if (windowOffset < 8740) {
-            $('#slide5').css('transform', "translate3d(0,-" + $(this).scrollTop() / 100 * 2 + "px,0");
-        }
-        if (windowOffset < 22390 || windowOffset >= 46400) {
-            $('#slide6').fadeOut();
-        }
-        if (windowOffset > 22390 && windowOffset < 46000) {
-            $('#slide6').fadeIn();
-        }
-        if (windowOffset > 43300) {
-            $('#slide7').fadeIn();
-            $('#slide7 .slide-7-1').fadeIn();
-        }
-        if (windowOffset < 43300) {
-            $('#slide7').fadeOut();
-            $('#slide7 .slide-7-1').fadeOut();
-        }
-        if (windowOffset >= 44800) {
-            $('#slide7 .slide-7-3').fadeIn();
-        }
-        if (windowOffset < 44800) {
-            $('#slide7 .slide-7-3').fadeOut();
-        }
-        if (windowOffset >= 46300) {
-            $('#slide7 .slide-7-2').fadeIn();
-        }
-        if (windowOffset < 46300) {
-            $('#slide7 .slide-7-2').fadeOut();
-        }
-        if (windowOffset >= 48000) {
-            $('#slide8').fadeIn();
-            $('#slide8 img').fadeIn();
-            $('#slide7 .slide-7-1').css('transition', "all linear 2s");
-            $('#slide7 .slide-7-2').css('transition', "all linear 1.7s");
-            $('#slide7 .slide-7-3').css('transition', "all linear 2s");
-            $('#slide7 .slide-7-1').css('left', '-25%');
-            $('#slide7 .slide-7-2').css('top', '100%');
-            $('#slide7 .slide-7-3').css('left', '100%');
-        }
-        if (windowOffset < 48000) {
-            $('#slide8').fadeOut();
-            $('#slide7 .slide-7-1').css('transition', "all linear 2s");
-            $('#slide7 .slide-7-2').css('transition', "all linear 1.7s");
-            $('#slide7 .slide-7-3').css('transition', "all linear 2s");
-            $('#slide7 .slide-7-1').css('left', '22%');
-            $('#slide7 .slide-7-2').css('top', '22%');
-            $('#slide7 .slide-7-3').css('left', '66%');
-            // $('#slide7 .slide-7-2').css('transform', "translate3d(0,-" + $(this).scrollTop()/360*2 + "px,0");
-            // $('#slide7 .slide-7-3').css('transform', "translate3d(-" + $(this).scrollTop()/100*3 + "px,0,0)");
-        }
-        if (windowOffset >= 49000) {
-            $('#slide9').fadeIn();
-            $('#slide8').css('transition', "all linear 2s");
-            $('#slide8').css('top', '-70%');
-        }
-        if (windowOffset < 49000) {
-            $('#slide9').fadeOut();
-            $('#slide8').css('transition', "all linear 2s");
-            $('#slide8').css('top', '22.2%');
-        }
-        if (windowOffset > 49300) {
-            $('#slide10').fadeIn();
-            $('#slide10').css('transition', "all linear 2s");
-            $('#slide10').css('top', '0');
-        }
-        if (windowOffset < 49300) {
-            $('#slide10').fadeOut();
-            // $('#slide10').css('transition', "all linear 2s");
-            $('#slide10').css('top', '100%');
-        }
+            }
+            if (windowOffset > 4370) {
+                $('#slide2').css('left', '2%');
+                $('#slide2').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
+            }
+            if (windowOffset == 4370) {
+                $('#slide2').css('transform', "translate3d(" + $(this).scrollTop() / 100 * 3 + "px,0,0)");
+            }
+            if (windowOffset > 8700) {
+                $('#slide1').fadeOut();
+                $('#slide5').fadeIn();
+            }
+            if (windowOffset < 8700) {
+                $('#slide1').fadeIn();
+                $('#slide5').fadeOut();
+            }
+            if (windowOffset > 8740) {
+                $('#slide5').css('top', '-90%');
+                $('#slide5').css('transform', "translate3d(0," + $(this).scrollTop() / 180 * 5 + "px,0)");
+            }
+            if (windowOffset < 8740) {
+                $('#slide5').css('transform', "translate3d(0,-" + $(this).scrollTop() / 100 * 2 + "px,0");
+            }
+            if (windowOffset < 22390 || windowOffset >= 46400) {
+                $('#slide6').fadeOut();
+            }
+            if (windowOffset > 22390 && windowOffset < 46000) {
+                $('#slide6').fadeIn();
+            }
+            if (windowOffset > 43300) {
+                $('#slide7').fadeIn();
+                $('#slide7 .slide-7-1').fadeIn();
+            }
+            if (windowOffset < 43300) {
+                $('#slide7').fadeOut();
+                $('#slide7 .slide-7-1').fadeOut();
+            }
+            if (windowOffset >= 44800) {
+                $('#slide7 .slide-7-3').fadeIn();
+            }
+            if (windowOffset < 44800) {
+                $('#slide7 .slide-7-3').fadeOut();
+            }
+            if (windowOffset >= 46300) {
+                $('#slide7 .slide-7-2').fadeIn();
+            }
+            if (windowOffset < 46300) {
+                $('#slide7 .slide-7-2').fadeOut();
+            }
+            if (windowOffset >= 48000) {
+                $('#slide8').fadeIn();
+                $('#slide8 img').fadeIn();
+                $('#slide7 .slide-7-1').css('transition', "all linear 2s");
+                $('#slide7 .slide-7-2').css('transition', "all linear 1.7s");
+                $('#slide7 .slide-7-3').css('transition', "all linear 2s");
+                $('#slide7 .slide-7-1').css('left', '-25%');
+                $('#slide7 .slide-7-2').css('top', '100%');
+                $('#slide7 .slide-7-3').css('left', '100%');
+            }
+            if (windowOffset < 48000) {
+                $('#slide8').fadeOut();
+                $('#slide7 .slide-7-1').css('transition', "all linear 2s");
+                $('#slide7 .slide-7-2').css('transition', "all linear 1.7s");
+                $('#slide7 .slide-7-3').css('transition', "all linear 2s");
+                $('#slide7 .slide-7-1').css('left', '22%');
+                $('#slide7 .slide-7-2').css('top', '22%');
+                $('#slide7 .slide-7-3').css('left', '66%');
+                // $('#slide7 .slide-7-2').css('transform', "translate3d(0,-" + $(this).scrollTop()/360*2 + "px,0");
+                // $('#slide7 .slide-7-3').css('transform', "translate3d(-" + $(this).scrollTop()/100*3 + "px,0,0)");
+            }
+            if (windowOffset >= 49000) {
+                $('#slide9').fadeIn();
+                $('#slide8').css('transition', "all linear 2s");
+                $('#slide8').css('top', '-70%');
+            }
+            if (windowOffset < 49000) {
+                $('#slide9').fadeOut();
+                $('#slide8').css('transition', "all linear 2s");
+                $('#slide8').css('top', '22.2%');
+            }
+            if (windowOffset > 49300) {
+                $('#slide10').fadeIn();
+                $('#slide10').css('transition', "all linear 2s");
+                $('#slide10').css('top', '0');
+            }
+            if (windowOffset < 49300) {
+                $('#slide10').fadeOut();
+                // $('#slide10').css('transition', "all linear 2s");
+                $('#slide10').css('top', '100%');
+            }
+            if (windowOffset > 50000) {
+                $('#slide9').css('left', '20%');
+                $('#slide9').css('transition', "all linear 2s");
+                $('#slide10').css('transition', "all linear 2s");
+                $('#slide10').css('top', '-100%');
+                $('#slide11').fadeIn();
+                $('#slide11').css('transition', "all linear 2s");
+                $('#slide11').css('top', '0');
+            }
+            if (windowOffset < 50000) {
+                $('#slide11').fadeOut();
+                $('#slide9').css('left', '44%');
+                $('#slide9').css('transition', "all linear 2s");
 
-        // switch(windowOffset){
-        //     case 0 : $('#slide1').css('transform', "translate3d(0,-" + $(this).scrollTop() + "px,0)");
-        //     break;
-        //     case 91 : $('#slide3').css('transform', "translate3d(0,-" + $(this).scrollTop()*8 + "px,0)");
-        // }
-        console.log('window offsetTop', $(window).scrollTop());
+            }
+            if (windowOffset > 60000) {
+                $('#slide10').css('transition', "all linear 2s");
+                $('#slide10').css('top', '-100%');
+                $('#slide11 .slide-11-2').css('top', '100%');
+                $('#slide11 .scroll-slide').css('transition', "all linear 2s");
+                $('#slide11 .slide-11-1').css('left', '100%');
+            }
+            if (windowOffset < 60000) {
+                $('#slide11 .slide-11-2').css('top', '27%');
+                $('#slide11 .scroll-slide').css('transition', "all linear 2s");
+                $('#slide11 .slide-11-1').css('left', '44%');
+
+            }
+
+            // switch(windowOffset){
+            //     case 0 : $('#slide1').css('transform', "translate3d(0,-" + $(this).scrollTop() + "px,0)");
+            //     break;
+            //     case 91 : $('#slide3').css('transform', "translate3d(0,-" + $(this).scrollTop()*8 + "px,0)");
+            // }
+            console.log('window offsetTop', $(window).scrollTop());
+        }
     }).scroll();
 });
 /* end of JS by Sammaan for homepage */
