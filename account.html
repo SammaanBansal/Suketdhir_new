@@ -1,0 +1,679 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="SD-header">
+        <div class="float-clear">
+            <div class="SD-name">
+                <a role="button" class="SD-gotohome" href="index.html">
+                    <img class="SD-logo" src="assets/images/landing-header-logo.svg">
+                </a>
+                <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs collapsed" aria-expanded="false">
+                    <div class="SD-icon-hat">
+                    </div>
+                </a>
+            </div>
+            <ul class="SD-nav navbar-collapse collapse" id="SD-nav" aria-expanded="false" style="height: 1px;">
+                <li>
+                    <a role="button" class="SD-clothing" href="clothing.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                                  SHOP
+                                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Coats</a></li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Pants</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-collections" href="collections.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                                      COLLECTIONS
+                                  </a>
+                    <div class="header-submenu">
+                        <ul>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW 2016</a></li>
+                            <li><a href="#">SS 2016</a></li>
+                            <li><a href="#">AW2017</a></li>
+                            <li><a href="#">Resort 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a role="button" class="SD-nav-stories" href="stories.html">
+                                  STORIES
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-about" href="aboutus.html">
+                                  ABOUT
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-contact" href="contact.html">
+                                  CONTACT
+                              </a>
+                </li>
+                <li>
+                    <a role="button" class="SD-account" href="account_signup.html">
+                                  MY ACCOUNT
+                              </a>
+                </li>
+                <li class="wardrobe-btn">
+                    <a onclick="toggleWardrobe()">
+                        <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus="" style="z-index:-1;">
+            <div class="SD-wardrobe-header ">
+                Wardrobe
+            </div>
+            <ul class="SD-wardrobe-items ">
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men4.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>State:
+                            <select name="" id="#SD-Stateselect">
+                                                  <option value="">M</option>
+                                                  <option value="">L</option>
+                                                  <option value="">XL</option>
+                                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men2.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>State:
+                            <select name="" id="#SD-Stateselect">
+                                                  <option value="">M</option>
+                                                  <option value="">L</option>
+                                                  <option value="">XL</option>
+                                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item">
+                    <div class="SD-wardrobe-item-pic">
+                        <img src="assets/images/men_images/Men6.png " alt="">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>State:
+                            <select name="" id="#SD-Stateselect">
+                                                  <option value="">M</option>
+                                                  <option value="">L</option>
+                                                  <option value="">XL</option>
+                                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+                <li class="SD-wardrobe-item ">
+                    <div class="SD-wardrobe-item-pic ">
+                        <img src="assets/images/men_images/Men3.png " alt=" ">
+                        <div class="wardrobe-heart">
+                            <i class="ion ion-heart icon-heart"></i>
+                        </div>
+                        <div class="pink-circle-wardrobe"></div>
+                    </div>
+                    <div class="SD-wardrobe-item-info ">
+                        <h4>Black Hemmed Pants</h4>
+                        <p>$350</p>
+                        <p>State:
+                            <select name="" id="#SD-Stateselect">
+                                                  <option value="">M</option>
+                                                  <option value="">L</option>
+                                                  <option value="">XL</option>
+                                              </select>
+                        </p>
+                        <p>Quantity:
+                            <select name="" id="#SD-qtyselect">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                              </select>
+                        </p>
+                        <a href=" ">Remove from wardrobe</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="SD-wardrobe-bottom ">
+                <p>Subtotal: <span>$1050</span></p>
+                <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
+            </div>
+        </div>
+    </header>
+    <div class="content-container">
+        <section class="accountContainer flex">
+            <div class="accountMiddle flex desktopTabs">
+                <aside class="tabsCol">
+                    <h5>Welcome Vikramaditya!</h5>
+                    <nav>
+                        <ul class="accountTabs linActive nav nav-pills">
+                            <li class=""><a data-toggle="pill" href="#wishList">Wishlist</a></li>
+                            <li class=""><a data-toggle="pill" href="#profile">Profile</a></li>
+                            <li class="active"><a data-toggle="pill" href="#address">Address</a></li>
+                            <li class=""><a data-toggle="pill" href="#orders">Orders</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <div class="tab-content accountTabsContent SD-account-tab-content wishlistContainer">
+                    <div id="wishList" class="tab-pane fade in">
+                        <div class="SD-add-address-inner wishListImg">
+                            <!-- <h4 class="accorItemHeading">1Job Description</h4> -->
+                            <div class="hoveContainer whiteBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                            Delete
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="hoveContainer grayBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                            Delete
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="hoveContainer whiteBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                            Delete
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="hoveContainer grayBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                        Delete
+                                    </a>
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                            </div>
+                            <div class="hoveContainer whiteBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                            Delete
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="profile" class="fashionDesigner tab-pane fade in">
+                        <div class="SD-add-address-inner">
+                            <div class="form addressForm">
+                                <div class="flex itemCenter thirtFiveBottom tabsContentHead">
+                                    <h3>Personal Details</h3>
+                                </div>
+                                <h5>Vikramaditya Sharma</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="address" class="addressContent tab-pane fade in active">
+                        <div class="SD-add-address-inner">
+                            <div class="flex itemCenter thirtFiveBottom">
+                                <div class="tabsContentHead">
+                                    <h3>Add new Address</h3>
+                                </div>
+                                <div class="leftTwenty addressPlus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                        <g fill="none" fill-rule="evenodd" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                                            <path d="M.25 18.77C.25 8.542 8.542.25 18.77.25s18.52 8.292 18.52 18.52c0 10.23-8.292 18.52-18.52 18.52S.25 29 .25 18.77zM12.178 12.178l13.185 13.184M25.363 12.178L12.178 25.362"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form addressForm">
+                                <div class="formInternal">
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Address Line 1"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Address Line 2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Postal Code"></span>
+                                        </div>
+                                        <div class="inputsContainer widthFull leftThirty">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="City"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="shopSelect selectBorder inputsContainer widthFull">
+                                            <select class="pad0 widthFull" name="" id="">
+                                            <option value="" selected="" disabled="">State</option>
+                                            <option value="">State</option>
+                                            <option value="">State</option>
+                                            <option value="">State</option>
+                                            <option value="">State</option>
+                                            <option value="">State</option>
+                                        </select>
+                                        </div>
+                                        <div class="shopSelect leftThirty selectBorder inputsContainer widthFull">
+                                            <select class="pad0 widthFull" name="" id="">
+                                            <option value="" selected="" disabled="">Country</option>
+                                            <option value="">Country</option>
+                                            <option value="">Country</option>
+                                            <option value="">Country</option>
+                                            <option value="">Country</option>
+                                            <option value="">Country</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                        </div>
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                        </div>
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                        </div>
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                        </div>
+                                    </div>
+                                    <div class="inputsContainer widthFull">
+                                        <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                    </div>
+                                </div>
+
+                                <div class="whiteBack preAddress">
+                                    <h4>Vikramaditya Sharma</h4>
+                                    <p>Vikramaditya Sharma</p>
+                                    <p>F-574/B2, 2nd Floor,</p>
+                                    <p>Lado Sarai, </p>
+                                    <p>Delhi - 110030</p>
+                                    <div class="flex flexEnd delEdit" style="">
+                                        <div class="delete">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                        <div class="delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="orders" class="onlineMarketing tab-pane fade in">
+                        <div class="SD-add-address-inner">
+                            <h4 class="accorItemHeading">3Job Description</h4>
+                            <div class="TwentySixty jobDescription fourteenSansPro">
+                                <p class="">
+                                    He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
+                                    design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
+                                </p>
+                            </div>
+                            <div>
+                                <div class="form">
+                                    <div class="inputsContainer widthFull">
+                                        <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                    </div>
+                                    <div class="inputsContainer widthFull">
+                                        <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                    </div>
+                                    <div class="inputsContainer widthFull">
+                                        <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
+                                    </div>
+                                    <div class="inputsContainer widthFull inputFields flex spaceBetween">
+                                        <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
+                                        <div class="inputFileCon">
+                                            <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                                        </div>
+                                        <div class="uploadBtn">
+                                            <img src="./assets/icons/upload.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="inputsContainer widthFull">
+                                        <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsContainer">
+                <div class="rightButtons">
+                    <a href="">
+                        <button>Log Out</button>
+                    </a>
+                </div>
+
+                <div class="rightButtons">
+                    <a href="">
+                        <button>Customer Care</button>
+                    </a>
+                </div>
+
+                <div class="rightButtons">
+                    <a href="">
+                        <button>FAQ</button>
+                    </a>
+                </div>
+
+                <div class="rightButtons">
+                    <a href="">
+                        <button>Shipping & Returns</button>
+                    </a>
+                </div>
+                <div class="flex">
+                    <div>
+                        <span>Cart</span>
+                    </div>
+                    <div>
+                        <span>Cart</span>
+                    </div>
+                    <div>
+                        <span>Cart</span>
+                    </div>
+                    <div>
+                        <span>Cart</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="panel-group mobileAccor accountSection" id="accordionMenu" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Wishlist
+                              </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="SD-add-address-inner twentyTwenty">
+                        <h4 class="accorItemHeading">Profile</h4>
+                        <div class="TwentySixty jobDescription fourteenSansPro">
+                            <p class="">
+                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
+                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
+                            </p>
+                        </div>
+                        <div>
+                            <div class="form">
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
+                                </div>
+                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
+                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
+                                    <div class="inputFileCon">
+                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                                    </div>
+                                    <div class="uploadBtn">
+                                        <img src="./assets/icons/upload.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Profile
+                              </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="SD-add-address-inner twentyTwenty">
+                        <h4 class="accorItemHeading">2Job Description</h4>
+                        <div class="TwentySixty jobDescription fourteenSansPro">
+                            <p class="">
+                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
+                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
+                            </p>
+                        </div>
+                        <div>
+                            <div class="form">
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
+                                </div>
+                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
+                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
+                                    <div class="inputFileCon">
+                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                                    </div>
+                                    <div class="uploadBtn">
+                                        <img src="./assets/icons/upload.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Address
+                              </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="SD-add-address-inner twentyTwenty">
+                        <h4 class="accorItemHeading">3Job Description</h4>
+                        <div class="TwentySixty jobDescription fourteenSansPro">
+                            <p class="">
+                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
+                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
+                            </p>
+                        </div>
+                        <div>
+                            <div class="form">
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
+                                </div>
+                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
+                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
+                                    <div class="inputFileCon">
+                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                                    </div>
+                                    <div class="uploadBtn">
+                                        <img src="./assets/icons/upload.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="inputsContainer widthFull">
+                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="col-sm-12">
+        <div class="SD-icon-hat"></div>
+        <div class="SD-footer">
+            <li class="SD-footer1">
+                <span>©2017</span>
+                <a role="button" class="SD-sd" href="#">
+                        SUKET DHIR
+                    </a>
+            </li>
+
+            <li class="SD-footer2">
+                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordionMenu" class="SD-shipp linkPage">
+                        SHIPPING &amp; RETURNS
+                    </a>
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-parent="#accordionMenu" class="SD-faq linkPage">
+                        FAQ
+                    </a>
+                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" data-parent="#accordionMenu" class="linkPage toggleAcc">
+                        TERMS OF USE
+                    </a>
+                <a data-toggle="collapse" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" data-parent="#accordionMenu" class="linkPage">
+                        PRIVACY POLICY
+                    </a>
+            </li>
+            <li class="SD-footer3 ">
+                <a role="button " class="ion SD-homeions " href="https://www.facebook.com/suketdhirpage/?hc_ref=SEARCH&amp;fref=nf ">
+                    <img src="assets/icons/VD_Icons_reState-02.png ">
+                </a>
+                <a role="button " class="ion SD-homeions " href="https://www.instagram.com/suketdhir/ ">
+                    <img src="assets/icons/VD_Icons_reState-03.png ">
+                </a>
+                <a role="button " class="ion SD-homeions " href="# ">
+                    <img src="assets/icons/VD_Icons_reState-04.png ">
+                </a>
+            </li>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="./assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

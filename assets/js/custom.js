@@ -386,4 +386,11 @@ $(window).scroll(function() {
 
 // For shop page (End)
 
-// JS by rahul (End)
+
+// For account page
+document.querySelector(".addressPlus").addEventListener("click", function() {
+        this.classList.toggle("closeAddress");
+        document.querySelector(".formInternal").classList.toggle("newAddress");
+    })
+    // For account page (End)
+    // JS by rahul (End)
