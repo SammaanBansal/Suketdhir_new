@@ -1,11 +1,212 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/js/custom.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./assets/js/custom.js"></script>
     </head>
-    <body class="homepage-image-scroller">
-        <div class="homepage-image-scroller scroll-hide" >
+    <body>
+        <header class="SD-header">
+            <div class="float-clear">
+                <div class="SD-name">
+                    <a role="button" class="SD-gotohome" href="index.html">
+                        <img class="SD-logo" src="./assets/images/landing-header-logo.svg">
+                    </a>
+                    <a href="#" style="float:right" data-toggle="collapse" data-target="#SD-nav" class="visible-xs">
+                        <div class="SD-icon-hat">
+                        </div>
+                    </a>
+                </div>
+                <ul class="SD-nav collapse navbar-collapse" id="SD-nav" aria-expanded="false">
+                    <li class="current-active">
+                        <a role="button" class="SD-clothing" href="clothing.html">
+                        SHOP
+                        </a>
+                        <div class="header-submenu">
+                            <ul>
+                                <li><a href="#Shirts">Shirts</a></li>
+                                <li><a href="#Jackets">Jackets</a></li>
+                                <li><a href="#Coats">Coats</a></li>
+                                <li><a href="#Kurtas">Kurtas</a></li>
+                                <li><a href="#Pants">Pants</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a role="button" class="SD-collections" href="collection.html" >
+                            COLLECTIONS
+                        </a>
+                        <div class="header-submenu">
+                            <ul>
+                                <li><a href="#SS2016">SS 2016</a></li>
+                                <li><a href="#AW2016">AW 2016</a></li>
+                                <li><a href="#SS2016">SS 2016</a></li>
+                                <li><a href="#AW2017">AW2017</a></li>
+                                <li><a href="#Resort2017">Resort 2017</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a role="button" class="SD-nav-stories" href="stories.html">
+                        STORIES
+                    </a>
+                    </li>
+                    <li>
+                        <a role="button" class="SD-about" href="about.html">
+                        ABOUT
+                    </a>
+                    </li>
+                    <li>
+                        <a role="button" class="SD-contact" href="contact.html">
+                        CONTACT
+                    </a>
+                    </li>
+                    <li>
+                        <a role="button" class="SD-account" href="#">
+                        MY ACCOUNT
+                    </a>
+                    </li>
+                    <li class="wardrobe-btn">
+                        <a class="desk-only" onclick="toggleWardrobe()">
+                            <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                        </a>
+                        <a class="mob-only" onclick="toggleWardrobe()">
+                            <img class="wardrobeIcon" src="assets/icons/wardrobe.svg" alt="">
+                        </a>
+        
+                    </li>
+                </ul>
+            </div>
+            <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus style="z-index:-1;">
+                <div class="SD-wardrobe-header ">
+                    Wardrobe
+                </div>
+                <ul class="SD-wardrobe-items ">
+                    <li class="SD-wardrobe-item ">
+                        <div class="SD-wardrobe-item-pic">
+                            <img src="assets/images/men_images/Men4.png " alt=" ">
+                            <div class="wardrobe-heart">
+                                <i class="ion ion-heart icon-heart"></i>
+                            </div>
+                            <div class="pink-circle-wardrobe"></div>
+                        </div>
+                        <div class="SD-wardrobe-item-info ">
+                            <h4>Black Hemmed Pants</h4>
+                            <p>$350</p>
+                            <p>Size:
+                                <select name="" id="#SD-sizeselect">
+                                    <option value=""><span>M</span></option>
+                                    <option value=""><span>L</span></option>
+                                    <option value=""><span>XL</span></option>
+                                </select>
+                            </p>
+                            <p>Quantity:
+                                <select name="" id="#SD-qtyselect">
+                                    <option value=""><span>1</span></option>
+                                    <option value=""><span>2</span></option>
+                                    <option value=""><span>3</span></option>
+                                </select>
+                            </p>
+                            <a href=" ">Remove from wardrobe</a>
+                        </div>
+                    </li>
+                    <li class="SD-wardrobe-item ">
+                        <div class="SD-wardrobe-item-pic ">
+                            <img src="assets/images/men_images/Men2.png " alt=" ">
+                            <div class="wardrobe-heart">
+                                <i class="ion ion-heart icon-heart"></i>
+                            </div>
+                            <div class="pink-circle-wardrobe"></div>
+                        </div>
+                        <div class="SD-wardrobe-item-info ">
+                            <h4>Black Hemmed Pants</h4>
+                            <p>$350</p>
+                            <p>Size:
+                                <select name="" id="#SD-sizeselect">
+                                    <option value=""><span>M</span></option>
+                                    <option value=""><span>L</span></option>
+                                    <option value=""><span>XL</span></option>
+                                </select>
+                            </p>
+                            <p>Quantity:
+                                <select name="" id="#SD-qtyselect">
+                                    <option value=""><span>1</span></option>
+                                    <option value=""><span>2</span></option>
+                                    <option value=""><span>3</span></option>
+                                </select>
+                            </p>
+                            <a href=" ">Remove from wardrobe</a>
+                        </div>
+                    </li>
+                    <li class="SD-wardrobe-item">
+                        <div class="SD-wardrobe-item-pic">
+                            <img src="assets/images/men_images/Men6.png " alt="">
+                            <div class="wardrobe-heart">
+                                <i class="ion ion-heart icon-heart"></i>
+                            </div>
+                            <div class="pink-circle-wardrobe"></div>
+                        </div>
+                        <div class="SD-wardrobe-item-info ">
+                            <h4>Black Hemmed Pants</h4>
+                            <p>$350</p>
+                            <p>Size:
+                                <select name="" id="#SD-sizeselect">
+                                    <option value=""><span>M</span></option>
+                                    <option value=""><span>L</span></option>
+                                    <option value=""><span>XL</span></option>
+                                </select>
+                            </p>
+                            <p>Quantity:
+                                <select name="" id="#SD-qtyselect">
+                                    <option value=""><span>1</span></option>
+                                    <option value=""><span>2</span></option>
+                                    <option value=""><span>3</span></option>
+                                </select>
+                            </p>
+                            <a href=" ">Remove from wardrobe</a>
+                        </div>
+                    </li>
+                    <li class="SD-wardrobe-item ">
+                        <div class="SD-wardrobe-item-pic ">
+                            <img src="assets/images/men_images/Men3.png " alt=" ">
+                            <div class="wardrobe-heart">
+                                <i class="ion ion-heart icon-heart"></i>
+                            </div>
+                            <div class="pink-circle-wardrobe"></div>
+                        </div>
+                        <div class="SD-wardrobe-item-info ">
+                            <h4>Black Hemmed Pants</h4>
+                            <p>$350</p>
+                            <p>Size:
+                                <select name="" id="#SD-sizeselect">
+                                    <option value=""><span>M</span></option>
+                                    <option value=""><span>L</span></option>
+                                    <option value=""><span>XL</span></option>
+                                </select>
+                            </p>
+                            <p>Quantity:
+                                <select name="" id="#SD-qtyselect">
+                                    <option value=""><span>1</span></option>
+                                    <option value=""><span>2</span></option>
+                                    <option value=""><span>3</span></option>
+                                </select>
+                            </p>
+                            <a href=" ">Remove from wardrobe</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="SD-wardrobe-bottom ">
+                    <p>Subtotal: <span>$1050</span></p>
+                    <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
+                </div>
+            </div>
+        </header>
+        <div class="homepage-image-scroller content-container scroll-hide" >
             <div class="scrolled-content" >
                 <div class="scroll-slide" id="slide1">
                     <img src="assets/images/slide1.jpg">
@@ -16,7 +217,7 @@
                     <p>On board are playful yet ethereal bombers, blazers, and gilets that thrive on layering. Urbane bandhgala jackets—a testament to refined tailoring of an era gone by—also make an appearance. Exquisite weaves like brocade, Duchess silk, and mulmul shed stereotypical garbs to feature in reinvented silhouettes crafted for work, play, and sleep. Reversible creations offer instant style updates; while relaxed yet elegant fits in shirts, trousers, and kurtas are tailored for comfort. At SUKETDHIR, this Autumn-Winter is all about marrying function with nazakat, in a never-seen before avatar.</p>
                 </div>
                 <div class="scroll-slide" id="slide3">
-                    <img src="assets/images/slide3.jpg">
+                    <img src="assets/images/slide2.jpg">
                 </div>
                 <div class="scroll-slide" id="slide4">
                     <img src="assets/images/slide3.jpg">
@@ -33,12 +234,12 @@
                     </ul>
                 </div>
                 <div class="scroll-slide clear-float" id="slide7">
-                    <img class="slide-7-1" src="assets/images/slide3.jpg">
-                    <img class="slide-7-2" src="assets/images/slide3.jpg">
-                    <img class="slide-7-3" src="assets/images/slide3.jpg">
+                    <img class="slide-7-1" src="assets/images/slide6.jpg">
+                    <img class="slide-7-2" src="assets/images/slide7.jpg">
+                    <img class="slide-7-3" src="assets/images/slide8.jpg">
                 </div>
                 <div class="scroll-slide" id="slide8">
-                    <img class="slide-8" src="assets/images/slide8.jpg">
+                    <img class="slide-8" src="assets/images/slide9.jpg">
                 </div>
                 <div class="scroll-slide fixed-text" id="slide9">
                     <ul>
@@ -49,10 +250,33 @@
                 <div class="scroll-slide" id="slide10">
                     <img class="slide-10" src="assets/images/slide10.jpg">
                 </div>
-                <!-- <div class="scroll-slide fixed-text" id="slide11">
-                    <img class="slide-11" src="bg-parrot.svg">
-                    <img class="slide-11-1" src="assets/images/slide11.svg">
-                </div> -->
+                <div class="scroll-slide fixed-text" id="slide11">
+                    <img class="slide-11-2" src="assets/images/bg-parrot.svg">
+                    <img class="slide-11-1" src="assets/images/slide11.jpg">
+                </div>
+                <div class="scroll-slide" id="slide12">
+                    <img class="slide-12" src="assets/images/slide12.jpg">
+                </div>
+                <div class="scroll-slide" id="slide13">
+                    <img class="slide-13-1" src="assets/images/slide13-1.jpg">
+                    <img class="slide-13-2" src="assets/images/slide13-2.jpg">
+                    <img class="slide-13-3" src="assets/images/cloud-6.svg">
+                </div>
+                <div class="scroll-slide fixed-text" id="slide14">
+                    <ul>
+                        <li>Three steps up, two steps down</li>
+                        <li>The destination is journey bound</li>
+                    </ul>
+                    <img class="slide-14" src="assets/images/clouds.svg">
+                </div>
+                <div class="scroll-slide clear-float" id="slide15">
+                    <img class="slide-15-1" src="assets/images/slide-15-1.jpg">
+                    <img class="slide-15-2" src="assets/images/slide-15-2.jpg">
+                    <img class="slide-15-3" src="assets/images/slide-15-3.jpg">
+                </div>
+                <div class="scroll-slide" id="slide16">
+                    <img class="slide-16" src="assets/images/slide10.jpg">
+                </div>
             </div>
         </div>
     </body>
