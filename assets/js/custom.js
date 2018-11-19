@@ -228,16 +228,18 @@ $(document).ready(function() {
             if (windowOffset >= 64000) {
                 $('#slide15').css('top', '100%');
                 $('#slide16').fadeIn();
-                $('#slide16').css('transition', "all linear 2s 2s");
+                $('#slide16').css('transition', "all linear 2s 1s");
                 $('#slide16').css('top', '0');
                 $('header').css('display', 'block');
                 $('#slide15').css('transition', "all linear 2s");
+                $('.home-footer').fadeIn();
             }
             if (windowOffset < 64000) {
                 $('#slide15').css('top', '22%');
                 $('#slide16').css('top', '100%');
                 $('#slide15').css('transition', "all linear 2s");
                 $('#slide16').css('transition', "all linear 2s");
+                $('.home-footer').fadeOut();
             }
             console.log('window offsetTop', $(window).scrollTop());
         }
@@ -639,3 +641,16 @@ document.querySelector(".addressPlus").addEventListener("click", function() {
     })
     // For account page (End)
     // JS by rahul (End)
+
+
+/**
+* Product's page
+*/
+$(".SD-product-view img").click(function(){
+    $(".SD-thumbnail-active").removeClass("SD-thumbnail-active");
+    $(this).addClass("SD-thumbnail-active");
+
+    var selector_number = $(this).data("image-s");
+    $(".SD-image-active").removeClass("SD-image-active");
+    $(".SD-product-image img[data-image-i='" + selector_number + "']").addClass("SD-image-active");
+});

@@ -106,6 +106,6 @@
     </div>
 
     <div class="topEightPix">
-        <button class="yellowBtn">Shop by category</button>
+        <a href="<?php echo get_bloginfo('url');?>/shop"><button class="yellowBtn">Shop by category</button></a>
     </div>
 </div>
