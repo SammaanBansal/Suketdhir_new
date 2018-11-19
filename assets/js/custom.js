@@ -389,7 +389,6 @@ function toggleWardrobe() {
 
 /* End JS by Sammaan for wardrobe*/
 
-
 /* JS by Rahul */
 
 // For upload file
