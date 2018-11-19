@@ -1,4 +1,6 @@
-/* JS by Sammaan for homepage */
+/**
+* JS for homepage.
+*/
 
 $(window).ready(function() {
     $(window).offset(0);
@@ -246,133 +248,84 @@ $(document).ready(function() {
         }
     }).scroll();
 });
-/* end of JS by Sammaan for homepage */
 
 
+/**
+* Js for Customer care page.
+*/
 $(document).ready(function() {
-        if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseOne") {
-            $("#collapseOne").addClass('in');
-            document.documentElement.scrollTop = 0;
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseOne") {
+        $("#collapseOne").addClass('in');
+        document.documentElement.scrollTop = 0;
 
-        }
-        if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseTwo") {
-            $("#collapseTwo").addClass('in');
-            document.documentElement.scrollTop = 0;
+    }
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseTwo") {
+        $("#collapseTwo").addClass('in');
+        document.documentElement.scrollTop = 0;
 
-        }
-        if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseThree") {
-            $("#collapseThree").addClass('in');
-            document.documentElement.scrollTop = 0;
+    }
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseThree") {
+        $("#collapseThree").addClass('in');
+        document.documentElement.scrollTop = 0;
 
-        }
-        if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseFour") {
-            $("#collapseFour").addClass('in');
-            document.documentElement.scrollTop = 0;
+    }
+    if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseFour") {
+        $("#collapseFour").addClass('in');
+        document.documentElement.scrollTop = 0;
 
-        }
-        // to change the ATW button on click
-        $('.SD-atw').click(function() {
-            $(this).addClass('added');
-        });
-        // prevent reloading of page on clicking search open and close buttons
-        $("a.SD-search").attr("href", "javascript:void(0);");
-        $("span.search-close a").attr("href", "javascript:void(0);");
+    }
+    // to change the ATW button on click
+    $('.SD-atw').click(function() {
+        $(this).addClass('added');
+    });
+    // prevent reloading of page on clicking search open and close buttons
+    $("a.SD-search").attr("href", "javascript:void(0);");
+    $("span.search-close a").attr("href", "javascript:void(0);");
 
-        $('.form-LogIn').fadeOut()
-
-
-
-        /* JS by Sammaan for shop submenu */
+    $('.form-LogIn').fadeOut();
 
 
-        /* JS for shop submenu */
 
+    /* JS for shop submenu */
+    $('.shop-sub').find('li').click(function() {
+        $('.submenu-clothing').removeClass('active');
+        $(this).addClass('active');
+    });
 
-        $('.shop-sub').find('li').click(function() {
-            $('.submenu-clothing').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        /* end of JS by Sammaan for shop submenu */
-        /* JS by Sammaan for header to section scroll */
-
-        $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                var ost = target.offset().top - 110;
-                $('html, body').stop().animate({
-                    scrollTop: ost
-                }, 1000);
-            }
-        });
-        $('a[href^="#home"]').on('click', function(event) {
+    /* JS by Sammaan for header to section scroll */
+    $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            var ost = target.offset().top - 110;
             $('html, body').stop().animate({
-                scrollTop: 0
+                scrollTop: ost
             }, 1000);
-        });
-        /* JS by Sammaan for header to section scroll*/
-        /* JS by Sammaan for header scroll changes*/
-
-        $(window).scroll(function() {
-
-            if ($(this).scrollTop() >= $('.SD-header').height()) {
-                $('.SD-header').addClass('scrolled');
-                // $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
-            } else {
-                $('.SD-header').removeClass('scrolled');
-                // $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
-            }
-        });
-
-        $(".SD-clothing").mouseover(function() {
-
-        }).mouseout(function() {
-
-        });
-
-        function toggleForm(value) {
-            if (value == 1) {
-                $('.form-SignUp').fadeIn(500)
-                $('.form-LogIn').fadeOut(500)
-
-
-            } else if (value == 2) {
-                $('.form-LogIn').fadeIn(500)
-                $('.form-SignUp').fadeOut(500)
-            }
         }
+    });
 
-        function changeModal(val) {
-            if (val == 1) {
-                $('#SD-login-md').modal('hide');
-            }
-            if (val == 2) {
-                $('#SD-signup-md').modal('hide');
-            }
-            if (val == 3) {
-                $('#SD-signup-md').modal('hide');
-            }
-        }
+    $('a[href^="#home"]').on('click', function(event) {
+        $('html, body').stop().animate({
+            scrollTop: 0
+        }, 1000);
+    });
 
-        function showSearch() {
-            $('#searchbox').fadeToggle('500');
+    /* JS by Sammaan for header scroll changes*/
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= $('.SD-header').height()) {
+            $('.SD-header').addClass('scrolled');
+             $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
+        } else {
+            $('.SD-header').removeClass('scrolled');
+            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
         }
-
-        function hideSearch() {
-            $('#searchbox').fadeOut('500');
-        }
-        var path;
-        var page;
-        $(function() {
-            path = window.location.pathname;
-            page = path.split("/").pop();
-            // alert(page)
-        });
+    });
 
 })
-    /* JS by Sammaan for wardrobe*/
 
+/**
+* JS by Sammaan for wardrobe.
+*/
 var hideWardrobeFlag = false;
 
 function toggleWardrobe() {
@@ -388,11 +341,6 @@ function toggleWardrobe() {
     }
 }
 
-/* End JS by Sammaan for wardrobe*/
-
-
-/* JS by Rahul */
-
 // For upload file
 var inputFileCon = document.getElementsByClassName("uploadBtn");
 var inputFile = document.querySelector(".inputFile");
@@ -404,26 +352,24 @@ for (var i = 0; i < inputFileCon.length; i++) {
 function listItems() {
     inputFile.click();
 }
-// For upload file (End)
-
 
 // For contact us accordion
-    var plus = document.getElementsByClassName("imgClick");
-    var allaccorHeading = document.getElementsByClassName("accorHeading");
-    for (var r = 0; r < plus.length; r++) {
-        plus[r].addEventListener("click", crossFun)
-    }
+var plus = document.getElementsByClassName("imgClick");
+var allaccorHeading = document.getElementsByClassName("accorHeading");
+for (var r = 0; r < plus.length; r++) {
+    plus[r].addEventListener("click", crossFun)
+}
 
-    function crossFun() {
-        var classes = this.parentElement.className;
-        for (var a = 0; a < allaccorHeading.length; a++) {
-            allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
-            plus[a].addEventListener()
-        }
-        if (classes == "accorHeading removeCross bottomfourty") {
-            this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
-        }
+function crossFun() {
+    var classes = this.parentElement.className;
+    for (var a = 0; a < allaccorHeading.length; a++) {
+        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
+        plus[a].addEventListener()
     }
+    if (classes == "accorHeading removeCross bottomfourty") {
+        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
+    }
+}
 
 var acc = document.getElementsByClassName("accordion-header");
 var i;
@@ -433,8 +379,6 @@ for (i = 0; i < acc.length; i++) {
         this.nextElementSibling.classList.toggle("show");
     }
 }
-// For contact us accordion (End)
-
 
 // For Video
 if (window.location == "https://www.google.com/") {
@@ -499,14 +443,11 @@ $(window).scroll(function() {
 }).scroll();
 // On scroll vavigation active (End)
 
-// For shop page (End)
-
-
 // For account page
-document.querySelector(".addressPlus").addEventListener("click", function() {
-        this.classList.toggle("closeAddress");
-        document.querySelector(".formInternal").classList.toggle("newAddress");
-    })
+// document.querySelector(".addressPlus").addEventListener("click", function() {
+//     this.classList.toggle("closeAddress");
+//     document.querySelector(".formInternal").classList.toggle("newAddress");
+// });
     // For account page (End)
     // JS by rahul (End)
 
