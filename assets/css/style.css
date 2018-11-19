@@ -2226,7 +2226,7 @@ li.wardrobe-btn {
 .SD-wardrobe-item-pic,
 .SD-wardrobe-item-info {
     width: 50%;
-    display: inline-block;
+    float: left;
 }
 
 .SD-wardrobe-item-info {
@@ -2243,6 +2243,7 @@ li.wardrobe-btn {
 .SD-wardrobe-item-info p {
     margin: 0px;
     font-size: 14px;
+    line-height: 2;
 }
 
 .SD-wardrobe-item-info>a {
@@ -2339,7 +2340,9 @@ li.wardrobe-btn {
 .SD-wardrobe-bottom>button:hover {
     background: #636363;
 }
+@media screen and (max-width: 1024px){
 
+}
 
 /* End Wardrobe */
 
@@ -2906,21 +2909,21 @@ li.wardrobe-btn {
     text-transform: uppercase;
 }
 
-.SD-inline-wardrobe-item-pic,
+/* .SD-inline-wardrobe-item-pic,
 .SD-inline-wardrobe-item-info {
     width: 50%;
     display: inline-block;
-}
+} */
 
 .SD-inline-wardrobe-item-info {
     width: 65%;
-    padding-left: 15%;
     margin-top: 20px;
 }
 
 .SD-inline-wardrobe-item-info p {
     margin: 0px;
     font-size: 14px;
+    line-height: 2;
 }
 
 .SD-inline-wardrobe-item-info>a {
@@ -2951,12 +2954,13 @@ li.wardrobe-btn {
     position: relative;
     padding: 5px;
     width: 35%;
+    float: left;
 }
 
 .SD-inline-wardrobe-item-pic>img {
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: block;
 }
@@ -4010,12 +4014,12 @@ li.wardrobe-btn {
     }
     .SD-inline-wardrobe-item-info {
         width: 65%;
-        padding-left: 15%;
         margin-top: 20px;
     }
     .SD-inline-wardrobe-item-info p {
         margin: 0px;
         font-size: 14px;
+        line-height: 2;
     }
     .SD-inline-wardrobe-item-info>a {
         font-size: 12px;
@@ -4041,11 +4045,12 @@ li.wardrobe-btn {
         position: relative;
         padding: 5px;
         width: 35%;
+        float: left;
     }
     .SD-inline-wardrobe-item-pic>img {
         position: relative;
         z-index: 1;
-        width: 80%;
+        width: 100%;
         margin: auto;
         display: block;
     }
@@ -4053,7 +4058,7 @@ li.wardrobe-btn {
         list-style-type: none;
         overflow-y: scroll;
         max-height: 400px;
-        padding: 0px 30px;
+        padding: 0;
         margin-bottom: 10px;
     }
     .SD-inline-wardrobe-item {
