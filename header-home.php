@@ -27,7 +27,7 @@
 <?php wp_head(); ?>
 </head>
 <body scroll="no">
-    <header class="SD-header">
+    <header class="SD-header SD-header-home">
       <div class="float-clear">
         <div class="SD-name">
             <a role="button" class="SD-gotohome" href="<?php echo get_bloginfo('url');?>">
