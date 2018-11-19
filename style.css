@@ -30,5 +30,44 @@ svg.icon.icon-angle-down {
 .SD-nav li.current-menu-item, .SD-footer2 li.current-menu-item {
     text-decoration: underline!important;
 }
+.jobDescription.fourteenSansPro p{
+    color: #333!important;
+}
+
+.woocommerce a.button{
+	display:none;
+}
+
+span.price {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.SD-product-description {
+    color:#333;
+}
+/*.woocommerce div.product div.images img{
+    width : auto !important;
+}*/
+.variations label {
+    font-size:100%!important%;
+    color:#333 !important;
+}
+.single_add_to_cart_button.disabled {
+    background-color: #C6C5C2!important;
+    
+}
+.single_add_to_cart_button {
+    background-color : #d19e2a!important;
+    color: #f7f7f2!important;
+    height: 40px;
+    width: 184px;
+    border: 0px!important;
+    padding: 0px;
+    margin-top: 55px!important;
+    opacity: 1!important;
+    border-radius: 0!important;
+}
+
 
 

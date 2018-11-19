@@ -410,3 +410,12 @@ class my_nav_walker extends Walker_Nav_Menu {
     $output .= "\n$indent<ul class=\"header-submenu\">\n";
   }
 }
+
+/**
+* Support for svg images.
+*/
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

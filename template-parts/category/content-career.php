@@ -26,7 +26,7 @@
     <div class="flex">
         <aside class="tabsCol">
             <nav>
-                <ul class="nav nav-pills">
+                <ul class="linActive nav nav-pills">
                 	<?php if ( $the_query->have_posts() ) : $count = 1;?>
 	                <!-- the loop -->
 	                	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
