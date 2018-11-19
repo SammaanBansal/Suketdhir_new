@@ -9,12 +9,12 @@ $(document).ready(function() {
             windowOffset = $(window).scrollTop();
             if (windowOffset > 1250) {
                 $('#slide4').css('display', 'block');
-                $('header').css('display', 'none');
+                $('.SD-header-home').css('display', 'none');
             }
             if (windowOffset < 1250) {
                 $('#slide4').css('display', 'none');
                 $('#slide1').css('display', 'block');
-                $('header').css('display', 'block');
+                $('.SD-header-home').css('display', 'block');
             }
             if (windowOffset > 1300) {
                 $('#slide4').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
@@ -200,6 +200,7 @@ $(document).ready(function() {
             }
             if (windowOffset >= 59800 && windowOffset < 63000) {
                 $('#slide14').css('display', 'block');
+                $('img.slide14').css('display', 'block');
             }
             if (windowOffset < 59800 || windowOffset >= 63000) {
                 $('#slide14').css('display', 'none');
@@ -230,7 +231,7 @@ $(document).ready(function() {
                 $('#slide16').fadeIn();
                 $('#slide16').css('transition', "all linear 2s 1s");
                 $('#slide16').css('top', '0');
-                $('header').css('display', 'block');
+                $('.SD-header-home').css('display', 'block');
                 $('#slide15').css('transition', "all linear 2s");
                 $('.home-footer').fadeIn();
             }
@@ -369,7 +370,7 @@ $(document).ready(function() {
             // alert(page)
         });
 
-    })
+})
     /* JS by Sammaan for wardrobe*/
 
 var hideWardrobeFlag = false;
@@ -407,22 +408,22 @@ function listItems() {
 
 
 // For contact us accordion
-var plus = document.getElementsByClassName("imgClick");
-var allaccorHeading = document.getElementsByClassName("accorHeading");
-for (var r = 0; r < plus.length; r++) {
-    plus[r].addEventListener("click", crossFun)
-}
+    var plus = document.getElementsByClassName("imgClick");
+    var allaccorHeading = document.getElementsByClassName("accorHeading");
+    for (var r = 0; r < plus.length; r++) {
+        plus[r].addEventListener("click", crossFun)
+    }
 
-function crossFun() {
-    var classes = this.parentElement.className;
-    for (var a = 0; a < allaccorHeading.length; a++) {
-        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
-        plus[a].addEventListener()
+    function crossFun() {
+        var classes = this.parentElement.className;
+        for (var a = 0; a < allaccorHeading.length; a++) {
+            allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
+            plus[a].addEventListener()
+        }
+        if (classes == "accorHeading removeCross bottomfourty") {
+            this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
+        }
     }
-    if (classes == "accorHeading removeCross bottomfourty") {
-        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
-    }
-}
 
 var acc = document.getElementsByClassName("accordion-header");
 var i;

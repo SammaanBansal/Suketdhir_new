@@ -31,7 +31,7 @@
 
         foreach ($product_cat as $cat) {
             echo '<li>
-                    <a class="navigation__link active" href="#'. $cat->term_id.'">'.$cat->name.'</a>
+                    <a class="navigationLink active" href="#'. $cat->term_id.'">'.$cat->name.'</a>
                 </li>';
         }
 
