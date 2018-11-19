@@ -74,7 +74,6 @@ a:hover {
     display: none !important;
 }
 
-=======
 .desk-only {
     display: block !important;
 }
@@ -2305,10 +2304,6 @@ header a:hover {
     cursor: url('../icons/cursor.svg') 100 0, auto !important;
 }
 
-footer a:hover {
-    /* cursor: url('../icons/cursor.svg') 100 0, auto !important; */
-}
-
 .SD-footerbefore {
     margin-bottom: 40px;
 }
@@ -4201,7 +4196,7 @@ li.wardrobe-btn {
         vertical-align: top;
         padding: 175px 0 100px;
         float: left;
-
+    }
     @media screen and (max-width: 768px) {
         ul#SD-nav.collapse.in {
             background: #fff;
@@ -4435,7 +4430,7 @@ li.wardrobe-btn {
         font-size: 24px;
         vertical-align: middle;
         margin-top: 55px;
-
+    }
     .submenu-clothing {
         display: inline;
         font-size: 16px;
@@ -5486,9 +5481,6 @@ li.wardrobe-btn {
     }
     .fourteenSansPro * {
         font-family: Source Sans Pro;
-        /* font-size: 14px;
-            font-weight: 300;
-            color: #696d70; */
         margin-bottom: 0;
     }
     .widthFull {
