@@ -15,7 +15,7 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 <div class="homepage-image-scroller content-container scroll-hide" >
     <div class="scrolled-content" >
@@ -38,11 +38,7 @@ get_header(); ?>
         </div>
         <div class="scroll-slide fixed-text" id="slide6">
             <img class="bg-image-icon" src="<?php echo get_bloginfo('template_directory');?>/assets/images/bg-mango.svg">
-            <ul>
-                <li>Take a turn at the roundabout,</li>
-                <li>Along the stairs, by the spout</li>
-                <li>To this place… a place of clouts</li>
-            </ul>
+            <p> Take a turn at the roundabout, Along the stairs, by the spout To this place… a place of clouts </p>
         </div>
         <div class="scroll-slide clear-float" id="slide7">
             <img class="slide-7-1" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide6.jpg">
@@ -53,10 +49,7 @@ get_header(); ?>
             <img class="slide-8" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide9.jpg">
         </div>
         <div class="scroll-slide fixed-text" id="slide9">
-            <ul>
-                <li>Three steps up, two steps down</li>
-                <li>The destination is journey bound</li>
-            </ul>
+            <p>Three steps up, two steps down The destination is journey bound </p>
         </div>
         <div class="scroll-slide" id="slide10">
             <img class="slide-10" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide10.jpg">
@@ -74,10 +67,7 @@ get_header(); ?>
             <img class="slide-13-3" src="<?php echo get_bloginfo('template_directory');?>/assets/images/cloud-6.svg">
         </div>
         <div class="scroll-slide fixed-text" id="slide14">
-            <ul>
-                <li>Three steps up, two steps down</li>
-                <li>The destination is journey bound</li>
-            </ul>
+            <p>Three steps up, two steps down The destination is journey bound </p>
             <img class="slide-14" src="<?php echo get_bloginfo('template_directory');?>/assets/images/clouds.svg">
         </div>
         <div class="scroll-slide clear-float" id="slide15">
