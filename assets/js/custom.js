@@ -1,11 +1,15 @@
 /**
-* JS for homepage.
-*/
+ * JS for window load reset scrolltop.
+ */
 
-$(window).ready(function() {
-    $(window).offset(0);
-});
+// $(window).ready(function() {
+//     $(window).offset(0);
+// });
+
 $(document).ready(function() {
+    /**
+     * JS for homepage.
+     */
     $(window).scroll(function() {
         if ($(this).width() > 1024) {
             windowOffset = $(window).scrollTop();
@@ -247,13 +251,10 @@ $(document).ready(function() {
             console.log('window offsetTop', $(window).scrollTop());
         }
     }).scroll();
-});
 
-
-/**
-* Js for Customer care page.
-*/
-$(document).ready(function() {
+    /**
+     * Js for Customer care page.
+     */
     if (window.location == "http://localhost/suketdhir-wordpress/customer-care/#collapseOne") {
         $("#collapseOne").addClass('in');
         document.documentElement.scrollTop = 0;
@@ -274,240 +275,247 @@ $(document).ready(function() {
         document.documentElement.scrollTop = 0;
 
     }
-    // to change the ATW button on click
+
+    /**
+     * Js to change the ATW button on click
+     */
     $('.SD-atw').click(function() {
         $(this).addClass('added');
     });
-    // prevent reloading of page on clicking search open and close buttons
-    $("a.SD-search").attr("href", "javascript:void(0);");
-    $("span.search-close a").attr("href", "javascript:void(0);");
 
-    $('.form-LogIn').fadeOut();
-
-
-
-    /* JS for shop submenu */
+    /**
+     * JS for shop submenu 
+     */
     $('.shop-sub').find('li').click(function() {
         $('.submenu-clothing').removeClass('active');
         $(this).addClass('active');
     });
 
-    /* JS by Sammaan for header to section scroll */
-    $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            var ost = target.offset().top - 110;
-            $('html, body').stop().animate({
-                scrollTop: ost
-            }, 1000);
-        }
-    });
+    /**
+     * JS for header to section scroll.
+     */
+    // $('.shop-sub').find('a[href^="#"]').on('click', function(event) {
+    //     var target = $(this.getAttribute('href'));
+    //     if (target.length) {
+    //         event.preventDefault();
+    //         var ost = target.offset().top - 110;
+    //         $('html, body').stop().animate({
+    //             scrollTop: ost
+    //         }, 1000);
+    //     }
+    // });
+    // $('a[href^="#home"]').on('click', function(event) {
+    //     $('html, body').stop().animate({
+    //         scrollTop: 0
+    //     }, 1000);
+    // });
 
-    $('a[href^="#home"]').on('click', function(event) {
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, 1000);
-    });
+    /**
+     * JS for header scroll changes.
+     */
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() >= $('.SD-header').height()) {
+    //         $('.SD-header').addClass('scrolled');
+    //         $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
+    //     } else {
+    //         $('.SD-header').removeClass('scrolled');
+    //         $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
+    //     }
+    // });
 
-    /* JS by Sammaan for header scroll changes*/
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= $('.SD-header').height()) {
-            $('.SD-header').addClass('scrolled');
-             $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/icons/on-scroll-logo.svg');
+    /**
+     * JS by Sammaan for wardrobe.
+     */
+
+    var hideWardrobeFlag = false;
+    $('.wardrobe-btn').click(function() {
+        if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
+            $('.SD-wardrobe-container').removeClass('show-wardrobe')
+
         } else {
-            $('.SD-header').removeClass('scrolled');
-            $('.SD-name').find('img').attr('src', 'http://localhost/suketdhir-wordpress/wp-content/themes/suketdhir-wordpress/assets/images/landing-header-logo.svg');
+            $('.SD-wardrobe-container').addClass('show-wardrobe')
+            $('.SD-wardrobe-container').focus();
         }
     });
 
-})
-
-/**
-* JS by Sammaan for wardrobe.
-*/
-var hideWardrobeFlag = false;
-
-function toggleWardrobe() {
-
-    if ($('.SD-wardrobe-container').hasClass('show-wardrobe')) {
-        $('.SD-wardrobe-container').removeClass('show-wardrobe')
-
-    } else {
-        $('.SD-wardrobe-container').addClass('show-wardrobe')
-        $('.SD-wardrobe-container').focus();
 
 
-    }
-}
-
-/* End JS by Sammaan for wardrobe*/
-/**
-* JS for payment page.
-*/
-
-$(document).ready(function(){
-    $('.isp-info-btn').click(function(e){
+    /**
+     * JS for payment page.
+     */
+    $('.isp-info-btn').click(function(e) {
         e.preventDefault();
         $('#info-form').fadeOut();
-        $('#info-form-details').fadeIn();     
+        $('#info-form-details').fadeIn();
     });
-    $('#info-back-btn').click(function(e){
+    $('#info-back-btn').click(function(e) {
         e.preventDefault();
         $('#info-form-details').fadeOut();
-        $('#info-form').fadeIn();     
+        $('#info-form').fadeIn();
     });
 
-    $('#dif-bill-add').change(function(e){
-        if(this.checked){
+    $('#dif-bill-add').change(function(e) {
+        if (this.checked) {
             $('#shipping .SD-shipaddress').fadeOut();
             $('#form-shipping').fadeIn();
-        }
-        else{
+        } else {
             $('#shipping .SD-shipaddress').fadeIn();
             $('#form-shipping').fadeOut();
         }
     });
-    $('.isp-info-ship-btn').click(function(e){
+    $('.isp-info-ship-btn').click(function(e) {
         e.preventDefault();
         $('.payment-section').fadeOut();
-        $('#shipping').fadeIn();     
+        $('#shipping').fadeIn();
     });
-    $('.isp-ship-info-btn').click(function(e){
+    $('.isp-ship-info-btn').click(function(e) {
         e.preventDefault();
         $('.payment-section').fadeOut();
-        $('#information').fadeIn();     
+        $('#information').fadeIn();
     });
-    $('.isp-ship-pay-btn').click(function(e){
+    $('.isp-ship-pay-btn').click(function(e) {
         e.preventDefault();
         $('.payment-section').fadeOut();
-        $('#payment').fadeIn();     
+        $('#payment').fadeIn();
     });
-});
 
+    /**
+     * Product's page
+     */
+    $(".SD-product-view img").click(function() {
+        $(".SD-thumbnail-active").removeClass("SD-thumbnail-active");
+        $(this).addClass("SD-thumbnail-active");
 
-/* JS by Rahul */
+        var selector_number = $(this).data("image-s");
+        $(".SD-image-active").removeClass("SD-image-active");
+        $(".SD-product-image img[data-image-i='" + selector_number + "']").addClass("SD-image-active");
+    });
 
-// For upload file
-var inputFileCon = document.getElementsByClassName("uploadBtn");
-var inputFile = document.querySelector(".inputFile");
-var uploaded = document.querySelector(".cvUpload");
-for (var i = 0; i < inputFileCon.length; i++) {
-    inputFileCon[i].addEventListener("click", listItems);
-}
-
-function listItems() {
-    inputFile.click();
-}
-
-// For contact us accordion
-var plus = document.getElementsByClassName("imgClick");
-var allaccorHeading = document.getElementsByClassName("accorHeading");
-for (var r = 0; r < plus.length; r++) {
-    plus[r].addEventListener("click", crossFun)
-}
-
-function crossFun() {
-    var classes = this.parentElement.className;
-    for (var a = 0; a < allaccorHeading.length; a++) {
-        allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
-        plus[a].addEventListener()
+    /**
+     * For upload file
+     */
+    var inputFileCon = document.getElementsByClassName("uploadBtn");
+    var inputFile = document.querySelector(".inputFile");
+    var uploaded = document.querySelector(".cvUpload");
+    for (var i = 0; i < inputFileCon.length; i++) {
+        inputFileCon[i].addEventListener("click", listItems);
     }
-    if (classes == "accorHeading removeCross bottomfourty") {
-        this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
-    }
-}
 
-var acc = document.getElementsByClassName("accordion-header");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
+    function listItems() {
+        inputFile.click();
     }
-}
 
-// For Video
-if (window.location == "https://www.google.com/") {
-    var myVideo = document.querySelector(".playVidGain");
-    myVideo.addEventListener("click", function() {
-        if (myVideo.paused) {
-            myVideo.play();
-            document.querySelector(".videoPlayCon").style.display = "none";
-        } else {
-            myVideo.pause();
-            document.querySelector(".videoPlayCon").style.display = "block";
+    /**
+     * For contact us accordion
+     */
+    var plus = document.getElementsByClassName("imgClick");
+    var allaccorHeading = document.getElementsByClassName("accorHeading");
+    for (var r = 0; r < plus.length; r++) {
+        plus[r].addEventListener("click", crossFun)
+    }
+
+    function crossFun() {
+        var classes = this.parentElement.className;
+        for (var a = 0; a < allaccorHeading.length; a++) {
+            allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
+            // plus[a].addEventListener()
         }
-    })
-}
-// For Video (End)
-
-
-// For heart wishlist onclcik active
-var slectHeart = document.getElementsByClassName("heart");
-for (var i = 0; i < slectHeart.length; i++) {
-    slectHeart[i].addEventListener("click", wishList)
-}
-
-function wishList() {
-    this.classList.toggle("selected");
-}
-// heart wishlist onclcik active (End)
-
-
-//For footer Finding id 
-$(".SD-footer2 a").click(function() {
-    var $delete = $(this);
-    var id = $delete.attr('href');
-    window.location.href = "http://localhost/suketdhir-wordpress/customer-care/" + id;
-
-});
-//For footer Finding id (End)
-
-
-// For shop page
-
-// onclcik reach to particualar section
-$(".navigationLink").click(function() {
-    var links = this.getAttribute("href")
-    var linkName = $(this).attr('href');
-    $('html,body').animate({
-        scrollTop: $(linkName).offset().top - 170
-    }, 10);
-});
-// onclcik reach to particualar section (End)
-
-
-// On scroll vavigation active
-$(window).scroll(function() {
-    var scrollDistance = $(window).scrollTop() + 80 + 15 + $(".navigation").outerHeight();
-    $('.page-section').each(function(i) {
-        if ($(this).position().top <= scrollDistance) {
-            $('.navigation a.active').removeClass('active');
-            $('.navigation a').eq(i).addClass('active');
+        if (classes == "accorHeading removeCross bottomfourty") {
+            this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
         }
-    });
-}).scroll();
-// On scroll vavigation active (End)
+    }
+    var acc = document.getElementsByClassName("accordion-header");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
 
-// For account page
+    /**
+     * For Video
+     */
+    if (window.location == "https://www.google.com/") {
+        var myVideo = document.querySelector(".playVidGain");
+        myVideo.addEventListener("click", function() {
+            if (myVideo.paused) {
+                myVideo.play();
+                document.querySelector(".videoPlayCon").style.display = "none";
+            } else {
+                myVideo.pause();
+                document.querySelector(".videoPlayCon").style.display = "block";
+            }
+        })
+    }
+
+    /**
+     * For heart wishlist onclcik active
+     */
+    var slectHeart = document.getElementsByClassName("heart");
+    for (var i = 0; i < slectHeart.length; i++) {
+        slectHeart[i].addEventListener("click", wishList)
+    }
+
+    function wishList(e) {
+        e.preventDefault();
+        this.classList.toggle("selected");
+    }
+
+    /**
+     * footer Finding id
+     */
+    $(".SD-footer2 a").click(function() {
+        var $delete = $(this);
+        var id = $delete.attr('href');
+        window.location.href = "http://localhost/suketdhir-wordpress/customer-care/" + id;
+
+    });
+
+    /**
+     * onclick reach to particualar section for shop page
+     */
+    $(".navigationLink").click(function() {
+        var links = this.getAttribute("href")
+        var linkName = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(linkName).offset().top - 170
+        }, 10);
+    });
+
+    /**
+     * On scroll navigation active
+     */
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop() + 80 + 15 + $(".navigation").outerHeight();
+        $('.page-section').each(function(i) {
+            if ($(this).position().top <= scrollDistance) {
+                $('.navigation a.active').removeClass('active');
+                $('.navigation a').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
+
+});
+
+/**
+ * End for JS
+ */
+
+
+
+/**
+ * Js For account page
+ */
 // document.querySelector(".addressPlus").addEventListener("click", function() {
 //     this.classList.toggle("closeAddress");
 //     document.querySelector(".formInternal").classList.toggle("newAddress");
 // });
-    // For account page (End)
-    // JS by rahul (End)
-
 
 /**
-* Product's page
-*/
-$(".SD-product-view img").click(function(){
-    $(".SD-thumbnail-active").removeClass("SD-thumbnail-active");
-    $(this).addClass("SD-thumbnail-active");
+ * Js to prevent reloading of page on clicking search open and close buttons
+ */
+// $("a.SD-search").attr("href", "javascript:void(0);");
+// $("span.search-close a").attr("href", "javascript:void(0);");
 
-    var selector_number = $(this).data("image-s");
-    $(".SD-image-active").removeClass("SD-image-active");
-    $(".SD-product-image img[data-image-i='" + selector_number + "']").addClass("SD-image-active");
-});
-
+// $('.form-LogIn').fadeOut();
