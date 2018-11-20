@@ -198,9 +198,21 @@ a:hover {
 }
 #slide8 {
     display: none;
-    top: 22%;
     left: 44%;
-    height: 400px;
+    width: 100%;
+    top: 0 ;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+}
+img.slide-8 {
+    top: 22% ;
+}
+#slide8 img.slide-8-1 {
+    top: 10%;
+    left: 100%;
+    width: 80px;
+    height: 50px;
     position: fixed;
     z-index: 2;
 }
