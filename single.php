@@ -12,18 +12,20 @@
 
 get_header(); ?>
 
-<div class="content-container">
-
-	<?php
-	/* Start the Loop */
-	while ( have_posts() ) : the_post();
-
+<?php
+/* Start the Loop */
+while ( have_posts() ) : the_post();
+	if(get_post_type() == "product")
+		get_template_part( 'template-parts/post/content', get_post_type() );
+	else {
+		echo '<div class="content-container">';
 		get_template_part( 'template-parts/post/content', get_post_format() );
+		echo "</div>";
+	}
 
-		
-	endwhile; // End of the loop.
-	?>
+	
+endwhile; // End of the loop.
+?>
 
-</div><!-- .wrap -->
 
 <?php get_footer();

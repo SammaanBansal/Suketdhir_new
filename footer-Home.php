@@ -13,7 +13,7 @@
  */
 
 ?>
-	<footer class="col-sm-12">
+	<footer class="home-footer col-sm-12">
         <div class="SD-icon-hat">
         </div>
         <div class="SD-footer float-clear">
