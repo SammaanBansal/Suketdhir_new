@@ -46,7 +46,8 @@ get_header('home'); ?>
             <img class="slide-7-3" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide8.jpg">
         </div>
         <div class="scroll-slide" id="slide8">
-            <img class="slide-8" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide9.jpg">
+           <!--  <img class="slide-8" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide9.jpg"> -->
+            <img class="slide-8" src="<?php echo get_bloginfo('template_directory');?>/assets/images/slide9.gif">
         </div>
         <div class="scroll-slide fixed-text" id="slide9">
             <p>Three steps up, two steps down The destination is journey bound </p>
