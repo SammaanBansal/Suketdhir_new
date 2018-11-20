@@ -341,6 +341,53 @@ function toggleWardrobe() {
     }
 }
 
+/* End JS by Sammaan for wardrobe*/
+/**
+* JS for payment page.
+*/
+
+$(document).ready(function(){
+    $('.isp-info-btn').click(function(e){
+        e.preventDefault();
+        $('#info-form').fadeOut();
+        $('#info-form-details').fadeIn();     
+    });
+    $('#info-back-btn').click(function(e){
+        e.preventDefault();
+        $('#info-form-details').fadeOut();
+        $('#info-form').fadeIn();     
+    });
+
+    $('#dif-bill-add').change(function(e){
+        if(this.checked){
+            $('#shipping .SD-shipaddress').fadeOut();
+            $('#form-shipping').fadeIn();
+        }
+        else{
+            $('#shipping .SD-shipaddress').fadeIn();
+            $('#form-shipping').fadeOut();
+        }
+    });
+    $('.isp-info-ship-btn').click(function(e){
+        e.preventDefault();
+        $('.payment-section').fadeOut();
+        $('#shipping').fadeIn();     
+    });
+    $('.isp-ship-info-btn').click(function(e){
+        e.preventDefault();
+        $('.payment-section').fadeOut();
+        $('#information').fadeIn();     
+    });
+    $('.isp-ship-pay-btn').click(function(e){
+        e.preventDefault();
+        $('.payment-section').fadeOut();
+        $('#payment').fadeIn();     
+    });
+});
+
+
+/* JS by Rahul */
+
 // For upload file
 var inputFileCon = document.getElementsByClassName("uploadBtn");
 var inputFile = document.querySelector(".inputFile");
@@ -463,3 +510,4 @@ $(".SD-product-view img").click(function(){
     $(".SD-image-active").removeClass("SD-image-active");
     $(".SD-product-image img[data-image-i='" + selector_number + "']").addClass("SD-image-active");
 });
+

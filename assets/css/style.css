@@ -7986,3 +7986,48 @@ a:hover {
         z-index: 9;
     }
     
+    /* style for payment sections*/
+    .SD-isp a span.active{
+        font-weight: bold;
+    }
+    .payment-section{
+        display: none;
+    }
+    #information{
+        display: block;
+    }
+    .isp-form-details{
+        display: none;
+    }
+    .isp-form{
+        margin-top: 20px;
+    }
+    .isp-form input {
+        margin-bottom: 5px;
+        border: 0;
+        border-bottom: 1px solid #c6c5c2;
+        font-family: cormorant;
+        color: #c6c6c4;
+        font-style: italic;
+        font-weight: 300;
+    }
+    .isp-form .SD-squared-checkbox label{
+        font-size: 14px;
+        color: #c6c6c4;
+        font-weight: 300;
+    }
+    #form-shipping{
+        display: none;
+    }
+    #shipping .SD-squared-checkbox{
+        margin-top: 10px;
+    }
+    label.chk-another-add {
+        padding-top: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+        font-weight: normal;
+        vertical-align: middle;
+        font-family: cormorant;
+    }
+    /* end of style for payment sections*/
