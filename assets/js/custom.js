@@ -210,7 +210,7 @@ $(document).ready(function() {
                 $('#slide15').css({'top':'22%','transition': "all linear 2s"});
                 $('#slide16').css({'top': '100%','transition': "all linear 2s"});
             }
-            console.log('window offsetTop', $(window).scrollTop());
+            // console.log('window offsetTop', $(window).scrollTop());
         }
     }).scroll();
 
@@ -380,7 +380,6 @@ $(document).ready(function() {
         var classes = this.parentElement.className;
         for (var a = 0; a < allaccorHeading.length; a++) {
             allaccorHeading[a].className = "accorHeading removeCross bottomfourty";
-            // plus[a].addEventListener()
         }
         if (classes == "accorHeading removeCross bottomfourty") {
             this.parentElement.className = "accorHeading showCross removePlus bottomfourty showContent";
@@ -398,18 +397,6 @@ $(document).ready(function() {
     /**
      * For Video
      */
-    if (window.location == "https://www.google.com/") {
-        var myVideo = document.querySelector(".playVidGain");
-        myVideo.addEventListener("click", function() {
-            if (myVideo.paused) {
-                myVideo.play();
-                document.querySelector(".videoPlayCon").style.display = "none";
-            } else {
-                myVideo.pause();
-                document.querySelector(".videoPlayCon").style.display = "block";
-            }
-        })
-    }
 
     /**
      * For heart wishlist onclcik active
@@ -469,10 +456,6 @@ $(document).ready(function() {
 /**
  * Js For account page
  */
-// document.querySelector(".addressPlus").addEventListener("click", function() {
-//     this.classList.toggle("closeAddress");
-//     document.querySelector(".formInternal").classList.toggle("newAddress");
-// });
 
 /**
  * Js to prevent reloading of page on clicking search open and close buttons
