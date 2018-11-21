@@ -232,13 +232,24 @@ a:hover {
 
 #slide8 {
     display: none;
-    top: 22%;
     left: 44%;
-    height: 400px;
+    width: 100%;
+    top: 0 ;
+    height: 100%;
     position: fixed;
     z-index: 2;
 }
-
+img.slide-8 {
+    top: 22% ;
+}
+#slide8 img.slide-8-1 {
+    top: 10%;
+    left: 100%;
+    width: 80px;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+}
 #slide9 {
     display: none;
     top: 22.2%;
@@ -247,7 +258,6 @@ a:hover {
     position: fixed;
     z-index: 1;
 }
-
 #slide10,
 #slide16 {
     display: none;
@@ -256,10 +266,9 @@ a:hover {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 5;
+    z-index: 4;
 }
-
-#slide11 {
+#slide11{
     display: none;
     top: 100%;
     left: 0;
@@ -268,34 +277,30 @@ a:hover {
     position: fixed;
     z-index: 3;
 }
-
 #slide11 .slide-11-1 {
     left: 50%;
     position: fixed;
     top: -90%;
     height: 400px;
-    width: 267px;
+    width: 267;
 }
-
 #slide11 .slide-11-2 {
     left: 75%;
-    top: 20%;
+    top: 10%;
     height: 97px;
     position: fixed;
     width: 143px;
 }
-
 #slide12 {
     display: none;
     left: 50%;
     position: fixed;
-    top: 27%;
+    top: 22%;
     height: 400px;
-    width: 267px;
+    width: 267;
     z-index: 2;
 }
-
-#slide13 {
+#slide13  {
     display: none;
     left: 100%;
     position: fixed;
