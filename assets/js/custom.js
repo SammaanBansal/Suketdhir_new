@@ -12,7 +12,6 @@ $(document).ready(function() {
      */
     $(window).scroll(function() {
         if ( $(this).width() > 1024 ) {
-                $(window).resize(function() {
                 windowOffset = $(window).scrollTop();
 
                 if(windowOffset > 1250){
@@ -212,7 +211,6 @@ $(document).ready(function() {
                     $('#slide16').css({'top': '100%','transition': "all linear 2s"});
                 }
                 // console.log('window offsetTop', $(window).scrollTop());
-            });
         }
     }).scroll();
 
@@ -432,10 +430,4 @@ $(document).ready(function() {
 
 /**
  * End for JS
- */
-
-
-
-/**
- * Js For account page
  */
