@@ -234,14 +234,16 @@ a:hover {
     display: none;
     left: 44%;
     width: 100%;
-    top: 0 ;
+    top: 0;
     height: 100%;
     position: fixed;
     z-index: 2;
 }
+
 img.slide-8 {
-    top: 22% ;
+    top: 22%;
 }
+
 #slide8 img.slide-8-1 {
     top: 10%;
     left: 100%;
@@ -250,6 +252,7 @@ img.slide-8 {
     position: fixed;
     z-index: 2;
 }
+
 #slide9 {
     display: none;
     top: 22.2%;
@@ -258,6 +261,7 @@ img.slide-8 {
     position: fixed;
     z-index: 1;
 }
+
 #slide10,
 #slide16 {
     display: none;
@@ -268,7 +272,8 @@ img.slide-8 {
     position: fixed;
     z-index: 4;
 }
-#slide11{
+
+#slide11 {
     display: none;
     top: 100%;
     left: 0;
@@ -277,6 +282,7 @@ img.slide-8 {
     position: fixed;
     z-index: 3;
 }
+
 #slide11 .slide-11-1 {
     left: 50%;
     position: fixed;
@@ -284,6 +290,7 @@ img.slide-8 {
     height: 400px;
     width: 267;
 }
+
 #slide11 .slide-11-2 {
     left: 75%;
     top: 10%;
@@ -291,6 +298,7 @@ img.slide-8 {
     position: fixed;
     width: 143px;
 }
+
 #slide12 {
     display: none;
     left: 50%;
@@ -300,7 +308,8 @@ img.slide-8 {
     width: 267;
     z-index: 2;
 }
-#slide13  {
+
+#slide13 {
     display: none;
     left: 100%;
     position: fixed;
@@ -6358,6 +6367,10 @@ video[poster] {
     position: relative;
 }
 
+.leavesHov:hover {
+    cursor: url('../icons/cursor.svg') 100 0, auto;
+}
+
 .gridFour {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
 }
@@ -7234,7 +7247,7 @@ h5 {
 }
 
 .addressForm {
-    width: 64%;
+    width: 71%;
 }
 
 .leftThirty {
@@ -7290,6 +7303,250 @@ h5 {
     width: 68%;
 }
 
+.ordersdetails:first-child h3 {
+    padding-bottom: 30px;
+}
+
+.ordersdetailsCont .ordersdetails {
+    padding-bottom: 80px
+}
+
+.ordersdetailsCont .ordersdetails:last-child {
+    padding-bottom: 0;
+}
+
+.moreLink {
+    float: right;
+    padding-top: 10px;
+    color: #696d70;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.orders * {
+    font-family: inherit;
+    font-size: 14px;
+    color: #696d70;
+    margin: 0;
+    text-transform: inherit;
+    padding-bottom: 6px;
+}
+
+.orderCont h1 {
+    font-family: Cormorant;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.orders h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.orders {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.orders h3 {
+    display: inline-block;
+}
+
+.orders h4 {
+    /* padding-top: 18px; */
+}
+
+.orders * span {
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+.orderCont {
+    padding: 25px 25px;
+}
+
+.moreItemAd h3 {}
+
+.moreItemAd p:last-child {
+    font-family: Cormorant;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: #696d70;
+    margin-left: 86px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    display: inline;
+    padding-bottom: 0;
+}
+
+.moreItemAd {
+    padding-bottom: 30px;
+}
+
+.orderExpand {
+    display: none;
+}
+
+.noFloat {
+    float: unset;
+}
+
+.backBtn {
+    padding-top: 0;
+}
+
+.orderRawCol {
+    /* padding-right: 118px; */
+}
+
+.orderCol {
+    display: flex;
+    padding-bottom: 2px;
+}
+
+.orderCol * {
+    font-family: sans-serif;
+}
+
+.orderCol span:first-child {
+    font-weight: 300;
+    width: 50%;
+}
+
+.orderCol span:last-child {
+    padding-left: 40px;
+}
+
+.orderCol span:last-child {
+    width: 50%;
+}
+
+.borderSpace {
+    border-bottom: solid 1px #c6c6c4;
+    padding: 30px 0px;
+}
+
+.billAddr {
+    border-bottom: 0;
+}
+
+.productDes .moreLink {
+    display: inline-block;
+}
+
+.moreLink a:hover,
+.moreLink {
+    text-decoration: none !important;
+}
+
+.productInternal * {
+    padding-bottom: 8px !important;
+}
+
+.borderSpace .itemCenter {
+    padding-bottom: 30px
+}
+
+.borderSpace .itemCenter:last-child {
+    padding-bottom: 0px
+}
+
+.totalPay {
+    padding-bottom: 30px;
+}
+
+.total span {
+    font-size: 18px;
+    font-weight: 600 !important;
+    color: #696d70;
+}
+
+.payMeth {
+    padding: 20px 0px 0px 0px;
+}
+
+.payMeth span {
+    font-size: 14px;
+    font-weight: 500 !important;
+}
+
+.billAddr p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #696d70;
+    margin-bottom: 0;
+}
+
+.billAddr p:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+.prifileTabs {
+    padding-top: 18px;
+}
+
+.personalDet {
+    padding-bottom: 50px;
+}
+
+.personalDet h1 {
+    margin: 0;
+    font-family: Cormorant;
+    font-size: 18px;
+    font-weight: bold;
+    color: #696d70;
+    padding-bottom: 20px;
+}
+
+.cardDet h3 {
+    padding-bottom: 30px;
+}
+
+.countryCode {
+    color: #c6c6c4;
+}
+
+.cards:last-child {
+    padding-right: 0;
+}
+
+.cards {
+    padding-right: 2px;
+}
+
+.cardsCont {
+    padding: 10px 10px 10px 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cardAdd {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cardAdd svg {
+    transition: 0.4s;
+}
+
+.cardAdd.rotate svg {
+    transform: rotate(45deg);
+}
+
+.newCards {
+    display: none;
+}
+
+.newCards.showCards {
+    display: block;
+}
+
 
 /* Account page end here */
 
@@ -7309,6 +7566,9 @@ h5 {
     .abourGraySection,
     .mapContainer {
         width: 100%;
+    }
+    .accountSection {
+        padding: 100px 20px !important;
     }
 }
 
@@ -7408,6 +7668,9 @@ h5 {
     .accountContainer {
         display: none;
     }
+    .wishListImg {
+        grid-gap: 14px;
+    }
     .accountSection {
         padding: 100px 40px;
     }
@@ -7418,6 +7681,16 @@ h5 {
     .SD-footer li {
         display: block;
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width:978px) {
+    .addressForm,
+    .orderCol span:first-child {
+        width: 100%;
+    }
+    .orderCol span:last-child {
+        width: auto;
     }
 }
 
