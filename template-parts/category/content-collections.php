@@ -20,14 +20,17 @@
         </div>
     </div>
 
-    <div class="videoContainer fiftyPercent">
+    <div class="collectionVideo videoContainer fiftyPercent">
     	<?php if(get_field('video_link',$category)) :?>
-	        <div>
-	            <video class="playVidGain largerVideoPoster" src="<?php echo get_field('video_link',$category);?>" poster="<?php if(get_field('video_poster',$category)){echo get_field('video_poster',$category);}?>"></video>
+	        <div class="videoInternal">
+	            <video class="videoFullHeight playVidGain largerVideoPoster" src="<?php echo get_field('video_link',$category);?>" poster="<?php if(get_field('video_poster',$category)){echo get_field('video_poster',$category);}?>"></video>
 	        </div>
 	        <div class="videoPlayCon">
 	            <img class="videPlay" src="<?php echo get_bloginfo('template_directory');?>/assets/icons/play.svg" alt="">
 	        </div>
+	         <div class="clearVideo">
+                <img src="<?php echo get_bloginfo('template_directory');?>/assets/icons/clear.svg" alt="">
+            </div>
 	    <?php endif;?>
     </div>
 </div>

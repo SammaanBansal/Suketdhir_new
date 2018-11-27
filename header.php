@@ -100,7 +100,7 @@
                
         <?php endif; ?>
         </div>
-        <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus style="z-index:-1;">
+       <!--  <div class="SD-wardrobe-container " onblur="hideWardrobe() " tabindex="0 " autofocus style="z-index:-1;">
             <div class="SD-wardrobe-header ">
                 Wardrobe
             </div>
@@ -222,6 +222,6 @@
                 <p>Subtotal: <span>$1050</span></p>
                 <button class="SD-button" data-toggle="modal" data-target="#SD-login-md">Checkout</button>
             </div>
-        </div>
+        </div> -->
     </header>
 

@@ -36,8 +36,12 @@ get_header(); ?>
 			get_template_part( 'template-parts/page/content', 'shop' );
 			break;
 
-			case 139 :
+			case '139' :
 			get_template_part( 'template-parts/page/content', 'customercare' );
+			break;
+
+			case '182':
+			get_template_part( 'template-parts/page/content', 'stories' );
 			break;
 
 			default :

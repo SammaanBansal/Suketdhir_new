@@ -256,6 +256,10 @@ function suketdhir_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	
 
+	if(is_page('29') || is_category('20') || is_category('21') ){ //Check if we are viewing a page
+		wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/collectionAbout.js' ) ,$deps = array(),$ver = false, $in_footer = true);
+		// wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/collection.js' ), $deps = array(),$ver = false, $in_footer = true );
+	}
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
 
@@ -271,35 +275,36 @@ function suketdhir_scripts() {
 	}
 
 	// Load the Internet Explorer 8 specific stylesheet.
-	wp_enqueue_style( 'twentyseventeen-ie8', get_theme_file_uri( '/assets/css/ie8.css' ), array( 'twentyseventeen-style' ), '1.0' );
-	wp_style_add_data( 'twentyseventeen-ie8', 'conditional', 'lt IE 9' );
+	// wp_enqueue_style( 'twentyseventeen-ie8', get_theme_file_uri( '/assets/css/ie8.css' ), array( 'twentyseventeen-style' ), '1.0' );
+	// wp_style_add_data( 'twentyseventeen-ie8', 'conditional', 'lt IE 9' );
 
-	// Load the html5 shiv.
-	wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '3.7.3' );
-	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
+	// // Load the html5 shiv.
+	// wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '3.7.3' );
+	// wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
 
-	wp_enqueue_script( 'twentyseventeen-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
+	// wp_enqueue_script( 'twentyseventeen-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
 
-	$twentyseventeen_l10n = array(
-		'quote'          => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
-	);
+	// $twentyseventeen_l10n = array(
+	// 	'quote'          => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
+	// );
 
-	if ( has_nav_menu( 'top' ) ) {
-		wp_enqueue_script( 'twentyseventeen-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
-		$twentyseventeen_l10n['expand']         = __( 'Expand child menu', 'twentyseventeen' );
-		$twentyseventeen_l10n['collapse']       = __( 'Collapse child menu', 'twentyseventeen' );
-		$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
-	}
+	// if ( has_nav_menu( 'top' ) ) {
+	// 	wp_enqueue_script( 'twentyseventeen-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+	// 	$twentyseventeen_l10n['expand']         = __( 'Expand child menu', 'twentyseventeen' );
+	// 	$twentyseventeen_l10n['collapse']       = __( 'Collapse child menu', 'twentyseventeen' );
+	// 	$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
+	// }
 
-	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+	// wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 
-	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+	// wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
-	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
+	// wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
 }
 add_action( 'wp_enqueue_scripts', 'suketdhir_scripts' );
 
