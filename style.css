@@ -90,6 +90,16 @@ span.price {
     padding: 0;
     cursor: pointer;
 }
+.gifeed-loadmore {
+    background-color: #d19e2a !important;
+    color: #fff;
+    padding: 9px 43px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    font-family: Cormorant !important;
+}
 
 
 
