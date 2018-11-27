@@ -18,6 +18,9 @@
 	    <div class="videoPlayCon">
 	        <img class="videPlay" src="<?php echo get_bloginfo('template_directory');?>/assets/icons/play.svg" alt="">
 	    </div>
+        <div class="clearVideo">
+            <img src="<?php echo get_bloginfo('template_directory');?>/assets/icons/clear.svg" alt="">
+        </div>
 	<?php endif;?>
 </div>
 

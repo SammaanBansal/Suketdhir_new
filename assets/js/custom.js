@@ -91,9 +91,9 @@ $(document).ready(function() {
                 }
                 if (windowOffset < 48000) {
                     $('#slide8').fadeOut();
-                    $('#slide7 .slide-7-1').css({'left': '22%','transition': "all linear 2s"});
+                    $('#slide7 .slide-7-1').css({'left': '17%','transition': "all linear 2s"});
                     $('#slide7 .slide-7-2').css({'top': '22%','transition': "all linear 1.7s"});
-                    $('#slide7 .slide-7-3').css({'left': '66%','transition': "all linear 2s"});
+                    $('#slide7 .slide-7-3').css({'left': '61%','transition': "all linear 2s"});
                 }
                 if (windowOffset >= 50000 && windowOffset < 56800) {
                     $('#slide9').fadeIn();
@@ -335,18 +335,6 @@ $(document).ready(function() {
     });
 
     /**
-     * For upload file
-     */
-    var inputFileCon = document.getElementsByClassName("uploadBtn");
-    var inputFile = document.querySelector(".inputFile");
-    var uploaded = document.querySelector(".cvUpload");
-    for (var i = 0; i < inputFileCon.length; i++) {
-        inputFileCon[i].addEventListener("click", listItems);
-    }
-
-    function listItems() {
-        inputFile.click();
-    }
 
     /**
      * For contact us accordion

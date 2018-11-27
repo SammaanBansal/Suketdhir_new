@@ -7,7 +7,7 @@
     <title>Account</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -25,7 +25,7 @@
             </div>
             <ul class="SD-nav navbar-collapse collapse" id="SD-nav" aria-expanded="false" style="height: 1px;">
                 <li>
-                    <a role="button" class="SD-clothing" href="clothing.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                    <a role="button" class="SD-clothing" href="clothing.html">
                                   SHOP
                                   </a>
                     <div class="header-submenu">
@@ -39,7 +39,7 @@
                     </div>
                 </li>
                 <li>
-                    <a role="button" class="SD-collections" href="collections.html" onmouseover="toggleCategory(1)" onmouseout="toggleCategory(2)">
+                    <a role="button" class="SD-collections" href="collections.html">
                                       COLLECTIONS
                                   </a>
                     <div class="header-submenu">
@@ -211,19 +211,19 @@
                     <h5>Welcome Vikramaditya!</h5>
                     <nav>
                         <ul class="accountTabs linActive nav nav-pills">
-                            <li class=""><a data-toggle="pill" href="#wishList">Wishlist</a></li>
+                            <li class="active"><a data-toggle="pill" href="#wishList">Wishlist</a></li>
                             <li class=""><a data-toggle="pill" href="#profile">Profile</a></li>
-                            <li class="active"><a data-toggle="pill" href="#address">Address</a></li>
+                            <li class=""><a data-toggle="pill" href="#address">Address</a></li>
                             <li class=""><a data-toggle="pill" href="#orders">Orders</a></li>
                         </ul>
                     </nav>
                 </aside>
 
                 <div class="tab-content accountTabsContent SD-account-tab-content wishlistContainer">
-                    <div id="wishList" class="tab-pane fade in">
+                    <div id="wishList" class="tab-pane fade in active">
                         <div class="SD-add-address-inner wishListImg">
                             <!-- <h4 class="accorItemHeading">1Job Description</h4> -->
-                            <div class="hoveContainer whiteBack">
+                            <div class="hoveContainer whiteBack leavesHov">
                                 <div class="center">
                                     <img src="./assets/images/wish1.png" alt="">
                                 </div>
@@ -237,7 +237,7 @@
                                         </a>
                                 </div>
                             </div>
-                            <div class="hoveContainer grayBack">
+                            <div class="hoveContainer grayBack leavesHov">
                                 <div class="center">
                                     <img src="./assets/images/wish1.png" alt="">
                                 </div>
@@ -251,7 +251,7 @@
                                         </a>
                                 </div>
                             </div>
-                            <div class="hoveContainer whiteBack">
+                            <div class="hoveContainer whiteBack leavesHov">
                                 <div class="center">
                                     <img src="./assets/images/wish1.png" alt="">
                                 </div>
@@ -265,7 +265,7 @@
                                         </a>
                                 </div>
                             </div>
-                            <div class="hoveContainer grayBack">
+                            <div class="hoveContainer grayBack leavesHov">
                                 <div class="center">
                                     <img src="./assets/images/wish1.png" alt="">
                                 </div>
@@ -279,7 +279,7 @@
                                     <h5>$350</h5>
                                 </div>
                             </div>
-                            <div class="hoveContainer whiteBack">
+                            <div class="hoveContainer whiteBack leavesHov">
                                 <div class="center">
                                     <img src="./assets/images/wish1.png" alt="">
                                 </div>
@@ -295,17 +295,113 @@
                             </div>
                         </div>
                     </div>
-                    <div id="profile" class="fashionDesigner tab-pane fade in">
-                        <div class="SD-add-address-inner">
-                            <div class="form addressForm">
-                                <div class="flex itemCenter thirtFiveBottom tabsContentHead">
-                                    <h3>Personal Details</h3>
+                    <div id="profile" class="prifileTabs tab-pane fade in">
+                        <div class="form addressForm">
+                            <div class="flex itemCenter thirtFiveBottom tabsContentHead">
+                                <h3>Personal Details</h3>
+                            </div>
+                            <div class="personalDet">
+                                <h1>Vikramaditya Sharma</h1>
+                                <div class="flex spaceBetween bottomTwenty">
+                                    <span>vikramaditya@nowform.co</span>
+                                    <span class="moreLink noFloat">Edit</span>
                                 </div>
-                                <h5>Vikramaditya Sharma</h5>
+                                <div class="flex spaceBetween bottomTwenty">
+                                    <span><span class="countryCode">+91</span> 9599926211</span>
+                                    <span class="moreLink noFloat">Edit</span>
+                                </div>
+                            </div>
+                            <div class="tabsContentHead cardDet">
+                                <h3>Card Details</h3>
+                                <div class="personalDet">
+                                    <div class="cardsCont flex spaceBetween whiteBack">
+                                        <span>Saved Cards</span>
+                                        <div class="flex">
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex spaceBetween bottomTwenty">
+                                            <span>Vikramaditya Sharma      **** **** **** 5677</span>
+                                            <span class="moreLink noFloat">Edit</span>
+                                        </div>
+                                        <div class="flex spaceBetween bottomTwenty">
+                                            <span>Aaina Singh      **** **** **** 9025</span>
+                                            <span class="moreLink noFloat">Edit</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="cardsCont flex spaceBetween whiteBack">
+                                        <span class="flex itemCenter">
+                                        Add a new Cards 
+                                        <span class="cardAdd">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                                <g fill="none" fill-rule="evenodd" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                                                    <path d="M1.105 8.903a7.798 7.798 0 1 1 15.596 0 7.798 7.798 0 0 1-15.596 0zM4.978 8.903h7.85M8.903 4.978v7.85"/>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        </span>
+                                        <div class="flex">
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personalDet newCards">
+                                        <div>
+                                            <div class="flex spaceBetween bottomTwenty">
+                                                <span>Vikramaditya Sharma      **** **** **** 5677</span>
+                                                <span class="moreLink noFloat">Edit</span>
+                                            </div>
+                                            <div class="flex spaceBetween bottomTwenty">
+                                                <span>Aaina Singh      **** **** **** 9025</span>
+                                                <span class="moreLink noFloat">Edit</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="address" class="addressContent tab-pane fade in active">
+                    <div id="address" class="addressContent tab-pane fade in">
                         <div class="SD-add-address-inner">
                             <div class="flex itemCenter thirtFiveBottom">
                                 <div class="tabsContentHead">
@@ -392,37 +488,132 @@
                             </div>
                         </div>
                     </div>
-                    <div id="orders" class="onlineMarketing tab-pane fade in">
-                        <div class="SD-add-address-inner">
-                            <h4 class="accorItemHeading">3Job Description</h4>
-                            <div class="TwentySixty jobDescription fourteenSansPro">
-                                <p class="">
-                                    He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
-                                    design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
-                                </p>
+                    <div id="orders" class="onlineMarketing tab-pane fade in ">
+                        <div class="SD-add-address-inner ordersdetailsCont addressForm">
+                            <div class="orderInternal">
+                                <div class="ordersdetails">
+                                    <h3 class="accorItemHeading">Recent Orders</h3>
+                                    <div class="orderCont whiteBack">
+                                        <h1>Order Number : 1242</h1>
+                                        <div class="flex spaceBetween itemCenter">
+                                            <div class="orders">
+                                                <p>Placed on : <span>09/08/2017</span></p>
+                                                <p>Amount : <span>$450</span></p>
+                                                <h2>BLACK HEMMED PANTS</h2>
+                                                <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                <h4>Status : the way</h4>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/icons/orders1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="moreLink moreCl">More</span>
+                                </div>
+                                <div class="ordersdetails">
+                                    <div class="orderCont whiteBack">
+                                        <h1>Order Number : 1063</h1>
+                                        <div class="flex spaceBetween itemCenter">
+                                            <div class="orders">
+                                                <p>Placed on : <span>09/08/2017</span></p>
+                                                <p>Amount : <span>$450</span></p>
+                                                <div class="moreItemAd">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <p>and 1 more item</p>
+                                                </div>
+                                                <h4>Status : Delivered on 03/09/2016</h4>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/icons/orders1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="moreLink moreCl">More</span>
+                                </div>
                             </div>
-                            <div>
-                                <div class="form">
-                                    <div class="inputsContainer widthFull">
-                                        <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
-                                    </div>
-                                    <div class="inputsContainer widthFull">
-                                        <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
-                                    </div>
-                                    <div class="inputsContainer widthFull">
-                                        <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
-                                    </div>
-                                    <div class="inputsContainer widthFull inputFields flex spaceBetween">
-                                        <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
-                                        <div class="inputFileCon">
-                                            <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                            <div class="orderExpand">
+                                <div class="ordersdetails">
+                                    <h3 class="accorItemHeading">Order Number : 1063</h3>
+                                    <div class="orderCont whiteBack">
+                                        <span class="moreLink noFloat backBtn">Back</span>
+                                        <div class="borderSpace">
+                                            <h1>Order Number : 1063</h1>
+                                            <div class="orderRawCol">
+                                                <div class="orderCol">
+                                                    <span>Placed on :</span>
+                                                    <span>05/05/2017</span>
+                                                </div>
+                                                <div class="orderCol">
+                                                    <span>Amount :</span>
+                                                    <span>$800</span>
+                                                </div>
+                                                <div class="orderCol">
+                                                    <span>Order Status :</span>
+                                                    <span>Delivered</span>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="uploadBtn">
-                                            <img src="./assets/icons/upload.svg" alt="">
+                                        <div class="borderSpace">
+                                            <h1>Product Description</h1>
+                                            <div class="flex spaceBetween itemCenter">
+                                                <div class="orders productInternal">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <h4>Status : Delivered on 03/09/2016</h4>
+                                                </div>
+                                                <div class="productDes">
+                                                    <img src="./assets/icons/orders1.png" alt="">
+                                                    <a class="moreLink noFloat" href=""> Return Product </a>
+                                                </div>
+                                            </div>
+                                            <div class="flex spaceBetween itemCenter">
+                                                <div class="orders productInternal">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <h4>Status : Delivered on 03/09/2016</h4>
+                                                </div>
+                                                <div class="productDes">
+                                                    <img src="./assets/icons/orders1.png" alt="">
+                                                    <a class="moreLink noFloat" href=""> Return Product </a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="inputsContainer widthFull">
-                                        <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                        <div class="borderSpace">
+                                            <h1>Payment Details</h1>
+                                            <div class="orderRawCol">
+                                                <div class="totalPay">
+                                                    <div class="orderCol">
+                                                        <span>Sub Total :</span>
+                                                        <span>$600</span>
+                                                    </div>
+                                                    <div class="orderCol">
+                                                        <span>Taxes :</span>
+                                                        <span>$100</span>
+                                                    </div>
+                                                    <div class="orderCol">
+                                                        <span>Order Status :</span>
+                                                        <span>$100</span>
+                                                    </div>
+                                                </div>
+                                                <div class="orderCol total">
+                                                    <span>TOTAL</span>
+                                                    <span>$800</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="borderSpace billAddr">
+                                            <h1>Billed to</h1>
+                                            <p>Vikramaditya Sharma</p>
+                                            <p>F-574/B2, 2nd Floor,</p>
+                                            <p>Lado Sarai, New Delhi - 110030</p>
+                                            <p>vikramaditya@nowform.co | +91 9599926211</p>
+                                            <div class="orderCol payMeth">
+                                                <span>Payment Method :</span>
+                                                <span>Paypal</span>
+                                            </div>
+                                        </div>
+                                        <span class="moreLink noFloat backBtn">Back</span>
                                     </div>
                                 </div>
                             </div>
@@ -454,18 +645,27 @@
                         <button>Shipping & Returns</button>
                     </a>
                 </div>
-                <div class="flex">
+                <div style="    padding: 8px 0px;
+                justify-content: center;" class="flex grayBack">
                     <div>
-                        <span>Cart</span>
+                        <a href="">
+                            <img src="./assets/icons/cards1.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <span>Cart</span>
+                        <a href="">
+                            <img src="./assets/icons/cards1.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <span>Cart</span>
+                        <a href="">
+                            <img src="./assets/icons/cards1.png" alt="">
+                        </a>
                     </div>
                     <div>
-                        <span>Cart</span>
+                        <a href="">
+                            <img src="./assets/icons/cards1.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -476,41 +676,82 @@
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Wishlist
-                              </a>
+                            Wishlist
+                        </a>
                     </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="SD-add-address-inner twentyTwenty">
-                        <h4 class="accorItemHeading">Profile</h4>
-                        <div class="TwentySixty jobDescription fourteenSansPro">
-                            <p class="">
-                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
-                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
-                            </p>
-                        </div>
-                        <div>
-                            <div class="form">
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                        <div class="SD-add-address-inner wishListImg">
+                            <!-- <h4 class="accorItemHeading">1Job Description</h4> -->
+                            <div class="hoveContainer whiteBack leavesHov">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
+                                <div class="heart delete">
+                                    <a href="#">
+                                                    Delete
+                                                </a>
                                 </div>
-                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
-                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
-                                    <div class="inputFileCon">
-                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
-                                    </div>
-                                    <div class="uploadBtn">
-                                        <img src="./assets/icons/upload.svg" alt="">
-                                    </div>
+                            </div>
+                            <div class="hoveContainer grayBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                                    Delete
+                                                </a>
+                                </div>
+                            </div>
+                            <div class="hoveContainer whiteBack leavesHov">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                                    Delete
+                                                </a>
+                                </div>
+                            </div>
+                            <div class="hoveContainer grayBack">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                                Delete
+                                            </a>
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                            </div>
+                            <div class="hoveContainer whiteBack leavesHov">
+                                <div class="center">
+                                    <img src="./assets/images/wish1.png" alt="">
+                                </div>
+                                <div class="shopHovContent hovContent wishHov">
+                                    <h6>Black hemmed pants</h6>
+                                    <h5>$350</h5>
+                                </div>
+                                <div class="heart delete">
+                                    <a href="#">
+                                                    Delete
+                                                </a>
                                 </div>
                             </div>
                         </div>
@@ -527,35 +768,107 @@
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="SD-add-address-inner twentyTwenty">
-                        <h4 class="accorItemHeading">2Job Description</h4>
-                        <div class="TwentySixty jobDescription fourteenSansPro">
-                            <p class="">
-                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
-                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
-                            </p>
-                        </div>
-                        <div>
-                            <div class="form">
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                        <div class="form addressForm">
+                            <div class="flex itemCenter thirtFiveBottom tabsContentHead">
+                                <h3>Personal Details</h3>
+                            </div>
+                            <div class="personalDet">
+                                <h1>Vikramaditya Sharma</h1>
+                                <div class="flex spaceBetween bottomTwenty">
+                                    <span>vikramaditya@nowform.co</span>
+                                    <span class="moreLink noFloat">Edit</span>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                <div class="flex spaceBetween bottomTwenty">
+                                    <span><span class="countryCode">+91</span> 9599926211</span>
+                                    <span class="moreLink noFloat">Edit</span>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
-                                </div>
-                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
-                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
-                                    <div class="inputFileCon">
-                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                            </div>
+                            <div class="tabsContentHead cardDet">
+                                <h3>Card Details</h3>
+                                <div class="personalDet">
+                                    <div class="cardsCont flex spaceBetween whiteBack">
+                                        <span>Saved Cards</span>
+                                        <div class="flex">
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="uploadBtn">
-                                        <img src="./assets/icons/upload.svg" alt="">
+                                    <div>
+                                        <div class="flex spaceBetween bottomTwenty">
+                                            <span>Vikramaditya Sharma      **** **** **** 5677</span>
+                                            <span class="moreLink noFloat">Edit</span>
+                                        </div>
+                                        <div class="flex spaceBetween bottomTwenty">
+                                            <span>Aaina Singh      **** **** **** 9025</span>
+                                            <span class="moreLink noFloat">Edit</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+                                <div>
+                                    <div class="cardsCont flex spaceBetween whiteBack">
+                                        <span class="flex itemCenter">
+                                                Add a new Cards 
+                                                <span class="cardAdd">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                                        <g fill="none" fill-rule="evenodd" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                                                            <path d="M1.105 8.903a7.798 7.798 0 1 1 15.596 0 7.798 7.798 0 0 1-15.596 0zM4.978 8.903h7.85M8.903 4.978v7.85"></path>
+                                                        </g>
+                                                    </svg>
+                                                </span>
+                                        </span>
+                                        <div class="flex">
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="cards">
+                                                <a href="">
+                                                    <img src="./assets/icons/cards1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="personalDet newCards">
+                                        <div>
+                                            <div class="flex spaceBetween bottomTwenty">
+                                                <span>Vikramaditya Sharma      **** **** **** 5677</span>
+                                                <span class="moreLink noFloat">Edit</span>
+                                            </div>
+                                            <div class="flex spaceBetween bottomTwenty">
+                                                <span>Aaina Singh      **** **** **** 9025</span>
+                                                <span class="moreLink noFloat">Edit</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -572,42 +885,236 @@
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="SD-add-address-inner twentyTwenty">
-                        <h4 class="accorItemHeading">3Job Description</h4>
-                        <div class="TwentySixty jobDescription fourteenSansPro">
-                            <p class="">
-                                He/She should be: Working as Textile designer in knit Garment Company Experience in the same line for 8 to 9 years Strong command of Adobe/Illustrator/coral draw Able to provide complete solution &amp; running of apparel Responsible for Print &amp; CAD
-                                design &amp; development Practical knowledge of different styles of printing, dyeing, finishing
-                            </p>
-                        </div>
-                        <div>
-                            <div class="form">
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                        <div class="SD-add-address-inner">
+                            <div class="flex itemCenter thirtFiveBottom">
+                                <div class="tabsContentHead">
+                                    <h3>Add new Address</h3>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="E-mail address"></span>
+                                <div class="leftTwenty addressPlus">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+                                                <g fill="none" fill-rule="evenodd" stroke="#636363" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5">
+                                                    <path d="M.25 18.77C.25 8.542 8.542.25 18.77.25s18.52 8.292 18.52 18.52c0 10.23-8.292 18.52-18.52 18.52S.25 29 .25 18.77zM12.178 12.178l13.185 13.184M25.363 12.178L12.178 25.362"></path>
+                                                </g>
+                                            </svg>
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <span><input class="inputFields widthFull textField" type="text" placeholder="Portfolio link"></span>
-                                </div>
-                                <div class="inputsContainer widthFull inputFields flex spaceBetween">
-                                    <div class="cvContainer"><span class="cvUpload">Upload CV</span></div>
-                                    <div class="inputFileCon">
-                                        <span><input class="inputFile" type="file" placeholder="Portfolio link"></span>
+                            </div>
+                            <div class="form addressForm">
+                                <div class="formInternal">
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Name"></span>
+                                        </div>
                                     </div>
-                                    <div class="uploadBtn">
-                                        <img src="./assets/icons/upload.svg" alt="">
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Address Line 1"></span>
+                                        </div>
                                     </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Address Line 2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Postal Code"></span>
+                                        </div>
+                                        <div class="inputsContainer widthFull leftThirty">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="City"></span>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="shopSelect selectBorder inputsContainer widthFull">
+                                            <select class="pad0 widthFull" name="" id="">
+                                                    <option value="" selected="" disabled="">State</option>
+                                                    <option value="">State</option>
+                                                    <option value="">State</option>
+                                                    <option value="">State</option>
+                                                    <option value="">State</option>
+                                                    <option value="">State</option>
+                                                </select>
+                                        </div>
+                                        <div class="shopSelect leftThirty selectBorder inputsContainer widthFull">
+                                            <select class="pad0 widthFull" name="" id="">
+                                                    <option value="" selected="" disabled="">Country</option>
+                                                    <option value="">Country</option>
+                                                    <option value="">Country</option>
+                                                    <option value="">Country</option>
+                                                    <option value="">Country</option>
+                                                    <option value="">Country</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="inputsContainer widthFull">
+                                            <span><input class="inputFields widthFull textField" type="text" placeholder="Phone"></span>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="inputsContainer widthFull">
-                                    <button class="fourteenCormorant oneFortyButton">Apply</button>
+
+                                <div class="whiteBack preAddress">
+                                    <h4>Vikramaditya Sharma</h4>
+                                    <p>Vikramaditya Sharma</p>
+                                    <p>F-574/B2, 2nd Floor,</p>
+                                    <p>Lado Sarai, </p>
+                                    <p>Delhi - 110030</p>
+                                    <div class="flex flexEnd delEdit" style="">
+                                        <div class="delete">
+                                            <a href="#">Edit</a>
+                                        </div>
+                                        <div class="delete">
+                                            <a href="#">Delete</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Orders
+                                </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="SD-add-address-inner twentyTwenty">
+                        <div class="SD-add-address-inner ordersdetailsCont addressForm">
+                            <div class="orderInternal">
+                                <div class="ordersdetails">
+                                    <h3 class="accorItemHeading">Recent Orders</h3>
+                                    <div class="orderCont whiteBack">
+                                        <h1>Order Number : 1242</h1>
+                                        <div class="flex spaceBetween itemCenter">
+                                            <div class="orders">
+                                                <p>Placed on : <span>09/08/2017</span></p>
+                                                <p>Amount : <span>$450</span></p>
+                                                <h2>BLACK HEMMED PANTS</h2>
+                                                <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                <h4>Status : the way</h4>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/icons/orders1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="moreLink moreCl">More</span>
+                                </div>
+                                <div class="ordersdetails">
+                                    <div class="orderCont whiteBack">
+                                        <h1>Order Number : 1063</h1>
+                                        <div class="flex spaceBetween itemCenter">
+                                            <div class="orders">
+                                                <p>Placed on : <span>09/08/2017</span></p>
+                                                <p>Amount : <span>$450</span></p>
+                                                <div class="moreItemAd">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <p>and 1 more item</p>
+                                                </div>
+                                                <h4>Status : Delivered on 03/09/2016</h4>
+                                            </div>
+                                            <div>
+                                                <img src="./assets/icons/orders1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="moreLink moreCl">More</span>
+                                </div>
+                            </div>
+                            <div class="orderExpand">
+                                <div class="ordersdetails">
+                                    <h3 class="accorItemHeading">Order Number : 1063</h3>
+                                    <div class="orderCont whiteBack">
+                                        <span class="moreLink noFloat backBtn">Back</span>
+                                        <div class="borderSpace">
+                                            <h1>Order Number : 1063</h1>
+                                            <div class="orderRawCol">
+                                                <div class="orderCol">
+                                                    <span>Placed on :</span>
+                                                    <span>05/05/2017</span>
+                                                </div>
+                                                <div class="orderCol">
+                                                    <span>Amount :</span>
+                                                    <span>$800</span>
+                                                </div>
+                                                <div class="orderCol">
+                                                    <span>Order Status :</span>
+                                                    <span>Delivered</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="borderSpace">
+                                            <h1>Product Description</h1>
+                                            <div class="flex spaceBetween itemCenter">
+                                                <div class="orders productInternal">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <h4>Status : Delivered on 03/09/2016</h4>
+                                                </div>
+                                                <div class="productDes">
+                                                    <img src="./assets/icons/orders1.png" alt="">
+                                                    <a class="moreLink noFloat" href=""> Return Product </a>
+                                                </div>
+                                            </div>
+                                            <div class="flex spaceBetween itemCenter">
+                                                <div class="orders productInternal">
+                                                    <h2>BLACK HEMMED PANTS</h2>
+                                                    <h3> <span>$350</span> <span>| M</span> <span>| 1</span></h3>
+                                                    <h4>Status : Delivered on 03/09/2016</h4>
+                                                </div>
+                                                <div class="productDes">
+                                                    <img src="./assets/icons/orders1.png" alt="">
+                                                    <a class="moreLink noFloat" href=""> Return Product </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="borderSpace">
+                                            <h1>Payment Details</h1>
+                                            <div class="orderRawCol">
+                                                <div class="totalPay">
+                                                    <div class="orderCol">
+                                                        <span>Sub Total :</span>
+                                                        <span>$600</span>
+                                                    </div>
+                                                    <div class="orderCol">
+                                                        <span>Taxes :</span>
+                                                        <span>$100</span>
+                                                    </div>
+                                                    <div class="orderCol">
+                                                        <span>Order Status :</span>
+                                                        <span>$100</span>
+                                                    </div>
+                                                </div>
+                                                <div class="orderCol total">
+                                                    <span>TOTAL</span>
+                                                    <span>$800</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="borderSpace billAddr">
+                                            <h1>Billed to</h1>
+                                            <p>Vikramaditya Sharma</p>
+                                            <p>F-574/B2, 2nd Floor,</p>
+                                            <p>Lado Sarai, New Delhi - 110030</p>
+                                            <p>vikramaditya@nowform.co | +91 9599926211</p>
+                                            <div class="orderCol payMeth">
+                                                <span>Payment Method :</span>
+                                                <span>Paypal</span>
+                                            </div>
+                                        </div>
+                                        <span class="moreLink noFloat backBtn">Back</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -637,13 +1144,13 @@
             </li>
             <li class="SD-footer3 ">
                 <a role="button " class="ion SD-homeions " href="https://www.facebook.com/suketdhirpage/?hc_ref=SEARCH&amp;fref=nf ">
-                    <img src="assets/icons/VD_Icons_reState-02.png ">
+                    <img src="assets/icons/facebook.svg">
                 </a>
                 <a role="button " class="ion SD-homeions " href="https://www.instagram.com/suketdhir/ ">
-                    <img src="assets/icons/VD_Icons_reState-03.png ">
+                    <img src="assets/icons/instagram.svg">
                 </a>
                 <a role="button " class="ion SD-homeions " href="# ">
-                    <img src="assets/icons/VD_Icons_reState-04.png ">
+                    <img src="assets/icons/pinterest.svg">
                 </a>
             </li>
         </div>
