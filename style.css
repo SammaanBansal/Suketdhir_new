@@ -34,9 +34,9 @@ svg.icon.icon-angle-down {
     color: #333!important;
 }
 
-.woocommerce a.button{
+/*.woocommerce a.button{
 	display:none;
-}
+}*/
 
 span.price {
     margin: 0;
@@ -68,6 +68,29 @@ span.price {
     opacity: 1!important;
     border-radius: 0!important;
 }
+
+.gifeed-header-container {
+    display: none!important;
+}
+
+.woocommerce-notices-wrapper {
+    position: absolute;
+    z-index: 999;
+    top: 16%;
+    left: 25%;
+    width: 60%;
+}
+
+.woocommerce-notices-wrapper .woocommerce-message {
+    padding: 14px 20px 10px 50px;
+}
+
+.woocommerce-notices-wrapper .woocommerce-message a.button.wc-forward {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
 
 
 
