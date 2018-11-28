@@ -122,7 +122,8 @@ a:hover {
     width: 0 !important
 }
 
-.scroll-slide:after, .clear-float:after {
+.scroll-slide:after,
+.clear-float:after {
     display: block;
     clear: both;
     content: "";
@@ -377,10 +378,10 @@ img.slide-15-3 {
 }
 
 @media screen and (max-width: 1024px) {
-    .homepage-image-scroller.content-container{
+    .homepage-image-scroller.content-container {
         padding: 16px 32px;
     }
-    .homepage-image-scroller .scroll-slide *{
+    .homepage-image-scroller .scroll-slide * {
         margin: 20px auto !important;
     }
     .homepage-image-scroller ul {
@@ -484,6 +485,7 @@ ul.SD-nav {
     float: left;
     border-top: 1px solid #636363;
     width: 100%;
+    background-color: #fff;
 }
 
 ul.SD-nav li {
@@ -4184,8 +4186,15 @@ li.wardrobe-btn {
         float: left;
     }
     @media screen and (max-width: 768px) {
+        .SD-header .header-submenu {
+            position: unset;
+            width: auto;
+        }
+        .header-submenu li {
+            text-align: center;
+        }
         ul#SD-nav.collapse.in {
-            background: #fff;
+            /* background: #fff; */
         }
         .SD-wardrobe-container.show-wardrobe {
             width: 100%;
