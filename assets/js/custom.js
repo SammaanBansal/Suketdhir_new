@@ -394,10 +394,19 @@ $(document).ready(function() {
      * onclick reach to particualar section for shop page
      */
     $(".navigationLink a").click(function() {
-        var links = this.getAttribute("href")
+        // var links = this.getAttribute("href");
         var linkName = $(this).attr('href');
         $('html,body').animate({
             scrollTop: $(linkName).offset().top - 170
+        }, 10);
+    });
+
+    $(".navigationdrop a").click(function() {
+        // var links = this.getAttribute("href");
+        var linkName = $(this).attr('href');
+        var str = linkName.split("#")[1];
+        $('html,body').animate({
+            scrollTop: $("#" + str).offset().top - 170
         }, 10);
     });
 
@@ -417,5 +426,35 @@ $(document).ready(function() {
 });
 
 /**
- * End for JS
+ * JS for Shop page, alternate sections color.
  */
+
+ var elems = $(".page-section a");
+    $(".page-section a").each(function(idx, val){
+        $(this).removeClass("whiteBack");
+        $(this).removeClass("grayBack");
+        if((idx)%2 === 0) {
+            $(this).toggleClass("whiteBack");
+        }
+        if((idx)%2 === 1){
+            $(this).toggleClass("grayBack");
+        }
+    });
+    // let elems = $(".page-section a");
+    for(let i = 2; i< elems.length; i = i + 4) {
+        if($(elems[i]).hasClass("whiteBack")){
+            $(elems[i]).removeClass("whiteBack");
+            $(elems[i]).addClass("grayBack");
+        } else if ($(elems[i]).hasClass("grayBack")){
+            $(elems[i]).removeClass("grayBack");
+            $(elems[i]).addClass("whiteBack");
+        }
+        
+        if($(elems[i + 1]).hasClass("whiteBack")){
+            $(elems[i + 1]).removeClass("whiteBack");
+            $(elems[i + 1]).addClass("grayBack");
+        } else if ($(elems[i + 1]).hasClass("grayBack")){
+            $(elems[i + 1]).removeClass("grayBack");
+            $(elems[i + 1]).addClass("whiteBack");
+        }
+    }

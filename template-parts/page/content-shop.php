@@ -30,8 +30,8 @@
         $product_cat = get_categories($args);
 
         foreach ($product_cat as $cat) {
-            echo '<li>
-                    <a class="navigationLink active" href="#'. $cat->term_id.'">'.$cat->name.'</a>
+            echo '<li class="navigationLink">
+                    <a class="active" href="#'. $cat->term_id.'">'.$cat->name.'</a>
                 </li>';
         }
 
