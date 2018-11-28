@@ -622,12 +622,6 @@ ul.SD-nav li {
     }
 }
 
-@media (max-width: 1024px) {
-    li.wardrobe-btn {
-        width: 5% !important;
-    }
-}
-
 @media (min-width: 768px) {
     ul.SD-nav {
         list-style-type: none;
@@ -2408,11 +2402,11 @@ header a:hover {
     transition: all linear 0.2s;
 }
 
-li.wardrobe-btn {
+.wardrobe-btn {
     float: right !important;
     right: 0;
-    line-height: 3;
-    text-align: right;
+    margin-top: 40px;
+    margin-right: 10px;
 }
 
 .SD-header>div {
@@ -2457,6 +2451,9 @@ li.wardrobe-btn {
 @media screen and (max-width: 768px) {
     ul#SD-nav.collapse.in {
         background: #fff;
+    }
+    .wardrobe-btn {
+        display: none;
     }
 }
 
@@ -3808,12 +3805,6 @@ li.wardrobe-btn {
         height: 140px;
         transition: all linear 0.2s;
     }
-    li.wardrobe-btn {
-        float: right !important;
-        right: 0;
-        line-height: 3;
-        text-align: right;
-    }
     .SD-header>div {
         line-height: 5;
         padding: 0 25px;
@@ -4114,14 +4105,6 @@ li.wardrobe-btn {
         width: 155px;
         height: 140px;
         transition: all linear 0.2s;
-    }
-    li.wardrobe-btn {
-        float: none !important;
-        right: 90px;
-        position: fixed !important;
-        line-height: 1;
-        text-align: right;
-        top: 22px;
     }
     .SD-header>div {
         line-height: 5;
