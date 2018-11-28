@@ -257,10 +257,13 @@ img.slide-8 {
 #slide9 {
     display: none;
     top: 22.2%;
-    left: 44%;
+    left: 40%;
     height: 200px;
     position: fixed;
     z-index: 1;
+}
+#slide9 p{
+    width: 60%;
 }
 
 #slide10,
