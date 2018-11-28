@@ -6995,7 +6995,7 @@ video[poster] {
     color: #fff;
 }
 
-.navigationLink.active {
+.navigationLink a.active {
     color: #696d70;
     border-left: 1px solid;
     border-right: 1px solid;
