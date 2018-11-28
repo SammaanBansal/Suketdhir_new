@@ -16,12 +16,12 @@ $(document).ready(function() {
 
             if (windowOffset > 1250) {
                 $('#slide4').css('display', 'block');
-                $('header').css('display', 'none');
+                $('.SD-header-home').css('display', 'none');
             }
             if (windowOffset < 1250) {
                 $('#slide4').css('display', 'none');
                 $('#slide1').css('display', 'block');
-                $('header').css('display', 'block');
+                $('.SD-header-home').css('display', 'block');
             }
             if (windowOffset > 1300) {
                 $('#slide4').css('transform', "translate3d(" + $(this).scrollTop() / 6 + "px,0,0)");
@@ -204,7 +204,7 @@ $(document).ready(function() {
                 $('#slide15').css({ 'top': '100%', 'transition': "all linear 2s" });
                 $('#slide16').fadeIn();
                 $('#slide16').css({ 'top': '0', 'transition': "all linear 2s 2s" });
-                $('header').css('display', 'block');
+                $('.SD-header-home').css('display', 'block');
             }
             if (windowOffset < 64000) {
                 $('#slide15').css({ 'top': '22%', 'transition': "all linear 2s" });
